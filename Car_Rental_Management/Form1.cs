@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Car_Rental_Management.Layouts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace Car_Rental_Management
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btn_Contract_Click(object sender, EventArgs e)
+        {
+            pnl_Container.Controls.Add(new UC_Contract());
         }
     }
 }
