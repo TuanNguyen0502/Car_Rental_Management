@@ -28,7 +28,7 @@ namespace Car_Rental_Management
             Console.WriteLine("Trạng thái: " + Status);
             Console.WriteLine("Động cơ: " + Engine);
             Console.WriteLine("Công suất: " + Power);
-            Console.WriteLine("Số chỗ ngồi: " + Seats);
+            Console.WriteLine("Số chỗ ngồi: " + Capacity);
             Console.WriteLine("Năm sản xuất: " + Year);
             Console.WriteLine("Tình trạng: " + Condition);
             Console.WriteLine("Mui trần: " + (IsConvertible ? "Có" : "Không"));

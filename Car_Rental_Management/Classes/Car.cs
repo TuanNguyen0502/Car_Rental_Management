@@ -18,11 +18,11 @@ namespace Car_Rental_Management
         public string Status { get; set; } // Trạng thái (Đã cho thuê, Chưa cho thuê, ...)
         public string Engine { get; set; } // Động cơ
         public string Power { get; set; } // Công suất
-        public string Seats { get; set; } // Số chỗ ngồi
+        public string Capacity { get; set; } // Số chỗ ngồi
         public string Year { get; set; } // Năm sản xuất
         public string Condition { get; set; } // Tình trạng (Mới, Cũ, ...)
 
-        public Car(string name, string color, string licenseNumber, string fuelType, string transmission, string fuelCapacity, string fuelConsumption, string status, string engine, string power, string seats, string year, string condition)
+        public Car(string name, string color, string licenseNumber, string fuelType, string transmission, string fuelCapacity, string fuelConsumption, string status, string engine, string power, string capacity, string year, string condition)
         {
             Name = name;
             Color = color;
@@ -34,7 +34,7 @@ namespace Car_Rental_Management
             Status = status;
             Engine = engine;
             Power = power;
-            Seats = seats;
+            Capacity = capacity;
             Year = year;
             Condition = condition;
         }
