@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlContent\UC_Client.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlContent\UC_Client.Designer.cs">
+      <DependentUpon>UC_Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlContent\UC_ContractContent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControlContent\UC_Client.resx">
+      <DependentUpon>UC_Client.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlContent\UC_ContractContent.resx">
       <DependentUpon>UC_ContractContent.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-delete-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
