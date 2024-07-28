@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.pnl_Content = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnClient = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Contract = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_Container = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnClient = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_Content.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,6 +44,23 @@
             this.pnl_Content.Name = "pnl_Content";
             this.pnl_Content.Size = new System.Drawing.Size(200, 660);
             this.pnl_Content.TabIndex = 0;
+            // 
+            // btnClient
+            // 
+            this.btnClient.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClient.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClient.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClient.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClient.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClient.ForeColor = System.Drawing.Color.White;
+            this.btnClient.Image = global::Car_Rental_Management.Properties.Resources.client;
+            this.btnClient.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnClient.Location = new System.Drawing.Point(11, 194);
+            this.btnClient.Name = "btnClient";
+            this.btnClient.Size = new System.Drawing.Size(180, 45);
+            this.btnClient.TabIndex = 1;
+            this.btnClient.Text = "Client";
+            this.btnClient.Click += new System.EventHandler(this.btnClient_Click);
             // 
             // btn_Contract
             // 
@@ -67,22 +84,6 @@
             this.pnl_Container.Name = "pnl_Container";
             this.pnl_Container.Size = new System.Drawing.Size(1140, 660);
             this.pnl_Container.TabIndex = 1;
-            // 
-            // btnClient
-            // 
-            this.btnClient.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClient.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClient.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClient.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClient.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClient.ForeColor = System.Drawing.Color.White;
-            this.btnClient.Image = global::Car_Rental_Management.Properties.Resources.client;
-            this.btnClient.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClient.Location = new System.Drawing.Point(11, 194);
-            this.btnClient.Name = "btnClient";
-            this.btnClient.Size = new System.Drawing.Size(180, 45);
-            this.btnClient.TabIndex = 1;
-            this.btnClient.Text = "Khách hàng";
             // 
             // Form1
             // 

@@ -22,5 +22,10 @@ namespace Car_Rental_Management
         {
             pnl_Container.Controls.Add(new UC_Contract());
         }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+        }
+
     }
 }

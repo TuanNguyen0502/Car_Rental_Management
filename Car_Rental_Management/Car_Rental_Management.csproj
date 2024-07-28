@@ -107,7 +107,6 @@
     <Compile Include="Classes\Human.cs" />
     <Compile Include="Classes\Mazda.cs" />
     <Compile Include="Classes\Mercedes.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\VinFast.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
