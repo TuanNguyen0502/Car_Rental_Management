@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace Car_Rental_Management
 {
-    public partial class Form1 : Form
+    public partial class FMain : Form
     {
         Form currentFormChild;
-        public Form1()
+        public FMain()
         {
             InitializeComponent();
         }
