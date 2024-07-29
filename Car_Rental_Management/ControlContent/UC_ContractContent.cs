@@ -16,5 +16,10 @@ namespace Car_Rental_Management.ControlContent
         {
             InitializeComponent();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

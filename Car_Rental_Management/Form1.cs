@@ -13,14 +13,33 @@ namespace Car_Rental_Management
 {
     public partial class Form1 : Form
     {
+        Form currentFormChild;
         public Form1()
         {
             InitializeComponent();
         }
 
+        private void OpenChildForm(Form childForm, Panel panel_Contains)
+        {
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+
+            panel_Contains.BackgroundImage = null;
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel_Contains.Controls.Add(childForm);
+            panel_Contains.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void btn_Contract_Click(object sender, EventArgs e)
         {
-            pnl_Container.Controls.Add(new UC_Contract());
+            OpenChildForm(new FContract(), pnl_Container);
         }
 
         private void btnClient_Click(object sender, EventArgs e)

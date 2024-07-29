@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace Car_Rental_Management.Layouts
 {
-    public partial class UC_Contract : UserControl
+    public partial class FContract : Form
     {
-        public UC_Contract()
+        public FContract()
         {
             InitializeComponent();
+        }
+        private void LoadAllContracts()
+        {
+
         }
     }
 }
