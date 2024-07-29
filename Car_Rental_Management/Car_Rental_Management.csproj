@@ -81,6 +81,12 @@
     <Compile Include="FClient.Designer.cs">
       <DependentUpon>FClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="FDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDashboard.Designer.cs">
+      <DependentUpon>FDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FClient.resx">
       <DependentUpon>FClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDashboard.resx">
+      <DependentUpon>FDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
