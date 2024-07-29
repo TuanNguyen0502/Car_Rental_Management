@@ -29,43 +29,52 @@
         private void InitializeComponent()
         {
             this.pnl_ContainerContracts = new System.Windows.Forms.Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel_Content = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel_Tittle = new Guna.UI2.WinForms.Guna2Panel();
             this.tlpProperties = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_ID = new System.Windows.Forms.Label();
             this.lbl_Prossession = new System.Windows.Forms.Label();
             this.lbl_Rent = new System.Windows.Forms.Label();
             this.lbl_FullName = new System.Windows.Forms.Label();
             this.lbl_Sex = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_Phone = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbb_Sex = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnl_Search = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.btnDel = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_ContainerContracts.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
+            this.panel_Tittle.SuspendLayout();
             this.tlpProperties.SuspendLayout();
             this.pnl_Search.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_ContainerContracts
             // 
-            this.pnl_ContainerContracts.Controls.Add(this.guna2Panel1);
+            this.pnl_ContainerContracts.Controls.Add(this.panel_Content);
+            this.pnl_ContainerContracts.Controls.Add(this.panel_Tittle);
             this.pnl_ContainerContracts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_ContainerContracts.Location = new System.Drawing.Point(0, 77);
             this.pnl_ContainerContracts.Name = "pnl_ContainerContracts";
             this.pnl_ContainerContracts.Size = new System.Drawing.Size(1359, 591);
             this.pnl_ContainerContracts.TabIndex = 11;
             // 
-            // guna2Panel1
+            // panel_Content
             // 
-            this.guna2Panel1.Controls.Add(this.tlpProperties);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1359, 54);
-            this.guna2Panel1.TabIndex = 0;
+            this.panel_Content.Location = new System.Drawing.Point(0, 54);
+            this.panel_Content.Name = "panel_Content";
+            this.panel_Content.Size = new System.Drawing.Size(1359, 537);
+            this.panel_Content.TabIndex = 1;
+            // 
+            // panel_Tittle
+            // 
+            this.panel_Tittle.Controls.Add(this.tlpProperties);
+            this.panel_Tittle.Location = new System.Drawing.Point(0, 0);
+            this.panel_Tittle.Name = "panel_Tittle";
+            this.panel_Tittle.Size = new System.Drawing.Size(1359, 54);
+            this.panel_Tittle.TabIndex = 0;
             // 
             // tlpProperties
             // 
@@ -84,7 +93,7 @@
             this.tlpProperties.Controls.Add(this.lbl_Rent, 4, 0);
             this.tlpProperties.Controls.Add(this.lbl_FullName, 1, 0);
             this.tlpProperties.Controls.Add(this.lbl_Sex, 2, 0);
-            this.tlpProperties.Controls.Add(this.label1, 3, 0);
+            this.tlpProperties.Controls.Add(this.lbl_Phone, 3, 0);
             this.tlpProperties.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpProperties.Location = new System.Drawing.Point(0, 0);
             this.tlpProperties.Name = "tlpProperties";
@@ -154,17 +163,17 @@
             this.lbl_Sex.TabIndex = 3;
             this.lbl_Sex.Text = "Sex";
             // 
-            // label1
+            // lbl_Phone
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(531, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Phone";
+            this.lbl_Phone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_Phone.AutoSize = true;
+            this.lbl_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lbl_Phone.ForeColor = System.Drawing.Color.White;
+            this.lbl_Phone.Location = new System.Drawing.Point(531, 17);
+            this.lbl_Phone.Name = "lbl_Phone";
+            this.lbl_Phone.Size = new System.Drawing.Size(61, 20);
+            this.lbl_Phone.TabIndex = 8;
+            this.lbl_Phone.Text = "Phone";
             // 
             // txtSearch
             // 
@@ -220,8 +229,8 @@
             this.pnl_Search.Controls.Add(this.btnDel);
             this.pnl_Search.Controls.Add(this.txtSearch);
             this.pnl_Search.Controls.Add(this.cbb_Sex);
-            this.pnl_Search.Controls.Add(this.guna2Button1);
-            this.pnl_Search.Controls.Add(this.guna2Button2);
+            this.pnl_Search.Controls.Add(this.btnSearch);
+            this.pnl_Search.Controls.Add(this.btnRefresh);
             this.pnl_Search.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Search.Location = new System.Drawing.Point(0, 0);
             this.pnl_Search.Name = "pnl_Search";
@@ -262,33 +271,33 @@
             this.btnDel.TabIndex = 3;
             this.btnDel.Text = "Xóa";
             // 
-            // guna2Button1
+            // btnSearch
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = global::Car_Rental_Management.Properties.Resources.icons8_find_16;
-            this.guna2Button1.Location = new System.Drawing.Point(296, 19);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(60, 43);
-            this.guna2Button1.TabIndex = 5;
+            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Image = global::Car_Rental_Management.Properties.Resources.icons8_find_16;
+            this.btnSearch.Location = new System.Drawing.Point(296, 19);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(60, 43);
+            this.btnSearch.TabIndex = 5;
             // 
-            // guna2Button2
+            // btnRefresh
             // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_16;
-            this.guna2Button2.Location = new System.Drawing.Point(360, 19);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(60, 43);
-            this.guna2Button2.TabIndex = 6;
+            this.btnRefresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRefresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_16;
+            this.btnRefresh.Location = new System.Drawing.Point(360, 19);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(60, 43);
+            this.btnRefresh.TabIndex = 6;
             // 
             // FClient
             // 
@@ -300,8 +309,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FClient";
             this.Text = "FClient";
+            this.Load += new System.EventHandler(this.FClient_Load);
             this.pnl_ContainerContracts.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
+            this.panel_Tittle.ResumeLayout(false);
             this.tlpProperties.ResumeLayout(false);
             this.tlpProperties.PerformLayout();
             this.pnl_Search.ResumeLayout(false);
@@ -315,17 +325,18 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2ComboBox cbb_Sex;
         private Guna.UI2.WinForms.Guna2Panel pnl_Search;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnSearch;
+        private Guna.UI2.WinForms.Guna2Button btnRefresh;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2Button btnDel;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel panel_Tittle;
         private System.Windows.Forms.TableLayoutPanel tlpProperties;
         private System.Windows.Forms.Label lbl_ID;
         private System.Windows.Forms.Label lbl_Prossession;
         private System.Windows.Forms.Label lbl_Rent;
         private System.Windows.Forms.Label lbl_Sex;
         private System.Windows.Forms.Label lbl_FullName;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_Phone;
+        private Guna.UI2.WinForms.Guna2Panel panel_Content;
     }
 }

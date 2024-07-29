@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Car_Rental_Management.ControlContent;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace Car_Rental_Management
         public FClient()
         {
             InitializeComponent();
+        }
+
+        private void FClient_Load(object sender, EventArgs e)
+        {
+            UC_Client client = new UC_Client();
+            panel_Content.Controls.Add(client);
         }
     }
 }
