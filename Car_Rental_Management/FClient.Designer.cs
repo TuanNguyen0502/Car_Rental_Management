@@ -32,11 +32,11 @@
             this.panel_Content = new Guna.UI2.WinForms.Guna2Panel();
             this.panel_Tittle = new Guna.UI2.WinForms.Guna2Panel();
             this.tlpProperties = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_ID = new System.Windows.Forms.Label();
-            this.lbl_Prossession = new System.Windows.Forms.Label();
-            this.lbl_Rent = new System.Windows.Forms.Label();
+            this.lbl_Email = new System.Windows.Forms.Label();
+            this.lbl_DrivingLicense = new System.Windows.Forms.Label();
+            this.lbl_CCCD = new System.Windows.Forms.Label();
             this.lbl_FullName = new System.Windows.Forms.Label();
-            this.lbl_Sex = new System.Windows.Forms.Label();
+            this.lbl_Gender = new System.Windows.Forms.Label();
             this.lbl_Phone = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbb_Sex = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -88,11 +88,11 @@
             this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.57096F));
             this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.57096F));
             this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.4231F));
-            this.tlpProperties.Controls.Add(this.lbl_ID, 6, 0);
-            this.tlpProperties.Controls.Add(this.lbl_Prossession, 5, 0);
-            this.tlpProperties.Controls.Add(this.lbl_Rent, 4, 0);
+            this.tlpProperties.Controls.Add(this.lbl_Email, 6, 0);
+            this.tlpProperties.Controls.Add(this.lbl_DrivingLicense, 5, 0);
+            this.tlpProperties.Controls.Add(this.lbl_CCCD, 4, 0);
             this.tlpProperties.Controls.Add(this.lbl_FullName, 1, 0);
-            this.tlpProperties.Controls.Add(this.lbl_Sex, 2, 0);
+            this.tlpProperties.Controls.Add(this.lbl_Gender, 2, 0);
             this.tlpProperties.Controls.Add(this.lbl_Phone, 3, 0);
             this.tlpProperties.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpProperties.Location = new System.Drawing.Point(0, 0);
@@ -102,41 +102,41 @@
             this.tlpProperties.Size = new System.Drawing.Size(1359, 54);
             this.tlpProperties.TabIndex = 1;
             // 
-            // lbl_ID
+            // lbl_Email
             // 
-            this.lbl_ID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_ID.AutoSize = true;
-            this.lbl_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_ID.ForeColor = System.Drawing.Color.White;
-            this.lbl_ID.Location = new System.Drawing.Point(1043, 17);
-            this.lbl_ID.Name = "lbl_ID";
-            this.lbl_ID.Size = new System.Drawing.Size(57, 20);
-            this.lbl_ID.TabIndex = 6;
-            this.lbl_ID.Text = "Spent";
+            this.lbl_Email.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_Email.AutoSize = true;
+            this.lbl_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lbl_Email.ForeColor = System.Drawing.Color.White;
+            this.lbl_Email.Location = new System.Drawing.Point(1044, 17);
+            this.lbl_Email.Name = "lbl_Email";
+            this.lbl_Email.Size = new System.Drawing.Size(56, 20);
+            this.lbl_Email.TabIndex = 6;
+            this.lbl_Email.Text = "Email";
             // 
-            // lbl_Prossession
+            // lbl_DrivingLicense
             // 
-            this.lbl_Prossession.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_Prossession.AutoSize = true;
-            this.lbl_Prossession.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_Prossession.ForeColor = System.Drawing.Color.White;
-            this.lbl_Prossession.Location = new System.Drawing.Point(835, 17);
-            this.lbl_Prossession.Name = "lbl_Prossession";
-            this.lbl_Prossession.Size = new System.Drawing.Size(134, 20);
-            this.lbl_Prossession.TabIndex = 5;
-            this.lbl_Prossession.Text = "In Prossession";
+            this.lbl_DrivingLicense.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_DrivingLicense.AutoSize = true;
+            this.lbl_DrivingLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lbl_DrivingLicense.ForeColor = System.Drawing.Color.White;
+            this.lbl_DrivingLicense.Location = new System.Drawing.Point(831, 17);
+            this.lbl_DrivingLicense.Name = "lbl_DrivingLicense";
+            this.lbl_DrivingLicense.Size = new System.Drawing.Size(141, 20);
+            this.lbl_DrivingLicense.TabIndex = 5;
+            this.lbl_DrivingLicense.Text = "Driving License";
             // 
-            // lbl_Rent
+            // lbl_CCCD
             // 
-            this.lbl_Rent.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_Rent.AutoSize = true;
-            this.lbl_Rent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_Rent.ForeColor = System.Drawing.Color.White;
-            this.lbl_Rent.Location = new System.Drawing.Point(708, 17);
-            this.lbl_Rent.Name = "lbl_Rent";
-            this.lbl_Rent.Size = new System.Drawing.Size(48, 20);
-            this.lbl_Rent.TabIndex = 4;
-            this.lbl_Rent.Text = "Rent";
+            this.lbl_CCCD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_CCCD.AutoSize = true;
+            this.lbl_CCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lbl_CCCD.ForeColor = System.Drawing.Color.White;
+            this.lbl_CCCD.Location = new System.Drawing.Point(701, 17);
+            this.lbl_CCCD.Name = "lbl_CCCD";
+            this.lbl_CCCD.Size = new System.Drawing.Size(62, 20);
+            this.lbl_CCCD.TabIndex = 4;
+            this.lbl_CCCD.Text = "CCCD";
             // 
             // lbl_FullName
             // 
@@ -151,17 +151,17 @@
             this.lbl_FullName.Text = "Full Name";
             this.lbl_FullName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_Sex
+            // lbl_Gender
             // 
-            this.lbl_Sex.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_Sex.AutoSize = true;
-            this.lbl_Sex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_Sex.ForeColor = System.Drawing.Color.White;
-            this.lbl_Sex.Location = new System.Drawing.Point(372, 17);
-            this.lbl_Sex.Name = "lbl_Sex";
-            this.lbl_Sex.Size = new System.Drawing.Size(40, 20);
-            this.lbl_Sex.TabIndex = 3;
-            this.lbl_Sex.Text = "Sex";
+            this.lbl_Gender.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_Gender.AutoSize = true;
+            this.lbl_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lbl_Gender.ForeColor = System.Drawing.Color.White;
+            this.lbl_Gender.Location = new System.Drawing.Point(357, 17);
+            this.lbl_Gender.Name = "lbl_Gender";
+            this.lbl_Gender.Size = new System.Drawing.Size(70, 20);
+            this.lbl_Gender.TabIndex = 3;
+            this.lbl_Gender.Text = "Gender";
             // 
             // lbl_Phone
             // 
@@ -331,10 +331,10 @@
         private Guna.UI2.WinForms.Guna2Button btnDel;
         private Guna.UI2.WinForms.Guna2Panel panel_Tittle;
         private System.Windows.Forms.TableLayoutPanel tlpProperties;
-        private System.Windows.Forms.Label lbl_ID;
-        private System.Windows.Forms.Label lbl_Prossession;
-        private System.Windows.Forms.Label lbl_Rent;
-        private System.Windows.Forms.Label lbl_Sex;
+        private System.Windows.Forms.Label lbl_Email;
+        private System.Windows.Forms.Label lbl_DrivingLicense;
+        private System.Windows.Forms.Label lbl_CCCD;
+        private System.Windows.Forms.Label lbl_Gender;
         private System.Windows.Forms.Label lbl_FullName;
         private System.Windows.Forms.Label lbl_Phone;
         private Guna.UI2.WinForms.Guna2Panel panel_Content;
