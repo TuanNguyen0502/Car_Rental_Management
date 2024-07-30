@@ -1,4 +1,5 @@
 ﻿using Car_Rental_Management.Layouts;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,14 +38,16 @@ namespace Car_Rental_Management
             childForm.Show();
         }
 
-        private void btn_Contract_Click(object sender, EventArgs e)
+        private void moveImageBox(object sender)
         {
-            OpenChildForm(new FContract(), pnl_Container);
+            Guna2Button b = (Guna2Button)sender;
+            imgSlide.Location = new Point(b.Location.X + 166, b.Location.Y - 30);
+            imgSlide.SendToBack();
         }
 
-        private void btnClient_Click(object sender, EventArgs e)
+        private void btnDashboard_CheckedChanged(object sender, EventArgs e)
         {
+            moveImageBox(sender);
         }
-
     }
 }
