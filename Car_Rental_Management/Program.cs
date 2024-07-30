@@ -18,7 +18,7 @@ namespace Car_Rental_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FMain());
+            Application.Run(new FCustomer_Information());
         }
     }
 }

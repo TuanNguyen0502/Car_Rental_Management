@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.tlp_Content = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_Spent = new System.Windows.Forms.Label();
-            this.lbl_In_Prossession = new System.Windows.Forms.Label();
+            this.lbl_DrivingLicense = new System.Windows.Forms.Label();
+            this.lbl_Email = new System.Windows.Forms.Label();
             this.lbl_FullName = new System.Windows.Forms.Label();
-            this.lbl_Rent = new System.Windows.Forms.Label();
-            this.lbl_Sex = new System.Windows.Forms.Label();
+            this.lbl_Gender = new System.Windows.Forms.Label();
             this.lbl_Phone = new System.Windows.Forms.Label();
-            this.btn_Del = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Edit = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_CCCD = new System.Windows.Forms.Label();
             this.cpb_Intitial_Img = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.btn_Edit = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Del = new Guna.UI2.WinForms.Guna2Button();
             this.tlp_Content.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpb_Intitial_Img)).BeginInit();
             this.SuspendLayout();
@@ -55,12 +55,12 @@
             this.tlp_Content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.62626F));
             this.tlp_Content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.070707F));
             this.tlp_Content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.070707F));
-            this.tlp_Content.Controls.Add(this.lbl_In_Prossession, 5, 0);
-            this.tlp_Content.Controls.Add(this.lbl_Spent, 6, 0);
+            this.tlp_Content.Controls.Add(this.lbl_DrivingLicense, 5, 0);
+            this.tlp_Content.Controls.Add(this.lbl_Email, 6, 0);
             this.tlp_Content.Controls.Add(this.lbl_FullName, 1, 0);
-            this.tlp_Content.Controls.Add(this.lbl_Sex, 2, 0);
+            this.tlp_Content.Controls.Add(this.lbl_Gender, 2, 0);
             this.tlp_Content.Controls.Add(this.lbl_Phone, 3, 0);
-            this.tlp_Content.Controls.Add(this.lbl_Rent, 4, 0);
+            this.tlp_Content.Controls.Add(this.lbl_CCCD, 4, 0);
             this.tlp_Content.Controls.Add(this.cpb_Intitial_Img, 0, 0);
             this.tlp_Content.Controls.Add(this.btn_Edit, 7, 0);
             this.tlp_Content.Controls.Add(this.btn_Del, 8, 0);
@@ -72,27 +72,27 @@
             this.tlp_Content.Size = new System.Drawing.Size(1359, 54);
             this.tlp_Content.TabIndex = 1;
             // 
-            // lbl_Spent
+            // lbl_DrivingLicense
             // 
-            this.lbl_Spent.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_Spent.AutoSize = true;
-            this.lbl_Spent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Spent.Location = new System.Drawing.Point(1051, 17);
-            this.lbl_Spent.Name = "lbl_Spent";
-            this.lbl_Spent.Size = new System.Drawing.Size(52, 20);
-            this.lbl_Spent.TabIndex = 7;
-            this.lbl_Spent.Text = "Spent";
+            this.lbl_DrivingLicense.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_DrivingLicense.AutoSize = true;
+            this.lbl_DrivingLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DrivingLicense.Location = new System.Drawing.Point(843, 17);
+            this.lbl_DrivingLicense.Name = "lbl_DrivingLicense";
+            this.lbl_DrivingLicense.Size = new System.Drawing.Size(126, 20);
+            this.lbl_DrivingLicense.TabIndex = 6;
+            this.lbl_DrivingLicense.Text = "Driving License";
             // 
-            // lbl_In_Prossession
+            // lbl_Email
             // 
-            this.lbl_In_Prossession.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_In_Prossession.AutoSize = true;
-            this.lbl_In_Prossession.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_In_Prossession.Location = new System.Drawing.Point(846, 17);
-            this.lbl_In_Prossession.Name = "lbl_In_Prossession";
-            this.lbl_In_Prossession.Size = new System.Drawing.Size(120, 20);
-            this.lbl_In_Prossession.TabIndex = 6;
-            this.lbl_In_Prossession.Text = "In Prossession";
+            this.lbl_Email.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_Email.AutoSize = true;
+            this.lbl_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Email.Location = new System.Drawing.Point(1052, 17);
+            this.lbl_Email.Name = "lbl_Email";
+            this.lbl_Email.Size = new System.Drawing.Size(51, 20);
+            this.lbl_Email.TabIndex = 7;
+            this.lbl_Email.Text = "Email";
             // 
             // lbl_FullName
             // 
@@ -105,27 +105,16 @@
             this.lbl_FullName.TabIndex = 3;
             this.lbl_FullName.Text = "Full Name";
             // 
-            // lbl_Rent
+            // lbl_Gender
             // 
-            this.lbl_Rent.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_Rent.AutoSize = true;
-            this.lbl_Rent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Rent.Location = new System.Drawing.Point(713, 17);
-            this.lbl_Rent.Name = "lbl_Rent";
-            this.lbl_Rent.Size = new System.Drawing.Size(44, 20);
-            this.lbl_Rent.TabIndex = 2;
-            this.lbl_Rent.Text = "Rent";
-            // 
-            // lbl_Sex
-            // 
-            this.lbl_Sex.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_Sex.AutoSize = true;
-            this.lbl_Sex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Sex.Location = new System.Drawing.Point(375, 17);
-            this.lbl_Sex.Name = "lbl_Sex";
-            this.lbl_Sex.Size = new System.Drawing.Size(37, 20);
-            this.lbl_Sex.TabIndex = 0;
-            this.lbl_Sex.Text = "Sex";
+            this.lbl_Gender.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_Gender.AutoSize = true;
+            this.lbl_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Gender.Location = new System.Drawing.Point(361, 17);
+            this.lbl_Gender.Name = "lbl_Gender";
+            this.lbl_Gender.Size = new System.Drawing.Size(64, 20);
+            this.lbl_Gender.TabIndex = 0;
+            this.lbl_Gender.Text = "Gender";
             // 
             // lbl_Phone
             // 
@@ -138,20 +127,26 @@
             this.lbl_Phone.TabIndex = 8;
             this.lbl_Phone.Text = "Phone";
             // 
-            // btn_Del
+            // lbl_CCCD
             // 
-            this.btn_Del.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Del.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Del.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Del.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Del.FillColor = System.Drawing.Color.Transparent;
-            this.btn_Del.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Del.ForeColor = System.Drawing.Color.White;
-            this.btn_Del.Image = global::Car_Rental_Management.Properties.Resources.icons8_delete_30;
-            this.btn_Del.Location = new System.Drawing.Point(1262, 3);
-            this.btn_Del.Name = "btn_Del";
-            this.btn_Del.Size = new System.Drawing.Size(94, 48);
-            this.btn_Del.TabIndex = 7;
+            this.lbl_CCCD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_CCCD.AutoSize = true;
+            this.lbl_CCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CCCD.Location = new System.Drawing.Point(706, 17);
+            this.lbl_CCCD.Name = "lbl_CCCD";
+            this.lbl_CCCD.Size = new System.Drawing.Size(58, 20);
+            this.lbl_CCCD.TabIndex = 2;
+            this.lbl_CCCD.Text = "CCCD";
+            // 
+            // cpb_Intitial_Img
+            // 
+            this.cpb_Intitial_Img.ImageRotate = 0F;
+            this.cpb_Intitial_Img.Location = new System.Drawing.Point(3, 3);
+            this.cpb_Intitial_Img.Name = "cpb_Intitial_Img";
+            this.cpb_Intitial_Img.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.cpb_Intitial_Img.Size = new System.Drawing.Size(48, 48);
+            this.cpb_Intitial_Img.TabIndex = 10;
+            this.cpb_Intitial_Img.TabStop = false;
             // 
             // btn_Edit
             // 
@@ -168,15 +163,20 @@
             this.btn_Edit.Size = new System.Drawing.Size(90, 48);
             this.btn_Edit.TabIndex = 9;
             // 
-            // cpb_Intitial_Img
+            // btn_Del
             // 
-            this.cpb_Intitial_Img.ImageRotate = 0F;
-            this.cpb_Intitial_Img.Location = new System.Drawing.Point(3, 3);
-            this.cpb_Intitial_Img.Name = "cpb_Intitial_Img";
-            this.cpb_Intitial_Img.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.cpb_Intitial_Img.Size = new System.Drawing.Size(48, 48);
-            this.cpb_Intitial_Img.TabIndex = 10;
-            this.cpb_Intitial_Img.TabStop = false;
+            this.btn_Del.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Del.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Del.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Del.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Del.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Del.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Del.ForeColor = System.Drawing.Color.White;
+            this.btn_Del.Image = global::Car_Rental_Management.Properties.Resources.icons8_delete_30;
+            this.btn_Del.Location = new System.Drawing.Point(1262, 3);
+            this.btn_Del.Name = "btn_Del";
+            this.btn_Del.Size = new System.Drawing.Size(94, 48);
+            this.btn_Del.TabIndex = 7;
             // 
             // UC_Client
             // 
@@ -196,11 +196,11 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tlp_Content;
-        private System.Windows.Forms.Label lbl_Spent;
-        private System.Windows.Forms.Label lbl_In_Prossession;
+        private System.Windows.Forms.Label lbl_Email;
+        private System.Windows.Forms.Label lbl_DrivingLicense;
         private System.Windows.Forms.Label lbl_FullName;
-        private System.Windows.Forms.Label lbl_Rent;
-        private System.Windows.Forms.Label lbl_Sex;
+        private System.Windows.Forms.Label lbl_CCCD;
+        private System.Windows.Forms.Label lbl_Gender;
         private System.Windows.Forms.Label lbl_Phone;
         private Guna.UI2.WinForms.Guna2Button btn_Del;
         private Guna.UI2.WinForms.Guna2Button btn_Edit;
