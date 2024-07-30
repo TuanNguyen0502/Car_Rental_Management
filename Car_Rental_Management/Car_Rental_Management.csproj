@@ -7,7 +7,7 @@
     <ProjectGuid>{B7460A21-80C4-411B-997C-190F473EC1FA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Car_Rental_Management</RootNamespace>
-    <AssemblyName>Car_Rental_Management</AssemblyName>
+    <AssemblyName>O9I0Car_Rental_Management</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -63,11 +63,11 @@
     <Compile Include="Customer.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Ford.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Layouts\EmployeeInfor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Layouts\EmployeeInfor.Designer.cs">
+      <DependentUpon>EmployeeInfor.cs</DependentUpon>
     </Compile>
     <Compile Include="Layouts\UC_Contract.cs">
       <SubType>UserControl</SubType>
@@ -80,8 +80,8 @@
     <EmbeddedResource Include="ControlContent\UC_ContractContent.resx">
       <DependentUpon>UC_ContractContent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Layouts\EmployeeInfor.resx">
+      <DependentUpon>EmployeeInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layouts\UC_Contract.resx">
       <DependentUpon>UC_Contract.cs</DependentUpon>
