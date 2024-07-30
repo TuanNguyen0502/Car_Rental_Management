@@ -113,6 +113,26 @@ namespace Car_Rental_Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_more_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-more-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_more_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-more-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_refresh_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-refresh-16", resourceCulture);
@@ -136,6 +156,26 @@ namespace Car_Rental_Management.Properties {
         internal static System.Drawing.Bitmap icons8_search_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-search-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_x_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-x-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_x_48__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-x-48 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
