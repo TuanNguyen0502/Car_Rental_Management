@@ -10,9 +10,10 @@ namespace Car_Rental_Management
     {
         public bool IsSoundproof { get; set; } // Có cách âm
 
-        public Ford(string name, string color, string licenseNumber, string fuelType, string transmission, string fuelCapacity, string fuelConsumption, string status, string engine, string power, string seats, string year, string condition, bool isSoundproof) : base(name, color, licenseNumber, fuelType, transmission, fuelCapacity, fuelConsumption, status, engine, power, seats, year, condition)
+        public Ford(string name, string licenseNumber, string color, string fuelType, string fuelCapacity, string fuelConsumption, string capacity, string transmission, string engine, string power, string year, string condition, string status, bool isSoundProof)
+            : base(name, licenseNumber, color, fuelType, fuelCapacity, fuelConsumption, capacity, transmission, engine, power, year, condition, status)
         {
-            IsSoundproof = isSoundproof;
+            IsSoundproof = isSoundProof;
         }
 
         public override void ShowInfo()

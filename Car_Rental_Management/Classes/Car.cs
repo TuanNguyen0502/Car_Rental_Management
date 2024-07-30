@@ -22,7 +22,7 @@ namespace Car_Rental_Management
         public string Year { get; set; } // Năm sản xuất
         public string Condition { get; set; } // Tình trạng (Mới, Cũ, ...)
 
-        public Car(string name, string color, string licenseNumber, string fuelType, string transmission, string fuelCapacity, string fuelConsumption, string status, string engine, string power, string capacity, string year, string condition)
+        public Car(string name, string licenseNumber, string color, string fuelType, string fuelCapacity, string fuelConsumption, string capacity, string transmission, string engine, string power, string year, string condition, string status)
         {
             Name = name;
             Color = color;
