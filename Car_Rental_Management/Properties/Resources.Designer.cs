@@ -103,6 +103,16 @@ namespace Car_Rental_Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_car_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-car-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_car_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-car-50", resourceCulture);
@@ -126,6 +136,16 @@ namespace Car_Rental_Management.Properties {
         internal static System.Drawing.Bitmap icons8_car_50__1_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8-car-50 (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_car_50__2_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-car-50 (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +236,16 @@ namespace Car_Rental_Management.Properties {
         internal static System.Drawing.Bitmap icons8_find_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-find-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

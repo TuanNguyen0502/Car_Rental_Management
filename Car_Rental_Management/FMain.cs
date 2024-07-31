@@ -53,7 +53,7 @@ namespace Car_Rental_Management
         private void moveImageBox(object sender)
         {
             Guna2Button b = (Guna2Button)sender;
-            imgSlide.Location = new Point(b.Location.X + 166, b.Location.Y - 30);
+            imgSlide.Location = new Point(b.Location.X + 156, b.Location.Y - 30);
             imgSlide.SendToBack();
         }
 
@@ -72,6 +72,36 @@ namespace Car_Rental_Management
             DateTime Tuan_startDate = new DateTime(2021, 07, 01);
             Employee Tuan = new Employee("Nguyen Ha Hong Tuan", Tuan_dob, "123456789", "Binh Duong", "0705488458", "nguyenhahongtuan@gmail.com",
                 "Nam", "EID001", "5M $", Tuan_startDate);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FDashboard(), pnl_Container);
+        }
+
+        private void btnVehicles_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FCar(), pnl_Container);
+        }
+
+        private void btnContracts_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FContract(), pnl_Container);
+        }
+
+        private void btnClients_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FClient(), pnl_Container);
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
