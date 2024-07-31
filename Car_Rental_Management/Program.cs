@@ -10,6 +10,13 @@ namespace Car_Rental_Management
 {
     internal static class Program
     {
+        private static MainFormManager mainFormManager;
+
+        public static MainFormManager MainFormManager
+        {
+            get { return mainFormManager; }
+        }
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,7 +25,9 @@ namespace Car_Rental_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FMain());
+            mainFormManager = new MainFormManager();
+            mainFormManager.CurrentForm = new FLogin();
+            Application.Run(mainFormManager);
         }
     }
 }
