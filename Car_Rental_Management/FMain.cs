@@ -19,11 +19,6 @@ namespace Car_Rental_Management
         private List<Contract> contracts = new List<Contract>();
         private List<Customer> customers = new List<Customer>();
         private List<Employee> employees = new List<Employee>();
-        private List<Ford> fords = new List<Ford>();
-        private List<Mazda> mazdas = new List<Mazda>();
-        private List<Mercedes> mercedes = new List<Mercedes>();
-        private List<VinFast> vinFasts = new List<VinFast>();
-
         // Current form
         Form currentFormChild;
 
@@ -93,10 +88,7 @@ namespace Car_Rental_Management
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FLogin fLogin = new FLogin();
-            fLogin.ShowDialog();
-            this.Close();
+            Program.MainFormManager.CurrentForm = new FLogin();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)

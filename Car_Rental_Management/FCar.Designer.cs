@@ -34,10 +34,6 @@
             this.button_Add = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel_Top = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.button_Search = new Guna.UI2.WinForms.Guna2Button();
-            this.flowLayoutPanel_Center = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,10 +42,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.uC_Car1 = new Car_Rental_Management.UC_Car();
+            this.panel_Top = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.button_Search = new Guna.UI2.WinForms.Guna2Button();
+            this.flowLayoutPanel_Center = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel_Top.SuspendLayout();
-            this.flowLayoutPanel_Center.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox_Search
@@ -183,73 +181,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Name";
             // 
-            // panel_Top
-            // 
-            this.panel_Top.Controls.Add(this.button_Add);
-            this.panel_Top.Controls.Add(this.tableLayoutPanel1);
-            this.panel_Top.Controls.Add(this.textBox_Search);
-            this.panel_Top.Controls.Add(this.comboBox_Transmission);
-            this.panel_Top.Controls.Add(this.guna2Button2);
-            this.panel_Top.Controls.Add(this.button_Search);
-            this.panel_Top.Controls.Add(this.comboBox_FuelType);
-            this.panel_Top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_Top.Location = new System.Drawing.Point(0, 0);
-            this.panel_Top.Name = "panel_Top";
-            this.panel_Top.Size = new System.Drawing.Size(1213, 213);
-            this.panel_Top.TabIndex = 1;
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.AutoRoundedCorners = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.White;
-            this.guna2Button2.BorderRadius = 29;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
-            this.guna2Button2.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_48;
-            this.guna2Button2.Location = new System.Drawing.Point(417, 19);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(80, 60);
-            this.guna2Button2.TabIndex = 2;
-            // 
-            // button_Search
-            // 
-            this.button_Search.AutoRoundedCorners = true;
-            this.button_Search.BackColor = System.Drawing.Color.White;
-            this.button_Search.BorderRadius = 29;
-            this.button_Search.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.button_Search.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.button_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.button_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.button_Search.FillColor = System.Drawing.Color.White;
-            this.button_Search.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
-            this.button_Search.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button_Search.ForeColor = System.Drawing.Color.White;
-            this.button_Search.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
-            this.button_Search.Image = global::Car_Rental_Management.Properties.Resources.icons8_search_48;
-            this.button_Search.Location = new System.Drawing.Point(315, 19);
-            this.button_Search.Name = "button_Search";
-            this.button_Search.Size = new System.Drawing.Size(80, 60);
-            this.button_Search.TabIndex = 1;
-            // 
-            // flowLayoutPanel_Center
-            // 
-            this.flowLayoutPanel_Center.AutoScroll = true;
-            this.flowLayoutPanel_Center.Controls.Add(this.uC_Car1);
-            this.flowLayoutPanel_Center.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel_Center.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel_Center.Location = new System.Drawing.Point(0, 213);
-            this.flowLayoutPanel_Center.Name = "flowLayoutPanel_Center";
-            this.flowLayoutPanel_Center.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.flowLayoutPanel_Center.Size = new System.Drawing.Size(1213, 498);
-            this.flowLayoutPanel_Center.TabIndex = 2;
-            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -346,12 +277,71 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "Status";
             // 
-            // uC_Car1
+            // panel_Top
             // 
-            this.uC_Car1.Location = new System.Drawing.Point(3, 13);
-            this.uC_Car1.Name = "uC_Car1";
-            this.uC_Car1.Size = new System.Drawing.Size(1213, 100);
-            this.uC_Car1.TabIndex = 0;
+            this.panel_Top.Controls.Add(this.button_Add);
+            this.panel_Top.Controls.Add(this.tableLayoutPanel1);
+            this.panel_Top.Controls.Add(this.textBox_Search);
+            this.panel_Top.Controls.Add(this.comboBox_Transmission);
+            this.panel_Top.Controls.Add(this.guna2Button2);
+            this.panel_Top.Controls.Add(this.button_Search);
+            this.panel_Top.Controls.Add(this.comboBox_FuelType);
+            this.panel_Top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_Top.Location = new System.Drawing.Point(0, 0);
+            this.panel_Top.Name = "panel_Top";
+            this.panel_Top.Size = new System.Drawing.Size(1213, 213);
+            this.panel_Top.TabIndex = 1;
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.AutoRoundedCorners = true;
+            this.guna2Button2.BackColor = System.Drawing.Color.White;
+            this.guna2Button2.BorderRadius = 29;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.White;
+            this.guna2Button2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
+            this.guna2Button2.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_48;
+            this.guna2Button2.Location = new System.Drawing.Point(417, 19);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(80, 60);
+            this.guna2Button2.TabIndex = 2;
+            // 
+            // button_Search
+            // 
+            this.button_Search.AutoRoundedCorners = true;
+            this.button_Search.BackColor = System.Drawing.Color.White;
+            this.button_Search.BorderRadius = 29;
+            this.button_Search.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.button_Search.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.button_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.button_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button_Search.FillColor = System.Drawing.Color.White;
+            this.button_Search.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
+            this.button_Search.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.button_Search.ForeColor = System.Drawing.Color.White;
+            this.button_Search.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
+            this.button_Search.Image = global::Car_Rental_Management.Properties.Resources.icons8_search_48;
+            this.button_Search.Location = new System.Drawing.Point(315, 19);
+            this.button_Search.Name = "button_Search";
+            this.button_Search.Size = new System.Drawing.Size(80, 60);
+            this.button_Search.TabIndex = 1;
+            // 
+            // flowLayoutPanel_Center
+            // 
+            this.flowLayoutPanel_Center.AutoScroll = true;
+            this.flowLayoutPanel_Center.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel_Center.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel_Center.Location = new System.Drawing.Point(0, 213);
+            this.flowLayoutPanel_Center.Name = "flowLayoutPanel_Center";
+            this.flowLayoutPanel_Center.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.flowLayoutPanel_Center.Size = new System.Drawing.Size(1213, 498);
+            this.flowLayoutPanel_Center.TabIndex = 2;
             // 
             // FCar
             // 
@@ -364,10 +354,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FCar";
             this.Text = "FCar";
+            this.Load += new System.EventHandler(this.FCar_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel_Top.ResumeLayout(false);
-            this.flowLayoutPanel_Center.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -392,6 +382,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private UC_Car uC_Car1;
     }
 }
