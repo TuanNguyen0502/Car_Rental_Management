@@ -207,6 +207,7 @@
   </data>
   <data name="Car_Rental" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Car_Rental.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-car-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-car-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

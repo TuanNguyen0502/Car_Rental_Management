@@ -97,22 +97,17 @@ namespace Car_Rental_Management
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FDashboard(), pnl_Container);
-        }
-
-        private void btnVehicles_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FCar(), pnl_Container);
+            OpenChildForm(new FDashboard());
         }
 
         private void btnContracts_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FContract(), pnl_Container);
+            OpenChildForm(new FContract());
         }
 
         private void btnClients_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FClient(), pnl_Container);
+            OpenChildForm(new FClient());
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
