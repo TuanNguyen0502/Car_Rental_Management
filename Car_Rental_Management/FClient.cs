@@ -23,5 +23,11 @@ namespace Car_Rental_Management
             UC_Client client = new UC_Client();
             panel_Content.Controls.Add(client);
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            FCustomer_Information newCustomer = new FCustomer_Information();
+            newCustomer.ShowDialog();
+        }
     }
 }
