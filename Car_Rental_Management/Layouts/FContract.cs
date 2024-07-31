@@ -8,16 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Car_Rental_Management.ControlContent
+namespace Car_Rental_Management.Layouts
 {
-    public partial class UC_ContractContent : UserControl
+    public partial class FContract : Form
     {
-        public UC_ContractContent()
+        public FContract()
         {
             InitializeComponent();
         }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void LoadAllContracts()
         {
 
         }

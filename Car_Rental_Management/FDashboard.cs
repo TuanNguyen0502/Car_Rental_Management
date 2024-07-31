@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Car_Rental_Management.Layouts
+namespace Car_Rental_Management
 {
-    public partial class UC_Contract : UserControl
+    public partial class FDashboard : Form
     {
-        public UC_Contract()
+        public FDashboard()
         {
             InitializeComponent();
         }

@@ -52,46 +52,133 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Account.cs" />
+    <Compile Include="Classes\Condition.cs" />
+    <Compile Include="Classes\FuelType.cs" />
+    <Compile Include="Classes\Status.cs" />
+    <Compile Include="Classes\Transmission.cs" />
+    <Compile Include="ControlContent\UC_Client.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlContent\UC_Client.Designer.cs">
+      <DependentUpon>UC_Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlContent\UC_ContractContent.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ControlContent\UC_ContractContent.Designer.cs">
       <DependentUpon>UC_ContractContent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Car.cs" />
-    <Compile Include="Contract.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="Ford.cs" />
     <Compile Include="Layouts\EmployeeInfor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Layouts\EmployeeInfor.Designer.cs">
       <DependentUpon>EmployeeInfor.cs</DependentUpon>
+    <Compile Include="Classes\Car.cs" />
+    <Compile Include="Classes\Contract.cs" />
+    <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Classes\Employee.cs" />
+    <Compile Include="Classes\Ford.cs" />
+    <Compile Include="FCar.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Layouts\UC_Contract.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="FCar.Designer.cs">
+      <DependentUpon>FCar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\UC_Contract.Designer.cs">
-      <DependentUpon>UC_Contract.cs</DependentUpon>
+    <Compile Include="FClient.cs">
+      <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FClient.Designer.cs">
+      <DependentUpon>FClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCustomer_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCustomer_Information.Designer.cs">
+      <DependentUpon>FCustomer_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDashboard.Designer.cs">
+      <DependentUpon>FDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCar_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCar_Detail.Designer.cs">
+      <DependentUpon>FCar_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\FContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layouts\FContract.Designer.cs">
+      <DependentUpon>FContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_Car.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Car.Designer.cs">
+      <DependentUpon>UC_Car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_CarInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_CarInformation.Designer.cs">
+      <DependentUpon>UC_CarInformation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ControlContent\UC_Client.resx">
+      <DependentUpon>UC_Client.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlContent\UC_ContractContent.resx">
       <DependentUpon>UC_ContractContent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layouts\EmployeeInfor.resx">
       <DependentUpon>EmployeeInfor.cs</DependentUpon>
+    <EmbeddedResource Include="FCar.resx">
+      <DependentUpon>FCar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Layouts\UC_Contract.resx">
-      <DependentUpon>UC_Contract.cs</DependentUpon>
+    <EmbeddedResource Include="FCar_Detail.resx">
+      <DependentUpon>FCar_Detail.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="Human.cs" />
-    <Compile Include="Mazda.cs" />
-    <Compile Include="Mercedes.cs" />
-    <Compile Include="Program.cs" />
+    <EmbeddedResource Include="FClient.resx">
+      <DependentUpon>FClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCustomer_Information.resx">
+      <DependentUpon>FCustomer_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDashboard.resx">
+      <DependentUpon>FDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\FContract.resx">
+      <DependentUpon>FContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Classes\Human.cs" />
+    <Compile Include="Classes\Mazda.cs" />
+    <Compile Include="Classes\Mercedes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VinFast.cs" />
+    <Compile Include="Classes\VinFast.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -102,6 +189,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC_Car.resx">
+      <DependentUpon>UC_Car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_CarInformation.resx">
+      <DependentUpon>UC_CarInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,6 +214,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-refresh-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-50 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-contract-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-client-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-contract-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-client-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car_Rental.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-50 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

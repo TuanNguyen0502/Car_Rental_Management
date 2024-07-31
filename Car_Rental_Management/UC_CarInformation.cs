@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Car_Rental_Management.ControlContent
+namespace Car_Rental_Management
 {
-    public partial class UC_ContractContent : UserControl
+    public partial class UC_CarInformation : UserControl
     {
-        public UC_ContractContent()
+        public UC_CarInformation()
         {
             InitializeComponent();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

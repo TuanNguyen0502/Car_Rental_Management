@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Car_Rental_Management.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,18 +12,18 @@ namespace Car_Rental_Management
         public string Name { get; set; } // Tên
         public string Color { get; set; } // Màu sắc
         public string LicenseNumber { get; set; } // Biển số
-        public string FuelType { get; set; } // Loại nhiên liệu (Xăng, Dầu, ...)
-        public string Transmission { get; set; } // Hộp số (Số tự động, Số sàn, ...)
+        public FuelType FuelType { get; set; } // Loại nhiên liệu (Xăng, Dầu, ...)
+        public Transmission Transmission { get; set; } // Hộp số (Số tự động, Số sàn, ...)
         public string FuelCapacity { get; set; } // Dung tích bình nhiên liệu
         public string FuelConsumption { get; set; } // Mức tiêu thụ nhiên liệu
-        public string Status { get; set; } // Trạng thái (Đã cho thuê, Chưa cho thuê, ...)
+        public Status Status { get; set; } // Trạng thái (Đã cho thuê, Chưa cho thuê, ...)
         public string Engine { get; set; } // Động cơ
         public string Power { get; set; } // Công suất
-        public string Seats { get; set; } // Số chỗ ngồi
+        public int Capacity { get; set; } // Số chỗ ngồi
         public string Year { get; set; } // Năm sản xuất
-        public string Condition { get; set; } // Tình trạng (Mới, Cũ, ...)
+        public Condition Condition { get; set; } // Tình trạng (Mới, Cũ, ...)
 
-        public Car(string name, string color, string licenseNumber, string fuelType, string transmission, string fuelCapacity, string fuelConsumption, string status, string engine, string power, string seats, string year, string condition)
+        public Car(string name, string licenseNumber, string color, FuelType fuelType, string fuelCapacity, string fuelConsumption, int capacity, Transmission transmission, string engine, string power, string year, Condition condition, Status status)
         {
             Name = name;
             Color = color;
@@ -34,7 +35,7 @@ namespace Car_Rental_Management
             Status = status;
             Engine = engine;
             Power = power;
-            Seats = seats;
+            Capacity = capacity;
             Year = year;
             Condition = condition;
         }
