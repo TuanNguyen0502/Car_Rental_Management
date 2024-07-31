@@ -77,7 +77,26 @@ namespace Car_Rental_Management
 
         private void LoadData()
         {
-
+            foreach (var ford in fords)
+            {
+                UC_Car ucCar = new UC_Car(ford);
+                flowLayoutPanel_Center.Controls.Add(ucCar);
+            }
+            foreach (var mazda in mazdas)
+            {
+                UC_Car ucCar = new UC_Car(mazda);
+                flowLayoutPanel_Center.Controls.Add(ucCar);
+            }
+            foreach (var mercede in mercedes)
+            {
+                UC_Car ucCar = new UC_Car(mercede);
+                flowLayoutPanel_Center.Controls.Add(ucCar);
+            }
+            foreach (var vinfast in vinfasts)
+            {
+                UC_Car ucCar = new UC_Car(vinfast);
+                flowLayoutPanel_Center.Controls.Add(ucCar);
+            }
         }
     }
 }

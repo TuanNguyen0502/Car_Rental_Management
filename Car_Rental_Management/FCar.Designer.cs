@@ -342,6 +342,7 @@
             this.flowLayoutPanel_Center.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.flowLayoutPanel_Center.Size = new System.Drawing.Size(1213, 498);
             this.flowLayoutPanel_Center.TabIndex = 2;
+            this.flowLayoutPanel_Center.WrapContents = false;
             // 
             // FCar
             // 
