@@ -56,6 +56,7 @@
             // 
             // pnl_Container
             // 
+            this.pnl_Container.BackColor = System.Drawing.Color.White;
             this.pnl_Container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Container.Location = new System.Drawing.Point(237, 0);
             this.pnl_Container.Name = "pnl_Container";
@@ -163,6 +164,7 @@
             this.btnVehicles.Text = "Vehicles";
             this.btnVehicles.UseTransparentBackground = true;
             this.btnVehicles.CheckedChanged += new System.EventHandler(this.btnDashboard_CheckedChanged);
+            this.btnVehicles.Click += new System.EventHandler(this.btnVehicles_Click);
             // 
             // btnDashboard
             // 
@@ -193,7 +195,7 @@
             // imgSlide
             // 
             this.imgSlide.Image = global::Car_Rental_Management.Properties.Resources.New_Project__3_;
-            this.imgSlide.Location = new System.Drawing.Point(196, 59);
+            this.imgSlide.Location = new System.Drawing.Point(198, 59);
             this.imgSlide.Name = "imgSlide";
             this.imgSlide.Size = new System.Drawing.Size(55, 98);
             this.imgSlide.TabIndex = 1;
@@ -208,7 +210,7 @@
             this.Controls.Add(this.panelMenu);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

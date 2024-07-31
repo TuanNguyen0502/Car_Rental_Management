@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,141 +54,132 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel9, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel4, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel8, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel5, 6, 0);
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel10, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel11, 8, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label9, 8, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label8, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.Black;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1737, 100);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1213, 100);
             this.tableLayoutPanel1.TabIndex = 7;
             this.tableLayoutPanel1.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
             // 
-            // guna2HtmlLabel11
+            // label1
             // 
-            this.guna2HtmlLabel11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel11.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2HtmlLabel11.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(1606, 33);
-            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(68, 34);
-            this.guna2HtmlLabel11.TabIndex = 10;
-            this.guna2HtmlLabel11.Text = "Status";
-            this.guna2HtmlLabel11.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(35, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 28);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Name";
             // 
-            // guna2HtmlLabel10
+            // label2
             // 
-            this.guna2HtmlLabel10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(1393, 33);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(108, 34);
-            this.guna2HtmlLabel10.TabIndex = 9;
-            this.guna2HtmlLabel10.Text = "Condition";
-            this.guna2HtmlLabel10.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(164, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 28);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "License";
             // 
-            // guna2HtmlLabel8
+            // label3
             // 
-            this.guna2HtmlLabel8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(1015, 33);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(93, 34);
-            this.guna2HtmlLabel8.TabIndex = 7;
-            this.guna2HtmlLabel8.Text = "Capacity";
-            this.guna2HtmlLabel8.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(305, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 28);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Color";
             // 
-            // guna2HtmlLabel2
+            // label4
             // 
-            this.guna2HtmlLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(206, 33);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(166, 34);
-            this.guna2HtmlLabel2.TabIndex = 1;
-            this.guna2HtmlLabel2.Text = "Lience Number";
-            this.guna2HtmlLabel2.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(445, 36);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 28);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Year";
             // 
-            // guna2HtmlLabel1
+            // label5
             // 
-            this.guna2HtmlLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(63, 33);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(67, 34);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Name";
-            this.guna2HtmlLabel1.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(556, 36);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 28);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Fuel Type";
             // 
-            // guna2HtmlLabel9
+            // label6
             // 
-            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(651, 33);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(49, 34);
-            this.guna2HtmlLabel9.TabIndex = 8;
-            this.guna2HtmlLabel9.Text = "Year";
-            this.guna2HtmlLabel9.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(693, 36);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 28);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Capacity";
             // 
-            // guna2HtmlLabel4
+            // label7
             // 
-            this.guna2HtmlLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(815, 33);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(107, 34);
-            this.guna2HtmlLabel4.TabIndex = 3;
-            this.guna2HtmlLabel4.Text = "Fuel Type";
-            this.guna2HtmlLabel4.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(810, 36);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(122, 28);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Transmission";
             // 
-            // guna2HtmlLabel3
+            // label8
             // 
-            this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(452, 33);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(60, 34);
-            this.guna2HtmlLabel3.TabIndex = 2;
-            this.guna2HtmlLabel3.Text = "Color";
-            this.guna2HtmlLabel3.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(955, 36);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(99, 28);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Condition";
             // 
-            // guna2HtmlLabel5
+            // label9
             // 
-            this.guna2HtmlLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(1184, 33);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(141, 34);
-            this.guna2HtmlLabel5.TabIndex = 4;
-            this.guna2HtmlLabel5.Text = "Transmission";
-            this.guna2HtmlLabel5.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(1110, 36);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(65, 28);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Status";
             // 
             // UC_Car
             // 
@@ -196,7 +187,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UC_Car";
-            this.Size = new System.Drawing.Size(1737, 100);
+            this.Size = new System.Drawing.Size(1213, 100);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -206,14 +197,14 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
