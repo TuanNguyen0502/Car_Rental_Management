@@ -92,7 +92,10 @@ namespace Car_Rental_Management
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            FLogin fLogin = new FLogin();
+            fLogin.ShowDialog();
+            this.Close();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
