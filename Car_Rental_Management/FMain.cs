@@ -32,6 +32,7 @@ namespace Car_Rental_Management
             this.eid = eid;
             InitializeData();
             InitializeComponent();
+            OpenChildForm(new FDashboard());
         }
 
         private void OpenChildForm(Form childForm)
