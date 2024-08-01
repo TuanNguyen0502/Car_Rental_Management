@@ -13,7 +13,7 @@ namespace Car_Rental_Management
 {
     public partial class FLogin : Form
     {
-        private List<Account> accounts = new List<Account>();
+        private List<Account> accounts;
 
         public FLogin()
         {
@@ -23,8 +23,7 @@ namespace Car_Rental_Management
 
         private void InitializeData()
         {
-            accounts.Add(new Account("admin", "admin", "E001"));
-            accounts.Add(new Account("employee", "employee", "E002"));
+            accounts = DataAccess.Accounts;
         }
 
         private void checkBox_ShowPass_CheckedChanged(object sender, EventArgs e)

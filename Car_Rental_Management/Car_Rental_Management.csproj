@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Classes\Account.cs" />
     <Compile Include="Classes\Condition.cs" />
+    <Compile Include="Classes\DataAccess.cs" />
     <Compile Include="Classes\FuelType.cs" />
     <Compile Include="Classes\Status.cs" />
     <Compile Include="Classes\Transmission.cs" />

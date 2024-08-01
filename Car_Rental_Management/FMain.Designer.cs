@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.pnl_Container = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.btnProfile = new Guna.UI2.WinForms.Guna2Button();
@@ -38,7 +38,7 @@
             this.btnVehicles = new Guna.UI2.WinForms.Guna2Button();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.imgSlide = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pnl_Container = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSlide)).BeginInit();
@@ -61,15 +61,16 @@
             this.panelMenu.Size = new System.Drawing.Size(223, 660);
             this.panelMenu.TabIndex = 0;
             // 
-            // pnl_Container
+            // label1
             // 
-            this.pnl_Container.BackColor = System.Drawing.Color.White;
-            this.pnl_Container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Container.Location = new System.Drawing.Point(223, 0);
-            this.pnl_Container.Name = "pnl_Container";
-            this.pnl_Container.Padding = new System.Windows.Forms.Padding(0, 6, 6, 6);
-            this.pnl_Container.Size = new System.Drawing.Size(1117, 660);
-            this.pnl_Container.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(25, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "CarRental Manager";
             // 
             // pictureBox1
             // 
@@ -244,16 +245,15 @@
             this.imgSlide.TabIndex = 1;
             this.imgSlide.TabStop = false;
             // 
-            // label1
+            // pnl_Container
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(25, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CarRental Manager";
+            this.pnl_Container.BackColor = System.Drawing.Color.White;
+            this.pnl_Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Container.Location = new System.Drawing.Point(223, 0);
+            this.pnl_Container.Name = "pnl_Container";
+            this.pnl_Container.Padding = new System.Windows.Forms.Padding(0, 6, 6, 6);
+            this.pnl_Container.Size = new System.Drawing.Size(1117, 660);
+            this.pnl_Container.TabIndex = 1;
             // 
             // FMain
             // 
@@ -267,6 +267,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
