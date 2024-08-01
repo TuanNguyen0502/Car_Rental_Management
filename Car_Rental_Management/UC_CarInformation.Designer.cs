@@ -261,9 +261,11 @@
             this.comboBox_FuelType.ItemHeight = 70;
             this.comboBox_FuelType.Items.AddRange(new object[] {
             "Gas",
-            "Diesel Oil",
-            "Electricity",
-            "Else..."});
+            "Diesel",
+            "Electric",
+            "Hybrid",
+            "Hydrogen",
+            "Other"});
             this.comboBox_FuelType.Location = new System.Drawing.Point(235, 290);
             this.comboBox_FuelType.Name = "comboBox_FuelType";
             this.comboBox_FuelType.Size = new System.Drawing.Size(372, 76);
@@ -453,8 +455,9 @@
             this.comboBox_Status.ForeColor = System.Drawing.Color.Black;
             this.comboBox_Status.ItemHeight = 70;
             this.comboBox_Status.Items.AddRange(new object[] {
-            "Not rented",
-            "Rented"});
+            "Rented",
+            "Available",
+            "Maintenance"});
             this.comboBox_Status.Location = new System.Drawing.Point(235, 1063);
             this.comboBox_Status.Name = "comboBox_Status";
             this.comboBox_Status.Size = new System.Drawing.Size(372, 76);

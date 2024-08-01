@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Car_Rental_Management.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace Car_Rental_Management
         public bool HaveBluetooth { get; set; } // Có Bluetooth hay không
         public int USBPort { get; set; } // Số cổng USB
 
-        public Mazda(string name, string licenseNumber, string color, string fuelType, string fuelCapacity, string fuelConsumption, string capacity, string transmission, string engine, string power, string year, string condition, string status, bool haveBluetooth, int USBPort)
+        public Mazda(string name, string licenseNumber, string color, FuelType fuelType, string fuelCapacity, string fuelConsumption, int capacity, Transmission transmission, string engine, string power, string year, Condition condition, Status status, bool haveBluetooth, int USBPort)
             : base(name, licenseNumber, color, fuelType, fuelCapacity, fuelConsumption, capacity, transmission, engine, power, year, condition, status)
         {
             HaveBluetooth = haveBluetooth;

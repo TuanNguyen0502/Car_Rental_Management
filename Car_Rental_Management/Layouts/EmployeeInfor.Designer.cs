@@ -64,6 +64,8 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -72,6 +74,8 @@
             // panel1
             // 
             this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.txtID);
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.lbErrorCCCD);
             this.panel1.Controls.Add(this.lbErrorName);
             this.panel1.Controls.Add(this.lbErrorGender);
@@ -105,7 +109,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(728, 612);
+            this.panel1.Size = new System.Drawing.Size(731, 550);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -219,6 +223,7 @@
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Cập nhật";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -229,6 +234,7 @@
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -247,7 +253,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dayDOB.Location = new System.Drawing.Point(275, 157);
             this.dayDOB.Name = "dayDOB";
-            this.dayDOB.Size = new System.Drawing.Size(304, 22);
+            this.dayDOB.Size = new System.Drawing.Size(307, 22);
             this.dayDOB.TabIndex = 2;
             // 
             // txtSalary
@@ -256,7 +262,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSalary.Location = new System.Drawing.Point(275, 366);
             this.txtSalary.Name = "txtSalary";
-            this.txtSalary.Size = new System.Drawing.Size(304, 22);
+            this.txtSalary.Size = new System.Drawing.Size(307, 22);
             this.txtSalary.TabIndex = 7;
             // 
             // txtEmail
@@ -265,7 +271,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.Location = new System.Drawing.Point(275, 326);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(304, 22);
+            this.txtEmail.Size = new System.Drawing.Size(307, 22);
             this.txtEmail.TabIndex = 6;
             // 
             // txtSĐT
@@ -274,7 +280,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSĐT.Location = new System.Drawing.Point(275, 283);
             this.txtSĐT.Name = "txtSĐT";
-            this.txtSĐT.Size = new System.Drawing.Size(304, 22);
+            this.txtSĐT.Size = new System.Drawing.Size(307, 22);
             this.txtSĐT.TabIndex = 5;
             // 
             // txtDiachi
@@ -283,7 +289,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDiachi.Location = new System.Drawing.Point(275, 241);
             this.txtDiachi.Name = "txtDiachi";
-            this.txtDiachi.Size = new System.Drawing.Size(304, 22);
+            this.txtDiachi.Size = new System.Drawing.Size(307, 22);
             this.txtDiachi.TabIndex = 4;
             // 
             // txtCCCD
@@ -292,7 +298,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCCCD.Location = new System.Drawing.Point(275, 199);
             this.txtCCCD.Name = "txtCCCD";
-            this.txtCCCD.Size = new System.Drawing.Size(304, 22);
+            this.txtCCCD.Size = new System.Drawing.Size(307, 22);
             this.txtCCCD.TabIndex = 3;
             // 
             // label8
@@ -482,7 +488,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtName.Location = new System.Drawing.Point(275, 111);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(304, 22);
+            this.txtName.Size = new System.Drawing.Size(307, 22);
             this.txtName.TabIndex = 1;
             // 
             // lbName
@@ -498,12 +504,33 @@
             this.lbName.Text = "Name*";
             this.lbName.Click += new System.EventHandler(this.label1_Click);
             // 
+            // txtID
+            // 
+            this.txtID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtID.Location = new System.Drawing.Point(275, 83);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(307, 22);
+            this.txtID.TabIndex = 18;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(148, 83);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 20);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "ID*";
+            // 
             // EmployeeInfor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(728, 612);
+            this.ClientSize = new System.Drawing.Size(731, 550);
             this.Controls.Add(this.panel1);
             this.Name = "EmployeeInfor";
             this.Text = "Clients";
@@ -557,5 +584,7 @@
         private System.Windows.Forms.Label lbErrorCCCD;
         private System.Windows.Forms.Label lbErrorName;
         private System.Windows.Forms.Label lbErrorSalary;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label label9;
     }
 }

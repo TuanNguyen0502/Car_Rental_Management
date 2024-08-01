@@ -30,6 +30,7 @@
         {
             this.pnl_ContainerContracts = new System.Windows.Forms.Panel();
             this.panel_Content = new Guna.UI2.WinForms.Guna2Panel();
+            this.flowLayoutPanel_Center = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_Tittle = new Guna.UI2.WinForms.Guna2Panel();
             this.tlpProperties = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_Email = new System.Windows.Forms.Label();
@@ -42,10 +43,10 @@
             this.cbb_Sex = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnl_Search = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDel = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_ContainerContracts.SuspendLayout();
+            this.panel_Content.SuspendLayout();
             this.panel_Tittle.SuspendLayout();
             this.tlpProperties.SuspendLayout();
             this.pnl_Search.SuspendLayout();
@@ -58,22 +59,36 @@
             this.pnl_ContainerContracts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_ContainerContracts.Location = new System.Drawing.Point(0, 77);
             this.pnl_ContainerContracts.Name = "pnl_ContainerContracts";
-            this.pnl_ContainerContracts.Size = new System.Drawing.Size(1359, 591);
+            this.pnl_ContainerContracts.Size = new System.Drawing.Size(1078, 492);
             this.pnl_ContainerContracts.TabIndex = 11;
             // 
             // panel_Content
             // 
+            this.panel_Content.Controls.Add(this.flowLayoutPanel_Center);
             this.panel_Content.Location = new System.Drawing.Point(0, 54);
             this.panel_Content.Name = "panel_Content";
-            this.panel_Content.Size = new System.Drawing.Size(1359, 537);
+            this.panel_Content.Size = new System.Drawing.Size(1117, 438);
             this.panel_Content.TabIndex = 1;
+            // 
+            // flowLayoutPanel_Center
+            // 
+            this.flowLayoutPanel_Center.AutoScroll = true;
+            this.flowLayoutPanel_Center.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel_Center.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel_Center.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel_Center.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flowLayoutPanel_Center.Name = "flowLayoutPanel_Center";
+            this.flowLayoutPanel_Center.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.flowLayoutPanel_Center.Size = new System.Drawing.Size(1117, 438);
+            this.flowLayoutPanel_Center.TabIndex = 3;
+            this.flowLayoutPanel_Center.WrapContents = false;
             // 
             // panel_Tittle
             // 
             this.panel_Tittle.Controls.Add(this.tlpProperties);
             this.panel_Tittle.Location = new System.Drawing.Point(0, 0);
             this.panel_Tittle.Name = "panel_Tittle";
-            this.panel_Tittle.Size = new System.Drawing.Size(1359, 54);
+            this.panel_Tittle.Size = new System.Drawing.Size(1117, 54);
             this.panel_Tittle.TabIndex = 0;
             // 
             // tlpProperties
@@ -99,7 +114,7 @@
             this.tlpProperties.Name = "tlpProperties";
             this.tlpProperties.RowCount = 1;
             this.tlpProperties.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpProperties.Size = new System.Drawing.Size(1359, 54);
+            this.tlpProperties.Size = new System.Drawing.Size(1117, 54);
             this.tlpProperties.TabIndex = 1;
             // 
             // lbl_Email
@@ -108,7 +123,7 @@
             this.lbl_Email.AutoSize = true;
             this.lbl_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbl_Email.ForeColor = System.Drawing.Color.White;
-            this.lbl_Email.Location = new System.Drawing.Point(1044, 17);
+            this.lbl_Email.Location = new System.Drawing.Point(855, 17);
             this.lbl_Email.Name = "lbl_Email";
             this.lbl_Email.Size = new System.Drawing.Size(56, 20);
             this.lbl_Email.TabIndex = 6;
@@ -120,9 +135,9 @@
             this.lbl_DrivingLicense.AutoSize = true;
             this.lbl_DrivingLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbl_DrivingLicense.ForeColor = System.Drawing.Color.White;
-            this.lbl_DrivingLicense.Location = new System.Drawing.Point(831, 17);
+            this.lbl_DrivingLicense.Location = new System.Drawing.Point(705, 7);
             this.lbl_DrivingLicense.Name = "lbl_DrivingLicense";
-            this.lbl_DrivingLicense.Size = new System.Drawing.Size(141, 20);
+            this.lbl_DrivingLicense.Size = new System.Drawing.Size(75, 40);
             this.lbl_DrivingLicense.TabIndex = 5;
             this.lbl_DrivingLicense.Text = "Driving License";
             // 
@@ -132,7 +147,7 @@
             this.lbl_CCCD.AutoSize = true;
             this.lbl_CCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbl_CCCD.ForeColor = System.Drawing.Color.White;
-            this.lbl_CCCD.Location = new System.Drawing.Point(701, 17);
+            this.lbl_CCCD.Location = new System.Drawing.Point(572, 17);
             this.lbl_CCCD.Name = "lbl_CCCD";
             this.lbl_CCCD.Size = new System.Drawing.Size(62, 20);
             this.lbl_CCCD.TabIndex = 4;
@@ -144,7 +159,7 @@
             this.lbl_FullName.AutoSize = true;
             this.lbl_FullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_FullName.ForeColor = System.Drawing.Color.White;
-            this.lbl_FullName.Location = new System.Drawing.Point(175, 17);
+            this.lbl_FullName.Location = new System.Drawing.Point(136, 17);
             this.lbl_FullName.Name = "lbl_FullName";
             this.lbl_FullName.Size = new System.Drawing.Size(94, 20);
             this.lbl_FullName.TabIndex = 2;
@@ -157,7 +172,7 @@
             this.lbl_Gender.AutoSize = true;
             this.lbl_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbl_Gender.ForeColor = System.Drawing.Color.White;
-            this.lbl_Gender.Location = new System.Drawing.Point(357, 17);
+            this.lbl_Gender.Location = new System.Drawing.Point(288, 17);
             this.lbl_Gender.Name = "lbl_Gender";
             this.lbl_Gender.Size = new System.Drawing.Size(70, 20);
             this.lbl_Gender.TabIndex = 3;
@@ -169,7 +184,7 @@
             this.lbl_Phone.AutoSize = true;
             this.lbl_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbl_Phone.ForeColor = System.Drawing.Color.White;
-            this.lbl_Phone.Location = new System.Drawing.Point(531, 17);
+            this.lbl_Phone.Location = new System.Drawing.Point(432, 17);
             this.lbl_Phone.Name = "lbl_Phone";
             this.lbl_Phone.Size = new System.Drawing.Size(61, 20);
             this.lbl_Phone.TabIndex = 8;
@@ -196,7 +211,7 @@
             this.txtSearch.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtSearch.PlaceholderText = "Search...";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(265, 43);
+            this.txtSearch.Size = new System.Drawing.Size(265, 36);
             this.txtSearch.TabIndex = 4;
             // 
             // cbb_Sex
@@ -216,7 +231,7 @@
             "Gender(All)",
             "Male",
             "Female"});
-            this.cbb_Sex.Location = new System.Drawing.Point(427, 19);
+            this.cbb_Sex.Location = new System.Drawing.Point(398, 19);
             this.cbb_Sex.Name = "cbb_Sex";
             this.cbb_Sex.Size = new System.Drawing.Size(175, 36);
             this.cbb_Sex.StartIndex = 0;
@@ -226,7 +241,6 @@
             // pnl_Search
             // 
             this.pnl_Search.Controls.Add(this.btnAdd);
-            this.pnl_Search.Controls.Add(this.btnDel);
             this.pnl_Search.Controls.Add(this.txtSearch);
             this.pnl_Search.Controls.Add(this.cbb_Sex);
             this.pnl_Search.Controls.Add(this.btnSearch);
@@ -234,7 +248,7 @@
             this.pnl_Search.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Search.Location = new System.Drawing.Point(0, 0);
             this.pnl_Search.Name = "pnl_Search";
-            this.pnl_Search.Size = new System.Drawing.Size(1359, 77);
+            this.pnl_Search.Size = new System.Drawing.Size(1078, 77);
             this.pnl_Search.TabIndex = 10;
             // 
             // btnAdd
@@ -248,28 +262,12 @@
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Image = global::Car_Rental_Management.Properties.Resources.icons8_add_30;
             this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAdd.Location = new System.Drawing.Point(1047, 17);
+            this.btnAdd.Location = new System.Drawing.Point(981, 19);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(137, 45);
+            this.btnAdd.Size = new System.Drawing.Size(118, 36);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Thêm";
-            // 
-            // btnDel
-            // 
-            this.btnDel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDel.FillColor = System.Drawing.Color.Red;
-            this.btnDel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.ForeColor = System.Drawing.Color.White;
-            this.btnDel.Image = global::Car_Rental_Management.Properties.Resources.icons8_delete_30;
-            this.btnDel.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDel.Location = new System.Drawing.Point(1190, 17);
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(137, 45);
-            this.btnDel.TabIndex = 3;
-            this.btnDel.Text = "Xóa";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSearch
             // 
@@ -282,7 +280,7 @@
             this.btnSearch.Image = global::Car_Rental_Management.Properties.Resources.icons8_find_16;
             this.btnSearch.Location = new System.Drawing.Point(296, 19);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(60, 43);
+            this.btnSearch.Size = new System.Drawing.Size(43, 36);
             this.btnSearch.TabIndex = 5;
             // 
             // btnRefresh
@@ -294,16 +292,17 @@
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_16;
-            this.btnRefresh.Location = new System.Drawing.Point(360, 19);
+            this.btnRefresh.Location = new System.Drawing.Point(342, 19);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(60, 43);
+            this.btnRefresh.Size = new System.Drawing.Size(43, 36);
             this.btnRefresh.TabIndex = 6;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // FClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1359, 668);
+            this.ClientSize = new System.Drawing.Size(1078, 569);
             this.Controls.Add(this.pnl_ContainerContracts);
             this.Controls.Add(this.pnl_Search);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -311,6 +310,7 @@
             this.Text = "FClient";
             this.Load += new System.EventHandler(this.FClient_Load);
             this.pnl_ContainerContracts.ResumeLayout(false);
+            this.panel_Content.ResumeLayout(false);
             this.panel_Tittle.ResumeLayout(false);
             this.tlpProperties.ResumeLayout(false);
             this.tlpProperties.PerformLayout();
@@ -328,15 +328,15 @@
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private Guna.UI2.WinForms.Guna2Button btnRefresh;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2Button btnDel;
         private Guna.UI2.WinForms.Guna2Panel panel_Tittle;
         private System.Windows.Forms.TableLayoutPanel tlpProperties;
         private System.Windows.Forms.Label lbl_Email;
         private System.Windows.Forms.Label lbl_DrivingLicense;
         private System.Windows.Forms.Label lbl_CCCD;
-        private System.Windows.Forms.Label lbl_Gender;
         private System.Windows.Forms.Label lbl_FullName;
+        private System.Windows.Forms.Label lbl_Gender;
         private System.Windows.Forms.Label lbl_Phone;
         private Guna.UI2.WinForms.Guna2Panel panel_Content;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_Center;
     }
 }

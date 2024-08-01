@@ -69,15 +69,16 @@
             this.tlp_Content.Name = "tlp_Content";
             this.tlp_Content.RowCount = 1;
             this.tlp_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_Content.Size = new System.Drawing.Size(1359, 54);
+            this.tlp_Content.Size = new System.Drawing.Size(1117, 54);
             this.tlp_Content.TabIndex = 1;
+            this.tlp_Content.Click += new System.EventHandler(this.tlp_Content_Click);
             // 
             // lbl_DrivingLicense
             // 
             this.lbl_DrivingLicense.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_DrivingLicense.AutoSize = true;
             this.lbl_DrivingLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_DrivingLicense.Location = new System.Drawing.Point(843, 17);
+            this.lbl_DrivingLicense.Location = new System.Drawing.Point(683, 17);
             this.lbl_DrivingLicense.Name = "lbl_DrivingLicense";
             this.lbl_DrivingLicense.Size = new System.Drawing.Size(126, 20);
             this.lbl_DrivingLicense.TabIndex = 6;
@@ -88,7 +89,7 @@
             this.lbl_Email.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_Email.AutoSize = true;
             this.lbl_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Email.Location = new System.Drawing.Point(1052, 17);
+            this.lbl_Email.Location = new System.Drawing.Point(862, 17);
             this.lbl_Email.Name = "lbl_Email";
             this.lbl_Email.Size = new System.Drawing.Size(51, 20);
             this.lbl_Email.TabIndex = 7;
@@ -99,7 +100,7 @@
             this.lbl_FullName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_FullName.AutoSize = true;
             this.lbl_FullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_FullName.Location = new System.Drawing.Point(180, 17);
+            this.lbl_FullName.Location = new System.Drawing.Point(140, 17);
             this.lbl_FullName.Name = "lbl_FullName";
             this.lbl_FullName.Size = new System.Drawing.Size(85, 20);
             this.lbl_FullName.TabIndex = 3;
@@ -110,7 +111,7 @@
             this.lbl_Gender.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_Gender.AutoSize = true;
             this.lbl_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Gender.Location = new System.Drawing.Point(361, 17);
+            this.lbl_Gender.Location = new System.Drawing.Point(291, 17);
             this.lbl_Gender.Name = "lbl_Gender";
             this.lbl_Gender.Size = new System.Drawing.Size(64, 20);
             this.lbl_Gender.TabIndex = 0;
@@ -121,7 +122,7 @@
             this.lbl_Phone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_Phone.AutoSize = true;
             this.lbl_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Phone.Location = new System.Drawing.Point(536, 17);
+            this.lbl_Phone.Location = new System.Drawing.Point(436, 17);
             this.lbl_Phone.Name = "lbl_Phone";
             this.lbl_Phone.Size = new System.Drawing.Size(56, 20);
             this.lbl_Phone.TabIndex = 8;
@@ -132,7 +133,7 @@
             this.lbl_CCCD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_CCCD.AutoSize = true;
             this.lbl_CCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CCCD.Location = new System.Drawing.Point(706, 17);
+            this.lbl_CCCD.Location = new System.Drawing.Point(576, 17);
             this.lbl_CCCD.Name = "lbl_CCCD";
             this.lbl_CCCD.Size = new System.Drawing.Size(58, 20);
             this.lbl_CCCD.TabIndex = 2;
@@ -158,9 +159,9 @@
             this.btn_Edit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Edit.ForeColor = System.Drawing.Color.White;
             this.btn_Edit.Image = global::Car_Rental_Management.Properties.Resources.icons8_edit_30;
-            this.btn_Edit.Location = new System.Drawing.Point(1166, 3);
+            this.btn_Edit.Location = new System.Drawing.Point(961, 3);
             this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(90, 48);
+            this.btn_Edit.Size = new System.Drawing.Size(72, 48);
             this.btn_Edit.TabIndex = 9;
             // 
             // btn_Del
@@ -173,9 +174,9 @@
             this.btn_Del.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Del.ForeColor = System.Drawing.Color.White;
             this.btn_Del.Image = global::Car_Rental_Management.Properties.Resources.icons8_delete_30;
-            this.btn_Del.Location = new System.Drawing.Point(1262, 3);
+            this.btn_Del.Location = new System.Drawing.Point(1039, 3);
             this.btn_Del.Name = "btn_Del";
-            this.btn_Del.Size = new System.Drawing.Size(94, 48);
+            this.btn_Del.Size = new System.Drawing.Size(75, 48);
             this.btn_Del.TabIndex = 7;
             // 
             // UC_Client
@@ -184,7 +185,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tlp_Content);
             this.Name = "UC_Client";
-            this.Size = new System.Drawing.Size(1359, 54);
+            this.Size = new System.Drawing.Size(1117, 54);
             this.Load += new System.EventHandler(this.UC_Client_Load);
             this.tlp_Content.ResumeLayout(false);
             this.tlp_Content.PerformLayout();
