@@ -229,14 +229,15 @@
             this.cbb_Sex.ItemHeight = 30;
             this.cbb_Sex.Items.AddRange(new object[] {
             "Gender(All)",
-            "Male",
-            "Female"});
+            "Nam",
+            "Nữ"});
             this.cbb_Sex.Location = new System.Drawing.Point(398, 19);
             this.cbb_Sex.Name = "cbb_Sex";
             this.cbb_Sex.Size = new System.Drawing.Size(175, 36);
             this.cbb_Sex.StartIndex = 0;
             this.cbb_Sex.TabIndex = 7;
             this.cbb_Sex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cbb_Sex.SelectedIndexChanged += new System.EventHandler(this.cbb_Sex_SelectedIndexChanged);
             // 
             // pnl_Search
             // 
@@ -282,6 +283,7 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(43, 36);
             this.btnSearch.TabIndex = 5;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnRefresh
             // 
