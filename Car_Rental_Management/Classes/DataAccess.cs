@@ -119,7 +119,7 @@ namespace Car_Rental_Management.Classes
 
         public static List<Account> Accounts = new List<Account>
         {
-            new Account("admin", "admin1", "Emp001"),
+            new Account("admin", "admin", "Emp001"),
         };
 
     }
