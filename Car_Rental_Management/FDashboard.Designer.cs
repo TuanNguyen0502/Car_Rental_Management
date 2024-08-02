@@ -29,44 +29,44 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panelVehicles = new System.Windows.Forms.Panel();
-            this.lblVehicles = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblnumVehicles = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panelVehiclesIssued = new System.Windows.Forms.Panel();
-            this.lblnumVehiclesIssued = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblVehiclesIssued = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panelVehiclesReturned = new System.Windows.Forms.Panel();
-            this.lblnumVehiclesReturned = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblVehiclesReturned = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panelVehiclesAvailable = new System.Windows.Forms.Panel();
-            this.lblnumVehiclesAvailable = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblVehiclesAvailable = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panelDamagedLost = new System.Windows.Forms.Panel();
-            this.lblnumDamagedLost = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblDamagedLost = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panelClients = new System.Windows.Forms.Panel();
-            this.lblnumClients = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblClients = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panelClientsInPossession = new System.Windows.Forms.Panel();
-            this.lblnumClientsInPossession = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblClientsInPossession = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panelRevenue = new System.Windows.Forms.Panel();
             this.lblnumRevenue = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblRevenue = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panelClientsInPossession = new System.Windows.Forms.Panel();
+            this.lblnumClientsInPossession = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblClientsInPossession = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panelClients = new System.Windows.Forms.Panel();
+            this.lblnumClients = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblClients = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panelDamagedLost = new System.Windows.Forms.Panel();
+            this.lblnumDamagedLost = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblDamagedLost = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panelVehiclesAvailable = new System.Windows.Forms.Panel();
+            this.lblnumVehiclesAvailable = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblVehiclesAvailable = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panelVehiclesReturned = new System.Windows.Forms.Panel();
+            this.lblnumVehiclesRented = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblVehiclesRented = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panelVehiclesIssued = new System.Windows.Forms.Panel();
+            this.lblnumVehiclesIssued = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblVehiclesIssued = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panelVehicles = new System.Windows.Forms.Panel();
+            this.lblnumVehicles = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblVehicles = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.lblTrans = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panelVehicles.SuspendLayout();
-            this.panelVehiclesIssued.SuspendLayout();
-            this.panelVehiclesReturned.SuspendLayout();
-            this.panelVehiclesAvailable.SuspendLayout();
-            this.panelDamagedLost.SuspendLayout();
-            this.panelClients.SuspendLayout();
-            this.panelClientsInPossession.SuspendLayout();
             this.panelRevenue.SuspendLayout();
+            this.panelClientsInPossession.SuspendLayout();
+            this.panelClients.SuspendLayout();
+            this.panelDamagedLost.SuspendLayout();
+            this.panelVehiclesAvailable.SuspendLayout();
+            this.panelVehiclesReturned.SuspendLayout();
+            this.panelVehiclesIssued.SuspendLayout();
+            this.panelVehicles.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -94,203 +94,38 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1122, 164);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // panelVehicles
+            // panelRevenue
             // 
-            this.panelVehicles.BackColor = System.Drawing.Color.Violet;
-            this.panelVehicles.Controls.Add(this.lblnumVehicles);
-            this.panelVehicles.Controls.Add(this.lblVehicles);
-            this.panelVehicles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelVehicles.Location = new System.Drawing.Point(3, 3);
-            this.panelVehicles.Name = "panelVehicles";
-            this.panelVehicles.Size = new System.Drawing.Size(274, 76);
-            this.panelVehicles.TabIndex = 1;
+            this.panelRevenue.BackColor = System.Drawing.Color.Green;
+            this.panelRevenue.Controls.Add(this.lblnumRevenue);
+            this.panelRevenue.Controls.Add(this.lblRevenue);
+            this.panelRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelRevenue.Location = new System.Drawing.Point(843, 85);
+            this.panelRevenue.Name = "panelRevenue";
+            this.panelRevenue.Size = new System.Drawing.Size(276, 76);
+            this.panelRevenue.TabIndex = 8;
             // 
-            // lblVehicles
+            // lblnumRevenue
             // 
-            this.lblVehicles.BackColor = System.Drawing.Color.Transparent;
-            this.lblVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lblVehicles.ForeColor = System.Drawing.Color.White;
-            this.lblVehicles.Location = new System.Drawing.Point(9, 9);
-            this.lblVehicles.Name = "lblVehicles";
-            this.lblVehicles.Size = new System.Drawing.Size(75, 22);
-            this.lblVehicles.TabIndex = 0;
-            this.lblVehicles.Text = "Vehicles";
+            this.lblnumRevenue.BackColor = System.Drawing.Color.Transparent;
+            this.lblnumRevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnumRevenue.ForeColor = System.Drawing.Color.White;
+            this.lblnumRevenue.Location = new System.Drawing.Point(9, 37);
+            this.lblnumRevenue.Name = "lblnumRevenue";
+            this.lblnumRevenue.Size = new System.Drawing.Size(94, 31);
+            this.lblnumRevenue.TabIndex = 1;
+            this.lblnumRevenue.Text = "$420.00";
             // 
-            // lblnumVehicles
+            // lblRevenue
             // 
-            this.lblnumVehicles.BackColor = System.Drawing.Color.Transparent;
-            this.lblnumVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnumVehicles.ForeColor = System.Drawing.Color.White;
-            this.lblnumVehicles.Location = new System.Drawing.Point(9, 37);
-            this.lblnumVehicles.Name = "lblnumVehicles";
-            this.lblnumVehicles.Size = new System.Drawing.Size(31, 31);
-            this.lblnumVehicles.TabIndex = 1;
-            this.lblnumVehicles.Text = "10";
-            // 
-            // panelVehiclesIssued
-            // 
-            this.panelVehiclesIssued.BackColor = System.Drawing.Color.SteelBlue;
-            this.panelVehiclesIssued.Controls.Add(this.lblnumVehiclesIssued);
-            this.panelVehiclesIssued.Controls.Add(this.lblVehiclesIssued);
-            this.panelVehiclesIssued.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelVehiclesIssued.Location = new System.Drawing.Point(283, 3);
-            this.panelVehiclesIssued.Name = "panelVehiclesIssued";
-            this.panelVehiclesIssued.Size = new System.Drawing.Size(274, 76);
-            this.panelVehiclesIssued.TabIndex = 2;
-            // 
-            // lblnumVehiclesIssued
-            // 
-            this.lblnumVehiclesIssued.BackColor = System.Drawing.Color.Transparent;
-            this.lblnumVehiclesIssued.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnumVehiclesIssued.ForeColor = System.Drawing.Color.White;
-            this.lblnumVehiclesIssued.Location = new System.Drawing.Point(9, 37);
-            this.lblnumVehiclesIssued.Name = "lblnumVehiclesIssued";
-            this.lblnumVehiclesIssued.Size = new System.Drawing.Size(17, 31);
-            this.lblnumVehiclesIssued.TabIndex = 1;
-            this.lblnumVehiclesIssued.Text = "4";
-            // 
-            // lblVehiclesIssued
-            // 
-            this.lblVehiclesIssued.BackColor = System.Drawing.Color.Transparent;
-            this.lblVehiclesIssued.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lblVehiclesIssued.ForeColor = System.Drawing.Color.White;
-            this.lblVehiclesIssued.Location = new System.Drawing.Point(9, 9);
-            this.lblVehiclesIssued.Name = "lblVehiclesIssued";
-            this.lblVehiclesIssued.Size = new System.Drawing.Size(136, 22);
-            this.lblVehiclesIssued.TabIndex = 0;
-            this.lblVehiclesIssued.Text = "Vehicles Issued";
-            // 
-            // panelVehiclesReturned
-            // 
-            this.panelVehiclesReturned.BackColor = System.Drawing.Color.LimeGreen;
-            this.panelVehiclesReturned.Controls.Add(this.lblnumVehiclesReturned);
-            this.panelVehiclesReturned.Controls.Add(this.lblVehiclesReturned);
-            this.panelVehiclesReturned.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelVehiclesReturned.Location = new System.Drawing.Point(563, 3);
-            this.panelVehiclesReturned.Name = "panelVehiclesReturned";
-            this.panelVehiclesReturned.Size = new System.Drawing.Size(274, 76);
-            this.panelVehiclesReturned.TabIndex = 3;
-            // 
-            // lblnumVehiclesReturned
-            // 
-            this.lblnumVehiclesReturned.BackColor = System.Drawing.Color.Transparent;
-            this.lblnumVehiclesReturned.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnumVehiclesReturned.ForeColor = System.Drawing.Color.White;
-            this.lblnumVehiclesReturned.Location = new System.Drawing.Point(9, 37);
-            this.lblnumVehiclesReturned.Name = "lblnumVehiclesReturned";
-            this.lblnumVehiclesReturned.Size = new System.Drawing.Size(17, 31);
-            this.lblnumVehiclesReturned.TabIndex = 1;
-            this.lblnumVehiclesReturned.Text = "0";
-            // 
-            // lblVehiclesReturned
-            // 
-            this.lblVehiclesReturned.BackColor = System.Drawing.Color.Transparent;
-            this.lblVehiclesReturned.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lblVehiclesReturned.ForeColor = System.Drawing.Color.White;
-            this.lblVehiclesReturned.Location = new System.Drawing.Point(9, 9);
-            this.lblVehiclesReturned.Name = "lblVehiclesReturned";
-            this.lblVehiclesReturned.Size = new System.Drawing.Size(157, 22);
-            this.lblVehiclesReturned.TabIndex = 0;
-            this.lblVehiclesReturned.Text = "Vehicles Returned";
-            // 
-            // panelVehiclesAvailable
-            // 
-            this.panelVehiclesAvailable.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panelVehiclesAvailable.Controls.Add(this.lblnumVehiclesAvailable);
-            this.panelVehiclesAvailable.Controls.Add(this.lblVehiclesAvailable);
-            this.panelVehiclesAvailable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelVehiclesAvailable.Location = new System.Drawing.Point(843, 3);
-            this.panelVehiclesAvailable.Name = "panelVehiclesAvailable";
-            this.panelVehiclesAvailable.Size = new System.Drawing.Size(276, 76);
-            this.panelVehiclesAvailable.TabIndex = 4;
-            // 
-            // lblnumVehiclesAvailable
-            // 
-            this.lblnumVehiclesAvailable.BackColor = System.Drawing.Color.Transparent;
-            this.lblnumVehiclesAvailable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnumVehiclesAvailable.ForeColor = System.Drawing.Color.White;
-            this.lblnumVehiclesAvailable.Location = new System.Drawing.Point(9, 37);
-            this.lblnumVehiclesAvailable.Name = "lblnumVehiclesAvailable";
-            this.lblnumVehiclesAvailable.Size = new System.Drawing.Size(17, 31);
-            this.lblnumVehiclesAvailable.TabIndex = 1;
-            this.lblnumVehiclesAvailable.Text = "6";
-            // 
-            // lblVehiclesAvailable
-            // 
-            this.lblVehiclesAvailable.BackColor = System.Drawing.Color.Transparent;
-            this.lblVehiclesAvailable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lblVehiclesAvailable.ForeColor = System.Drawing.Color.White;
-            this.lblVehiclesAvailable.Location = new System.Drawing.Point(9, 9);
-            this.lblVehiclesAvailable.Name = "lblVehiclesAvailable";
-            this.lblVehiclesAvailable.Size = new System.Drawing.Size(157, 22);
-            this.lblVehiclesAvailable.TabIndex = 0;
-            this.lblVehiclesAvailable.Text = "Vehicles Available";
-            // 
-            // panelDamagedLost
-            // 
-            this.panelDamagedLost.BackColor = System.Drawing.Color.Crimson;
-            this.panelDamagedLost.Controls.Add(this.lblnumDamagedLost);
-            this.panelDamagedLost.Controls.Add(this.lblDamagedLost);
-            this.panelDamagedLost.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDamagedLost.Location = new System.Drawing.Point(3, 85);
-            this.panelDamagedLost.Name = "panelDamagedLost";
-            this.panelDamagedLost.Size = new System.Drawing.Size(274, 76);
-            this.panelDamagedLost.TabIndex = 5;
-            // 
-            // lblnumDamagedLost
-            // 
-            this.lblnumDamagedLost.BackColor = System.Drawing.Color.Transparent;
-            this.lblnumDamagedLost.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnumDamagedLost.ForeColor = System.Drawing.Color.White;
-            this.lblnumDamagedLost.Location = new System.Drawing.Point(9, 37);
-            this.lblnumDamagedLost.Name = "lblnumDamagedLost";
-            this.lblnumDamagedLost.Size = new System.Drawing.Size(17, 31);
-            this.lblnumDamagedLost.TabIndex = 1;
-            this.lblnumDamagedLost.Text = "0";
-            // 
-            // lblDamagedLost
-            // 
-            this.lblDamagedLost.BackColor = System.Drawing.Color.Transparent;
-            this.lblDamagedLost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lblDamagedLost.ForeColor = System.Drawing.Color.White;
-            this.lblDamagedLost.Location = new System.Drawing.Point(9, 9);
-            this.lblDamagedLost.Name = "lblDamagedLost";
-            this.lblDamagedLost.Size = new System.Drawing.Size(131, 22);
-            this.lblDamagedLost.TabIndex = 0;
-            this.lblDamagedLost.Text = "Damaged/ Lost";
-            // 
-            // panelClients
-            // 
-            this.panelClients.BackColor = System.Drawing.Color.Purple;
-            this.panelClients.Controls.Add(this.lblnumClients);
-            this.panelClients.Controls.Add(this.lblClients);
-            this.panelClients.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelClients.Location = new System.Drawing.Point(283, 85);
-            this.panelClients.Name = "panelClients";
-            this.panelClients.Size = new System.Drawing.Size(274, 76);
-            this.panelClients.TabIndex = 6;
-            // 
-            // lblnumClients
-            // 
-            this.lblnumClients.BackColor = System.Drawing.Color.Transparent;
-            this.lblnumClients.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnumClients.ForeColor = System.Drawing.Color.White;
-            this.lblnumClients.Location = new System.Drawing.Point(9, 37);
-            this.lblnumClients.Name = "lblnumClients";
-            this.lblnumClients.Size = new System.Drawing.Size(17, 31);
-            this.lblnumClients.TabIndex = 1;
-            this.lblnumClients.Text = "3";
-            // 
-            // lblClients
-            // 
-            this.lblClients.BackColor = System.Drawing.Color.Transparent;
-            this.lblClients.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lblClients.ForeColor = System.Drawing.Color.White;
-            this.lblClients.Location = new System.Drawing.Point(9, 9);
-            this.lblClients.Name = "lblClients";
-            this.lblClients.Size = new System.Drawing.Size(62, 22);
-            this.lblClients.TabIndex = 0;
-            this.lblClients.Text = "Clients";
+            this.lblRevenue.BackColor = System.Drawing.Color.Transparent;
+            this.lblRevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblRevenue.ForeColor = System.Drawing.Color.White;
+            this.lblRevenue.Location = new System.Drawing.Point(9, 9);
+            this.lblRevenue.Name = "lblRevenue";
+            this.lblRevenue.Size = new System.Drawing.Size(75, 22);
+            this.lblRevenue.TabIndex = 0;
+            this.lblRevenue.Text = "Revenue";
             // 
             // panelClientsInPossession
             // 
@@ -325,38 +160,203 @@
             this.lblClientsInPossession.TabIndex = 0;
             this.lblClientsInPossession.Text = "Clients In Possession";
             // 
-            // panelRevenue
+            // panelClients
             // 
-            this.panelRevenue.BackColor = System.Drawing.Color.Green;
-            this.panelRevenue.Controls.Add(this.lblnumRevenue);
-            this.panelRevenue.Controls.Add(this.lblRevenue);
-            this.panelRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRevenue.Location = new System.Drawing.Point(843, 85);
-            this.panelRevenue.Name = "panelRevenue";
-            this.panelRevenue.Size = new System.Drawing.Size(276, 76);
-            this.panelRevenue.TabIndex = 8;
+            this.panelClients.BackColor = System.Drawing.Color.Purple;
+            this.panelClients.Controls.Add(this.lblnumClients);
+            this.panelClients.Controls.Add(this.lblClients);
+            this.panelClients.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelClients.Location = new System.Drawing.Point(283, 85);
+            this.panelClients.Name = "panelClients";
+            this.panelClients.Size = new System.Drawing.Size(274, 76);
+            this.panelClients.TabIndex = 6;
             // 
-            // lblnumRevenue
+            // lblnumClients
             // 
-            this.lblnumRevenue.BackColor = System.Drawing.Color.Transparent;
-            this.lblnumRevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnumRevenue.ForeColor = System.Drawing.Color.White;
-            this.lblnumRevenue.Location = new System.Drawing.Point(9, 37);
-            this.lblnumRevenue.Name = "lblnumRevenue";
-            this.lblnumRevenue.Size = new System.Drawing.Size(94, 31);
-            this.lblnumRevenue.TabIndex = 1;
-            this.lblnumRevenue.Text = "$420.00";
+            this.lblnumClients.BackColor = System.Drawing.Color.Transparent;
+            this.lblnumClients.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnumClients.ForeColor = System.Drawing.Color.White;
+            this.lblnumClients.Location = new System.Drawing.Point(9, 37);
+            this.lblnumClients.Name = "lblnumClients";
+            this.lblnumClients.Size = new System.Drawing.Size(17, 31);
+            this.lblnumClients.TabIndex = 1;
+            this.lblnumClients.Text = "3";
             // 
-            // lblRevenue
+            // lblClients
             // 
-            this.lblRevenue.BackColor = System.Drawing.Color.Transparent;
-            this.lblRevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lblRevenue.ForeColor = System.Drawing.Color.White;
-            this.lblRevenue.Location = new System.Drawing.Point(9, 9);
-            this.lblRevenue.Name = "lblRevenue";
-            this.lblRevenue.Size = new System.Drawing.Size(75, 22);
-            this.lblRevenue.TabIndex = 0;
-            this.lblRevenue.Text = "Revenue";
+            this.lblClients.BackColor = System.Drawing.Color.Transparent;
+            this.lblClients.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblClients.ForeColor = System.Drawing.Color.White;
+            this.lblClients.Location = new System.Drawing.Point(9, 9);
+            this.lblClients.Name = "lblClients";
+            this.lblClients.Size = new System.Drawing.Size(62, 22);
+            this.lblClients.TabIndex = 0;
+            this.lblClients.Text = "Clients";
+            // 
+            // panelDamagedLost
+            // 
+            this.panelDamagedLost.BackColor = System.Drawing.Color.Crimson;
+            this.panelDamagedLost.Controls.Add(this.lblnumDamagedLost);
+            this.panelDamagedLost.Controls.Add(this.lblDamagedLost);
+            this.panelDamagedLost.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDamagedLost.Location = new System.Drawing.Point(3, 85);
+            this.panelDamagedLost.Name = "panelDamagedLost";
+            this.panelDamagedLost.Size = new System.Drawing.Size(274, 76);
+            this.panelDamagedLost.TabIndex = 5;
+            // 
+            // lblnumDamagedLost
+            // 
+            this.lblnumDamagedLost.BackColor = System.Drawing.Color.Transparent;
+            this.lblnumDamagedLost.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnumDamagedLost.ForeColor = System.Drawing.Color.White;
+            this.lblnumDamagedLost.Location = new System.Drawing.Point(9, 37);
+            this.lblnumDamagedLost.Name = "lblnumDamagedLost";
+            this.lblnumDamagedLost.Size = new System.Drawing.Size(17, 31);
+            this.lblnumDamagedLost.TabIndex = 1;
+            this.lblnumDamagedLost.Text = "0";
+            // 
+            // lblDamagedLost
+            // 
+            this.lblDamagedLost.BackColor = System.Drawing.Color.Transparent;
+            this.lblDamagedLost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblDamagedLost.ForeColor = System.Drawing.Color.White;
+            this.lblDamagedLost.Location = new System.Drawing.Point(9, 9);
+            this.lblDamagedLost.Name = "lblDamagedLost";
+            this.lblDamagedLost.Size = new System.Drawing.Size(131, 22);
+            this.lblDamagedLost.TabIndex = 0;
+            this.lblDamagedLost.Text = "Damaged/ Lost";
+            // 
+            // panelVehiclesAvailable
+            // 
+            this.panelVehiclesAvailable.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panelVehiclesAvailable.Controls.Add(this.lblnumVehiclesAvailable);
+            this.panelVehiclesAvailable.Controls.Add(this.lblVehiclesAvailable);
+            this.panelVehiclesAvailable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelVehiclesAvailable.Location = new System.Drawing.Point(843, 3);
+            this.panelVehiclesAvailable.Name = "panelVehiclesAvailable";
+            this.panelVehiclesAvailable.Size = new System.Drawing.Size(276, 76);
+            this.panelVehiclesAvailable.TabIndex = 4;
+            // 
+            // lblnumVehiclesAvailable
+            // 
+            this.lblnumVehiclesAvailable.BackColor = System.Drawing.Color.Transparent;
+            this.lblnumVehiclesAvailable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnumVehiclesAvailable.ForeColor = System.Drawing.Color.White;
+            this.lblnumVehiclesAvailable.Location = new System.Drawing.Point(9, 37);
+            this.lblnumVehiclesAvailable.Name = "lblnumVehiclesAvailable";
+            this.lblnumVehiclesAvailable.Size = new System.Drawing.Size(17, 31);
+            this.lblnumVehiclesAvailable.TabIndex = 1;
+            this.lblnumVehiclesAvailable.Text = "6";
+            // 
+            // lblVehiclesAvailable
+            // 
+            this.lblVehiclesAvailable.BackColor = System.Drawing.Color.Transparent;
+            this.lblVehiclesAvailable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblVehiclesAvailable.ForeColor = System.Drawing.Color.White;
+            this.lblVehiclesAvailable.Location = new System.Drawing.Point(9, 9);
+            this.lblVehiclesAvailable.Name = "lblVehiclesAvailable";
+            this.lblVehiclesAvailable.Size = new System.Drawing.Size(157, 22);
+            this.lblVehiclesAvailable.TabIndex = 0;
+            this.lblVehiclesAvailable.Text = "Vehicles Available";
+            // 
+            // panelVehiclesReturned
+            // 
+            this.panelVehiclesReturned.BackColor = System.Drawing.Color.LimeGreen;
+            this.panelVehiclesReturned.Controls.Add(this.lblnumVehiclesRented);
+            this.panelVehiclesReturned.Controls.Add(this.lblVehiclesRented);
+            this.panelVehiclesReturned.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelVehiclesReturned.Location = new System.Drawing.Point(563, 3);
+            this.panelVehiclesReturned.Name = "panelVehiclesReturned";
+            this.panelVehiclesReturned.Size = new System.Drawing.Size(274, 76);
+            this.panelVehiclesReturned.TabIndex = 3;
+            // 
+            // lblnumVehiclesRented
+            // 
+            this.lblnumVehiclesRented.BackColor = System.Drawing.Color.Transparent;
+            this.lblnumVehiclesRented.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnumVehiclesRented.ForeColor = System.Drawing.Color.White;
+            this.lblnumVehiclesRented.Location = new System.Drawing.Point(9, 37);
+            this.lblnumVehiclesRented.Name = "lblnumVehiclesRented";
+            this.lblnumVehiclesRented.Size = new System.Drawing.Size(17, 31);
+            this.lblnumVehiclesRented.TabIndex = 1;
+            this.lblnumVehiclesRented.Text = "0";
+            // 
+            // lblVehiclesRented
+            // 
+            this.lblVehiclesRented.BackColor = System.Drawing.Color.Transparent;
+            this.lblVehiclesRented.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblVehiclesRented.ForeColor = System.Drawing.Color.White;
+            this.lblVehiclesRented.Location = new System.Drawing.Point(9, 9);
+            this.lblVehiclesRented.Name = "lblVehiclesRented";
+            this.lblVehiclesRented.Size = new System.Drawing.Size(140, 22);
+            this.lblVehiclesRented.TabIndex = 0;
+            this.lblVehiclesRented.Text = "Vehicles Rented";
+            // 
+            // panelVehiclesIssued
+            // 
+            this.panelVehiclesIssued.BackColor = System.Drawing.Color.SteelBlue;
+            this.panelVehiclesIssued.Controls.Add(this.lblnumVehiclesIssued);
+            this.panelVehiclesIssued.Controls.Add(this.lblVehiclesIssued);
+            this.panelVehiclesIssued.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelVehiclesIssued.Location = new System.Drawing.Point(283, 3);
+            this.panelVehiclesIssued.Name = "panelVehiclesIssued";
+            this.panelVehiclesIssued.Size = new System.Drawing.Size(274, 76);
+            this.panelVehiclesIssued.TabIndex = 2;
+            // 
+            // lblnumVehiclesIssued
+            // 
+            this.lblnumVehiclesIssued.BackColor = System.Drawing.Color.Transparent;
+            this.lblnumVehiclesIssued.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnumVehiclesIssued.ForeColor = System.Drawing.Color.White;
+            this.lblnumVehiclesIssued.Location = new System.Drawing.Point(9, 37);
+            this.lblnumVehiclesIssued.Name = "lblnumVehiclesIssued";
+            this.lblnumVehiclesIssued.Size = new System.Drawing.Size(17, 31);
+            this.lblnumVehiclesIssued.TabIndex = 1;
+            this.lblnumVehiclesIssued.Text = "4";
+            // 
+            // lblVehiclesIssued
+            // 
+            this.lblVehiclesIssued.BackColor = System.Drawing.Color.Transparent;
+            this.lblVehiclesIssued.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblVehiclesIssued.ForeColor = System.Drawing.Color.White;
+            this.lblVehiclesIssued.Location = new System.Drawing.Point(9, 9);
+            this.lblVehiclesIssued.Name = "lblVehiclesIssued";
+            this.lblVehiclesIssued.Size = new System.Drawing.Size(136, 22);
+            this.lblVehiclesIssued.TabIndex = 0;
+            this.lblVehiclesIssued.Text = "Vehicles Issued";
+            // 
+            // panelVehicles
+            // 
+            this.panelVehicles.BackColor = System.Drawing.Color.Violet;
+            this.panelVehicles.Controls.Add(this.lblnumVehicles);
+            this.panelVehicles.Controls.Add(this.lblVehicles);
+            this.panelVehicles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelVehicles.Location = new System.Drawing.Point(3, 3);
+            this.panelVehicles.Name = "panelVehicles";
+            this.panelVehicles.Size = new System.Drawing.Size(274, 76);
+            this.panelVehicles.TabIndex = 1;
+            // 
+            // lblnumVehicles
+            // 
+            this.lblnumVehicles.BackColor = System.Drawing.Color.Transparent;
+            this.lblnumVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnumVehicles.ForeColor = System.Drawing.Color.White;
+            this.lblnumVehicles.Location = new System.Drawing.Point(9, 37);
+            this.lblnumVehicles.Name = "lblnumVehicles";
+            this.lblnumVehicles.Size = new System.Drawing.Size(31, 31);
+            this.lblnumVehicles.TabIndex = 1;
+            this.lblnumVehicles.Text = "10";
+            // 
+            // lblVehicles
+            // 
+            this.lblVehicles.BackColor = System.Drawing.Color.Transparent;
+            this.lblVehicles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblVehicles.ForeColor = System.Drawing.Color.White;
+            this.lblVehicles.Location = new System.Drawing.Point(9, 9);
+            this.lblVehicles.Name = "lblVehicles";
+            this.lblVehicles.Size = new System.Drawing.Size(75, 22);
+            this.lblVehicles.TabIndex = 0;
+            this.lblVehicles.Text = "Vehicles";
             // 
             // txtSearch
             // 
@@ -460,23 +460,24 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FDashboard";
             this.Text = "FDashboard";
+            this.Load += new System.EventHandler(this.FDashboard_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panelVehicles.ResumeLayout(false);
-            this.panelVehicles.PerformLayout();
-            this.panelVehiclesIssued.ResumeLayout(false);
-            this.panelVehiclesIssued.PerformLayout();
-            this.panelVehiclesReturned.ResumeLayout(false);
-            this.panelVehiclesReturned.PerformLayout();
-            this.panelVehiclesAvailable.ResumeLayout(false);
-            this.panelVehiclesAvailable.PerformLayout();
-            this.panelDamagedLost.ResumeLayout(false);
-            this.panelDamagedLost.PerformLayout();
-            this.panelClients.ResumeLayout(false);
-            this.panelClients.PerformLayout();
-            this.panelClientsInPossession.ResumeLayout(false);
-            this.panelClientsInPossession.PerformLayout();
             this.panelRevenue.ResumeLayout(false);
             this.panelRevenue.PerformLayout();
+            this.panelClientsInPossession.ResumeLayout(false);
+            this.panelClientsInPossession.PerformLayout();
+            this.panelClients.ResumeLayout(false);
+            this.panelClients.PerformLayout();
+            this.panelDamagedLost.ResumeLayout(false);
+            this.panelDamagedLost.PerformLayout();
+            this.panelVehiclesAvailable.ResumeLayout(false);
+            this.panelVehiclesAvailable.PerformLayout();
+            this.panelVehiclesReturned.ResumeLayout(false);
+            this.panelVehiclesReturned.PerformLayout();
+            this.panelVehiclesIssued.ResumeLayout(false);
+            this.panelVehiclesIssued.PerformLayout();
+            this.panelVehicles.ResumeLayout(false);
+            this.panelVehicles.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -504,8 +505,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblnumVehiclesAvailable;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblVehiclesAvailable;
         private System.Windows.Forms.Panel panelVehiclesReturned;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblnumVehiclesReturned;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblVehiclesReturned;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblnumVehiclesRented;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblVehiclesRented;
         private System.Windows.Forms.Panel panelVehiclesIssued;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblnumVehiclesIssued;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblVehiclesIssued;

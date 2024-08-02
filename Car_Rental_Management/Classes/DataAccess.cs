@@ -117,6 +117,15 @@ namespace Car_Rental_Management.Classes
             new VinFast("VinFast 5", "12O5-1234", "Silver", Classes.FuelType.Hydrogen, "600 L", "110 Km/L", 4, Classes.Transmission.Automatic, "Hydrogen", "400 HP", "2024", Classes.Condition.Else, Classes.Status.Rented, false),
         };
 
+        public static List<Car> GetAllCars()
+        {
+            List<Car> Cars = new List<Car>();
+            Cars.AddRange(Fords.Cast<Car>());
+            Cars.AddRange(Mazdas.Cast<Car>());
+            Cars.AddRange(Mercedeses.Cast<Car>());
+            Cars.AddRange(VinFasts.Cast<Car>());
+            return Cars;
+        }
         public static List<Account> Accounts = new List<Account>
         {
             new Account("admin", "admin", "Emp001"),

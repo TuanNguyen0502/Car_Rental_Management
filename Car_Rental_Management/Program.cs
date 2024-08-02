@@ -25,10 +25,9 @@ namespace Car_Rental_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //mainFormManager = new MainFormManager();
-            //mainFormManager.CurrentForm = new FLogin();
-            //Application.Run(mainFormManager);
-            Application.Run(new EmployeeInfor());
+            mainFormManager = new MainFormManager();
+            mainFormManager.CurrentForm = new FLogin();
+            Application.Run(mainFormManager);
         }
     }
 }
