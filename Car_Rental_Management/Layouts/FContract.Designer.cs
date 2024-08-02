@@ -37,7 +37,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.flp_Contents = new System.Windows.Forms.FlowLayoutPanel();
-            this.uC_ContractContent1 = new Car_Rental_Management.ControlContent.UC_ContractContent();
+            this.uC_Contract1 = new Car_Rental_Management.ControlContent.UC_Contract();
             this.pnl_Tasbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptc_Ava)).BeginInit();
             this.flp_Contents.SuspendLayout();
@@ -88,7 +88,7 @@
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Search contract...";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(265, 43);
+            this.txtSearch.Size = new System.Drawing.Size(265, 35);
             this.txtSearch.TabIndex = 4;
             // 
             // cbb_StatusRent
@@ -107,9 +107,9 @@
             "Đang thuê",
             "Đã trả",
             "Đã đặt cọc"});
-            this.cbb_StatusRent.Location = new System.Drawing.Point(560, 16);
+            this.cbb_StatusRent.Location = new System.Drawing.Point(539, 16);
             this.cbb_StatusRent.Name = "cbb_StatusRent";
-            this.cbb_StatusRent.Size = new System.Drawing.Size(205, 36);
+            this.cbb_StatusRent.Size = new System.Drawing.Size(226, 36);
             this.cbb_StatusRent.TabIndex = 7;
             // 
             // guna2Button1
@@ -123,7 +123,7 @@
             this.guna2Button1.Image = global::Car_Rental_Management.Properties.Resources.icons8_find_16;
             this.guna2Button1.Location = new System.Drawing.Point(428, 17);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(60, 43);
+            this.guna2Button1.Size = new System.Drawing.Size(48, 35);
             this.guna2Button1.TabIndex = 5;
             // 
             // guna2Button2
@@ -135,26 +135,26 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_16;
-            this.guna2Button2.Location = new System.Drawing.Point(494, 17);
+            this.guna2Button2.Location = new System.Drawing.Point(485, 16);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(60, 43);
+            this.guna2Button2.Size = new System.Drawing.Size(48, 35);
             this.guna2Button2.TabIndex = 6;
             // 
             // flp_Contents
             // 
-            this.flp_Contents.Controls.Add(this.uC_ContractContent1);
+            this.flp_Contents.Controls.Add(this.uC_Contract1);
             this.flp_Contents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flp_Contents.Location = new System.Drawing.Point(0, 77);
             this.flp_Contents.Name = "flp_Contents";
             this.flp_Contents.Size = new System.Drawing.Size(1362, 652);
-            this.flp_Contents.TabIndex = 10;
+            this.flp_Contents.TabIndex = 0;
             // 
-            // uC_ContractContent1
+            // uC_Contract1
             // 
-            this.uC_ContractContent1.Location = new System.Drawing.Point(3, 3);
-            this.uC_ContractContent1.Name = "uC_ContractContent1";
-            this.uC_ContractContent1.Size = new System.Drawing.Size(1358, 57);
-            this.uC_ContractContent1.TabIndex = 0;
+            this.uC_Contract1.Location = new System.Drawing.Point(3, 3);
+            this.uC_Contract1.Name = "uC_Contract1";
+            this.uC_Contract1.Size = new System.Drawing.Size(1358, 57);
+            this.uC_Contract1.TabIndex = 0;
             // 
             // FContract
             // 
@@ -184,6 +184,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.FlowLayoutPanel flp_Contents;
-        private ControlContent.UC_ContractContent uC_ContractContent1;
+        private ControlContent.UC_Contract uC_ContractContent1;
+        private ControlContent.UC_Contract uC_Contract1;
     }
 }

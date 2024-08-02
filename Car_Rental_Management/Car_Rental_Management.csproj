@@ -71,11 +71,11 @@
     <Compile Include="ControlContent\UC_Client.Designer.cs">
       <DependentUpon>UC_Client.cs</DependentUpon>
     </Compile>
-    <Compile Include="ControlContent\UC_ContractContent.cs">
+    <Compile Include="ControlContent\UC_Contract.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ControlContent\UC_ContractContent.Designer.cs">
-      <DependentUpon>UC_ContractContent.cs</DependentUpon>
+    <Compile Include="ControlContent\UC_Contract.Designer.cs">
+      <DependentUpon>UC_Contract.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Car.cs" />
     <Compile Include="Classes\Contract.cs" />
@@ -151,8 +151,8 @@
     <EmbeddedResource Include="ControlContent\UC_Client.resx">
       <DependentUpon>UC_Client.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ControlContent\UC_ContractContent.resx">
-      <DependentUpon>UC_ContractContent.cs</DependentUpon>
+    <EmbeddedResource Include="ControlContent\UC_Contract.resx">
+      <DependentUpon>UC_Contract.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FCar.resx">
       <DependentUpon>FCar.cs</DependentUpon>
