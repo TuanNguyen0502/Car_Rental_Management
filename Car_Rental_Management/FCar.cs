@@ -60,5 +60,10 @@ namespace Car_Rental_Management
                 flowLayoutPanel_Center.Controls.Add(ucCar);
             }
         }
+
+        private void button_Add_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
