@@ -27,11 +27,6 @@ namespace Car_Rental_Management.Classes
             new Employee("Trương Thị Tâm", new DateTime(1995, 11, 29), "0502434812345", "Ninh Bình", "0901234565", "tamt@student.com", "Nữ", "Emp014", "25000000", new DateTime(2018, 02, 01))
         };
 
-        public static List<Contract> Contracts = new List<Contract>
-        {
-
-        };
-
         public static List<Customer> Customers = new List<Customer>
         {
             new Customer("Trần Trung Quân", new DateTime(2001, 09, 09), "052304054203", "TP. Hồ Chí Minh", "0325188392", "quantt@cus.com", "Nam", "Cus011", "B2"),
@@ -115,6 +110,11 @@ namespace Car_Rental_Management.Classes
             new VinFast("VinFast 4", "01N4-0123", "White", Classes.FuelType.Hybrid, "450 L", "120 Km/L", 5, Classes.Transmission.Manual, "Hybrid", "250 HP", "2020", Classes.Condition.Breakdown, Classes.Status.Available, false),
 
             new VinFast("VinFast 5", "12O5-1234", "Silver", Classes.FuelType.Hydrogen, "600 L", "110 Km/L", 4, Classes.Transmission.Automatic, "Hydrogen", "400 HP", "2024", Classes.Condition.Else, Classes.Status.Rented, false),
+        };
+
+        public static List<Contract> Contracts = new List<Contract>
+        {
+            new Contract("Contract001", "Thuê xe để đi du lịch", new DateTime(2024, 07,30), new DateTime(2024, 08,02), "10000", Fords[0], Customers[0])
         };
 
         public static List<Car> GetAllCars()

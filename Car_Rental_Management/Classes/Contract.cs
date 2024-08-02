@@ -21,13 +21,15 @@ namespace Car_Rental_Management
         public Car Car { get; set; } // Xe
         public Employee Employee { get; set; } // Nhân viên
 
-        public Contract(string contractID, string content, DateTime dateHire, DateTime dateReturn, string rentCost)
+        public Contract(string contractID, string content, DateTime dateHire, DateTime dateReturn, string rentCost, Car car, Customer cus)
         {
             ContractID = contractID;
             Content = content;
             DateHire = dateHire;
             DateReturn = dateReturn;
             RentCost = rentCost;
+            Car = car;
+            Customer = cus;
         }
     }
 }

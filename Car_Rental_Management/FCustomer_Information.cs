@@ -79,26 +79,32 @@ namespace Car_Rental_Management
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-
+            btnOK.Show();
+            btn_Edit.Hide();
+            Accessible();
         }
-
-        private void btnOK_Click(object sender, EventArgs e)
+        public bool checkValid()
         {
             bool check = true;
-            if (txt_FullName.Text == "" || txt_Email.Text == ""|| txt_CCCD.Text == ""|| txt_Address.Text == ""|| txtPhone.Text == "")
+            if (txt_FullName.Text == "" || txt_Email.Text == "" || txt_CCCD.Text == "" || txt_Address.Text == "" || txtPhone.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin cá nhân của khách hàng");
                 check = false;
             }
             int year = 0;
-            if(Int32.TryParse(DateTime.Now.Year.ToString(),out year)){
-                if((year - dtp_Birthday.Value.Year) < 18)
+            if (Int32.TryParse(DateTime.Now.Year.ToString(), out year))
+            {
+                if ((year - dtp_Birthday.Value.Year) < 18)
                 {
                     MessageBox.Show("Khách hàng chưa đủ 18 tuổi.");
                     check = false;
                 }
             }
-            if (check)
+            return check;
+        }
+        private void btnOK_Click(object sender, EventArgs e)
+        {            
+            if (checkValid()&&_customer==null)
             {
                 int nextID = 1;
                 var lastCus = customerList != null && customerList.Any()
@@ -130,6 +136,32 @@ namespace Car_Rental_Management
                 else
                 {
                     customerList = new List<Customer> { customer };
+                }
+            }
+            else if(checkValid())
+            {
+                var customer = customerList.SingleOrDefault(t => t.CustomerID ==_customer.CustomerID);
+                if (customer != null)
+                    customerList.Remove(customer);
+                Customer customer1 = new Customer(
+                    txt_FullName.Text,
+                    dtp_Birthday.Value,
+                    txt_CCCD.Text,
+                    txt_Address.Text,
+                    txtPhone.Text,
+                    txt_Email.Text,
+                    this.cbx_Sex.Text,
+                    _customer.CustomerID,
+                    txt_DrivingLicense.Text
+                );
+
+                if (customerList != null)
+                {
+                    customerList.Add(customer1);
+                }
+                else
+                {
+                    customerList = new List<Customer> { customer1 };
                 }
             }
             btnOK.Hide();

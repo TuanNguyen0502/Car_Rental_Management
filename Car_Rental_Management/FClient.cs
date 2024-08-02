@@ -63,11 +63,11 @@ namespace Car_Rental_Management
 
         private void cbb_Sex_SelectedIndexChanged(object sender, EventArgs e)
         {
-            flowLayoutPanel_Center.Controls.Clear();
             if (cbb_Sex.Text != "Gender(All)")
             {
                 var search = customerList.Where(t =>
         (t.Gender?.Contains(cbb_Sex.Text) ?? false)).ToList();
+                flowLayoutPanel_Center.Controls.Clear();
                 foreach (var client in search)
                 {
                     UC_Client ucClient = new UC_Client(client);

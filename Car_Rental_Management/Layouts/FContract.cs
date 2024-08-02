@@ -19,6 +19,7 @@ namespace Car_Rental_Management.Layouts
         {
             InitializeComponent();
             Initialize();
+            LoadAllContracts();
         }
         private void Initialize()
         {
