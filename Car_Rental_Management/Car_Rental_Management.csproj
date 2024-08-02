@@ -139,12 +139,6 @@
     <Compile Include="UC_Car.Designer.cs">
       <DependentUpon>UC_Car.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_CarInformation.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_CarInformation.Designer.cs">
-      <DependentUpon>UC_CarInformation.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FCar_Infor.resx">
       <DependentUpon>FCar_Infor.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,9 +189,6 @@
     </Compile>
     <EmbeddedResource Include="UC_Car.resx">
       <DependentUpon>UC_Car.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_CarInformation.resx">
-      <DependentUpon>UC_CarInformation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

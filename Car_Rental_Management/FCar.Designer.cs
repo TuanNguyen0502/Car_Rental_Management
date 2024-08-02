@@ -136,6 +136,7 @@
             this.button_Add.Size = new System.Drawing.Size(118, 60);
             this.button_Add.TabIndex = 5;
             this.button_Add.Text = "ADD";
+            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
             // tableLayoutPanel1
             // 
