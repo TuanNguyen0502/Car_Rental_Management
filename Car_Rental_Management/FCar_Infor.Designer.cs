@@ -1,6 +1,6 @@
 ﻿namespace Car_Rental_Management
 {
-    partial class FNewCar
+    partial class FCar_Infor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.button_Exit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.uC_CarInformation1 = new Car_Rental_Management.UC_CarInformation();
@@ -37,28 +37,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(97, 26);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(62, 56);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Car";
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
+            this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.button_Exit);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(800, 100);
-            this.guna2Panel1.TabIndex = 1;
+            this.guna2Panel1.Size = new System.Drawing.Size(833, 130);
+            this.guna2Panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(87, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 54);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Car";
             // 
             // button_Exit
             // 
@@ -93,23 +93,24 @@
             // 
             this.uC_CarInformation1.AutoScroll = true;
             this.uC_CarInformation1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_CarInformation1.Location = new System.Drawing.Point(0, 100);
+            this.uC_CarInformation1.Location = new System.Drawing.Point(0, 130);
             this.uC_CarInformation1.Name = "uC_CarInformation1";
             this.uC_CarInformation1.Padding = new System.Windows.Forms.Padding(20);
-            this.uC_CarInformation1.Size = new System.Drawing.Size(800, 610);
-            this.uC_CarInformation1.TabIndex = 2;
+            this.uC_CarInformation1.Size = new System.Drawing.Size(833, 524);
+            this.uC_CarInformation1.TabIndex = 3;
             // 
-            // FNewCar
+            // FCar_Infor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(800, 710);
+            this.ClientSize = new System.Drawing.Size(833, 654);
             this.Controls.Add(this.uC_CarInformation1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FNewCar";
-            this.Text = "FNewCar";
+            this.Name = "FCar_Infor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Car_Infor";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -119,10 +120,10 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button button_Exit;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private UC_CarInformation uC_CarInformation1;
     }
 }

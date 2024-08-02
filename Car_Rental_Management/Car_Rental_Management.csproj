@@ -52,7 +52,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FCar_Infor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCar_Infor.Designer.cs">
+      <DependentUpon>FCar_Infor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Account.cs" />
+    <Compile Include="Classes\CarBrand.cs" />
     <Compile Include="Classes\Condition.cs" />
     <Compile Include="Classes\DataAccess.cs" />
     <Compile Include="Classes\FuelType.cs" />
@@ -111,12 +118,6 @@
     <Compile Include="FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FCar_Detail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FCar_Detail.Designer.cs">
-      <DependentUpon>FCar_Detail.cs</DependentUpon>
-    </Compile>
     <Compile Include="Layouts\FContract.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +139,9 @@
     <Compile Include="UC_CarInformation.Designer.cs">
       <DependentUpon>UC_CarInformation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FCar_Infor.resx">
+      <DependentUpon>FCar_Infor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlContent\UC_Client.resx">
       <DependentUpon>UC_Client.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,9 +150,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FCar.resx">
       <DependentUpon>FCar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FCar_Detail.resx">
-      <DependentUpon>FCar_Detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FClient.resx">
       <DependentUpon>FClient.cs</DependentUpon>

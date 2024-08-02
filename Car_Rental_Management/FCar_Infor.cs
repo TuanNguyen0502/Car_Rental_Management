@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Car_Rental_Management
 {
-    public partial class FNewCar : Form
+    public partial class FCar_Infor : Form
     {
-        public FNewCar()
+        public FCar_Infor()
         {
             InitializeComponent();
         }

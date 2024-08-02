@@ -41,22 +41,22 @@ namespace Car_Rental_Management
         {
             foreach (var ford in fords)
             {
-                UC_Car ucCar = new UC_Car(ford);
+                UC_Car ucCar = new UC_Car(ford, CarBrand.Ford);
                 flowLayoutPanel_Center.Controls.Add(ucCar);
             }
             foreach (var mazda in mazdas)
             {
-                UC_Car ucCar = new UC_Car(mazda);
+                UC_Car ucCar = new UC_Car(mazda, CarBrand.Mazda);
                 flowLayoutPanel_Center.Controls.Add(ucCar);
             }
             foreach (var mercede in mercedes)
             {
-                UC_Car ucCar = new UC_Car(mercede);
+                UC_Car ucCar = new UC_Car(mercede, CarBrand.Mercedes);
                 flowLayoutPanel_Center.Controls.Add(ucCar);
             }
             foreach (var vinfast in vinfasts)
             {
-                UC_Car ucCar = new UC_Car(vinfast);
+                UC_Car ucCar = new UC_Car(vinfast, CarBrand.VinFast);
                 flowLayoutPanel_Center.Controls.Add(ucCar);
             }
         }
