@@ -118,12 +118,6 @@
     <Compile Include="FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FCar_Detail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FCar_Detail.Designer.cs">
-      <DependentUpon>FCar_Detail.cs</DependentUpon>
-    </Compile>
     <Compile Include="Layouts\EmployeeInfor.cs">
       <SubType>Form</SubType>
     </Compile>
