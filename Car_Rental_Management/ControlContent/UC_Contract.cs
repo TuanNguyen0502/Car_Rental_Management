@@ -18,11 +18,15 @@ namespace Car_Rental_Management.ControlContent
         {
             InitializeComponent();
             _contract = contract;
+            SetData();
         }
         public UC_Contract()
         {
             InitializeComponent();
         } 
+        private void Initialize()
+        {
+        }
         private void SetData()
         {
             TimeSpan difference = _contract.DateReturn - DateTime.Now;
