@@ -1,6 +1,6 @@
 ﻿namespace Car_Rental_Management.ControlContent
 {
-    partial class UC_ContractContent
+    partial class UC_Contract
     {
         /// <summary> 
         /// Required designer variable.
@@ -33,10 +33,10 @@
             this.lbl_DayNumbers = new System.Windows.Forms.Label();
             this.lbl_Price = new System.Windows.Forms.Label();
             this.lbl_ReturnDate = new System.Windows.Forms.Label();
+            this.lbl_Status = new System.Windows.Forms.Label();
             this.lbl_Client = new System.Windows.Forms.Label();
             this.lbl_Vehicle = new System.Windows.Forms.Label();
             this.lbl_DayRent = new System.Windows.Forms.Label();
-            this.lbl_Status = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +71,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1358, 57);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // lbl_Total
             // 
@@ -117,6 +116,17 @@
             this.lbl_ReturnDate.TabIndex = 4;
             this.lbl_ReturnDate.Text = "Ngày trả";
             // 
+            // lbl_Status
+            // 
+            this.lbl_Status.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_Status.AutoSize = true;
+            this.lbl_Status.ForeColor = System.Drawing.Color.White;
+            this.lbl_Status.Location = new System.Drawing.Point(655, 20);
+            this.lbl_Status.Name = "lbl_Status";
+            this.lbl_Status.Size = new System.Drawing.Size(67, 16);
+            this.lbl_Status.TabIndex = 0;
+            this.lbl_Status.Text = "Trạng thái";
+            // 
             // lbl_Client
             // 
             this.lbl_Client.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -150,23 +160,12 @@
             this.lbl_DayRent.TabIndex = 1;
             this.lbl_DayRent.Text = "Ngày thuê";
             // 
-            // lbl_Status
-            // 
-            this.lbl_Status.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_Status.AutoSize = true;
-            this.lbl_Status.ForeColor = System.Drawing.Color.White;
-            this.lbl_Status.Location = new System.Drawing.Point(655, 20);
-            this.lbl_Status.Name = "lbl_Status";
-            this.lbl_Status.Size = new System.Drawing.Size(67, 16);
-            this.lbl_Status.TabIndex = 0;
-            this.lbl_Status.Text = "Trạng thái";
-            // 
-            // UC_ContractContent
+            // UC_Contract
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "UC_ContractContent";
+            this.Name = "UC_Contract";
             this.Size = new System.Drawing.Size(1358, 57);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
