@@ -14,6 +14,7 @@ namespace Car_Rental_Management.ControlContent
     public partial class UC_Client : UserControl
     {
         private Customer _customer;
+        private List<Customer> customerList;
         public UC_Client(Customer customer)
         {
             InitializeComponent();
@@ -89,6 +90,19 @@ namespace Car_Rental_Management.ControlContent
             }
 
         private void tlp_Content_Click(object sender, EventArgs e)
+        {
+            FCustomer_Information customer_Information = new FCustomer_Information(_customer);
+            customer_Information.ShowDialog();
+        }
+
+        private void btn_Del_Click(object sender, EventArgs e)
+        {
+            var customer = customerList.SingleOrDefault(t => t.CustomerID == _customer.CustomerID);
+            if (customer != null)
+                customerList.Remove(customer);
+        }
+
+        private void btn_Edit_Click(object sender, EventArgs e)
         {
             FCustomer_Information customer_Information = new FCustomer_Information(_customer);
             customer_Information.ShowDialog();
