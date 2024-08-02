@@ -13,12 +13,26 @@ namespace Car_Rental_Management.ControlContent
 {
     public partial class UC_Client : UserControl
     {
-        public UC_Client()
+        private Customer _customer;
+        public UC_Client(Customer customer)
         {
             InitializeComponent();
+            _customer = customer;
+            LoadData();
             this.Load += new System.EventHandler(this.UC_Client_Load);
         }
-
+        public void LoadData()
+        {
+            if (_customer != null)
+            {
+                lbl_CCCD.Text= _customer.CCCD.ToString();
+                lbl_DrivingLicense.Text= _customer.DrivingLicense.ToString();
+                lbl_Email.Text= _customer.Email.ToString();
+                lbl_FullName.Text= _customer.FullName.ToString();
+                lbl_Gender.Text= _customer.Gender.ToString();
+                lbl_Phone.Text = _customer.PhoneNumber.ToString();
+            }
+        }
         private void UC_Client_Load(object sender, EventArgs e)
         {
             string name = lbl_FullName.Text;
@@ -74,6 +88,10 @@ namespace Car_Rental_Management.ControlContent
                 return bitmap;
             }
 
-
+        private void tlp_Content_Click(object sender, EventArgs e)
+        {
+            FCustomer_Information customer_Information = new FCustomer_Information(_customer);
+            customer_Information.ShowDialog();
+        }
     }
 }

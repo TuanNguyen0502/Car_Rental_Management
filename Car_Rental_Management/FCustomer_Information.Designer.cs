@@ -42,7 +42,7 @@
             this.lbl_Phone = new System.Windows.Forms.Label();
             this.txt_Email = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_Email = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_DrivingLicense = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_DrivingLicense = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.button_Exit = new Guna.UI2.WinForms.Guna2Button();
@@ -133,14 +133,13 @@
             this.cbx_Sex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.cbx_Sex.ItemHeight = 30;
             this.cbx_Sex.Items.AddRange(new object[] {
-            "Female",
-            "Male",
-            "Other"});
+            "Nam",
+            "Nữ",
+            "Khác"});
             this.cbx_Sex.Location = new System.Drawing.Point(299, 219);
             this.cbx_Sex.Margin = new System.Windows.Forms.Padding(4);
             this.cbx_Sex.Name = "cbx_Sex";
             this.cbx_Sex.Size = new System.Drawing.Size(264, 36);
-            this.cbx_Sex.StartIndex = 0;
             this.cbx_Sex.TabIndex = 4;
             // 
             // lbl_Birthday
@@ -233,7 +232,7 @@
             this.txtPhone.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
-            this.txtPhone.PlaceholderText = "1 Võ Văn Ngân, Thủ Đức";
+            this.txtPhone.PlaceholderText = "0386251328";
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(264, 43);
             this.txtPhone.TabIndex = 11;
@@ -282,27 +281,27 @@
             this.lbl_Email.TabIndex = 12;
             this.lbl_Email.Text = "Email";
             // 
-            // guna2TextBox1
+            // txt_DrivingLicense
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Blue;
-            this.guna2TextBox1.BorderRadius = 20;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(299, 771);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "793573524259";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(264, 43);
-            this.guna2TextBox1.TabIndex = 15;
+            this.txt_DrivingLicense.BorderColor = System.Drawing.Color.Blue;
+            this.txt_DrivingLicense.BorderRadius = 20;
+            this.txt_DrivingLicense.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_DrivingLicense.DefaultText = "";
+            this.txt_DrivingLicense.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_DrivingLicense.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_DrivingLicense.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_DrivingLicense.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_DrivingLicense.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_DrivingLicense.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_DrivingLicense.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_DrivingLicense.Location = new System.Drawing.Point(299, 771);
+            this.txt_DrivingLicense.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txt_DrivingLicense.Name = "txt_DrivingLicense";
+            this.txt_DrivingLicense.PasswordChar = '\0';
+            this.txt_DrivingLicense.PlaceholderText = "A1";
+            this.txt_DrivingLicense.SelectedText = "";
+            this.txt_DrivingLicense.Size = new System.Drawing.Size(264, 43);
+            this.txt_DrivingLicense.TabIndex = 15;
             // 
             // lbl_DrivingLicense
             // 
@@ -412,7 +411,7 @@
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txt_DrivingLicense);
             this.Controls.Add(this.lbl_DrivingLicense);
             this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.lbl_Email);
@@ -460,7 +459,7 @@
         private System.Windows.Forms.Label lbl_Phone;
         private Guna.UI2.WinForms.Guna2TextBox txt_Email;
         private System.Windows.Forms.Label lbl_Email;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_DrivingLicense;
         private System.Windows.Forms.Label lbl_DrivingLicense;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button button_Exit;

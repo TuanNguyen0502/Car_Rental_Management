@@ -71,6 +71,7 @@
             this.tlp_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlp_Content.Size = new System.Drawing.Size(1117, 54);
             this.tlp_Content.TabIndex = 1;
+            this.tlp_Content.Click += new System.EventHandler(this.tlp_Content_Click);
             // 
             // lbl_DrivingLicense
             // 

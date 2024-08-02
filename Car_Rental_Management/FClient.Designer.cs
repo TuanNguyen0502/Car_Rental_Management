@@ -30,6 +30,7 @@
         {
             this.pnl_ContainerContracts = new System.Windows.Forms.Panel();
             this.panel_Content = new Guna.UI2.WinForms.Guna2Panel();
+            this.flowLayoutPanel_Center = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_Tittle = new Guna.UI2.WinForms.Guna2Panel();
             this.tlpProperties = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_Email = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_ContainerContracts.SuspendLayout();
+            this.panel_Content.SuspendLayout();
             this.panel_Tittle.SuspendLayout();
             this.tlpProperties.SuspendLayout();
             this.pnl_Search.SuspendLayout();
@@ -57,15 +59,29 @@
             this.pnl_ContainerContracts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_ContainerContracts.Location = new System.Drawing.Point(0, 77);
             this.pnl_ContainerContracts.Name = "pnl_ContainerContracts";
-            this.pnl_ContainerContracts.Size = new System.Drawing.Size(1117, 492);
+            this.pnl_ContainerContracts.Size = new System.Drawing.Size(1078, 492);
             this.pnl_ContainerContracts.TabIndex = 11;
             // 
             // panel_Content
             // 
+            this.panel_Content.Controls.Add(this.flowLayoutPanel_Center);
             this.panel_Content.Location = new System.Drawing.Point(0, 54);
             this.panel_Content.Name = "panel_Content";
             this.panel_Content.Size = new System.Drawing.Size(1117, 438);
             this.panel_Content.TabIndex = 1;
+            // 
+            // flowLayoutPanel_Center
+            // 
+            this.flowLayoutPanel_Center.AutoScroll = true;
+            this.flowLayoutPanel_Center.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel_Center.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel_Center.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel_Center.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flowLayoutPanel_Center.Name = "flowLayoutPanel_Center";
+            this.flowLayoutPanel_Center.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.flowLayoutPanel_Center.Size = new System.Drawing.Size(1117, 438);
+            this.flowLayoutPanel_Center.TabIndex = 3;
+            this.flowLayoutPanel_Center.WrapContents = false;
             // 
             // panel_Tittle
             // 
@@ -213,14 +229,15 @@
             this.cbb_Sex.ItemHeight = 30;
             this.cbb_Sex.Items.AddRange(new object[] {
             "Gender(All)",
-            "Male",
-            "Female"});
+            "Nam",
+            "Nữ"});
             this.cbb_Sex.Location = new System.Drawing.Point(398, 19);
             this.cbb_Sex.Name = "cbb_Sex";
             this.cbb_Sex.Size = new System.Drawing.Size(175, 36);
             this.cbb_Sex.StartIndex = 0;
             this.cbb_Sex.TabIndex = 7;
             this.cbb_Sex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cbb_Sex.SelectedIndexChanged += new System.EventHandler(this.cbb_Sex_SelectedIndexChanged);
             // 
             // pnl_Search
             // 
@@ -232,7 +249,7 @@
             this.pnl_Search.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Search.Location = new System.Drawing.Point(0, 0);
             this.pnl_Search.Name = "pnl_Search";
-            this.pnl_Search.Size = new System.Drawing.Size(1117, 77);
+            this.pnl_Search.Size = new System.Drawing.Size(1078, 77);
             this.pnl_Search.TabIndex = 10;
             // 
             // btnAdd
@@ -266,6 +283,7 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(43, 36);
             this.btnSearch.TabIndex = 5;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnRefresh
             // 
@@ -280,12 +298,13 @@
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(43, 36);
             this.btnRefresh.TabIndex = 6;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // FClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1117, 569);
+            this.ClientSize = new System.Drawing.Size(1078, 569);
             this.Controls.Add(this.pnl_ContainerContracts);
             this.Controls.Add(this.pnl_Search);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -293,6 +312,7 @@
             this.Text = "FClient";
             this.Load += new System.EventHandler(this.FClient_Load);
             this.pnl_ContainerContracts.ResumeLayout(false);
+            this.panel_Content.ResumeLayout(false);
             this.panel_Tittle.ResumeLayout(false);
             this.tlpProperties.ResumeLayout(false);
             this.tlpProperties.PerformLayout();
@@ -311,7 +331,6 @@
         private Guna.UI2.WinForms.Guna2Button btnRefresh;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2Panel panel_Tittle;
-        private Guna.UI2.WinForms.Guna2Panel panel_Content;
         private System.Windows.Forms.TableLayoutPanel tlpProperties;
         private System.Windows.Forms.Label lbl_Email;
         private System.Windows.Forms.Label lbl_DrivingLicense;
@@ -319,5 +338,7 @@
         private System.Windows.Forms.Label lbl_FullName;
         private System.Windows.Forms.Label lbl_Gender;
         private System.Windows.Forms.Label lbl_Phone;
+        private Guna.UI2.WinForms.Guna2Panel panel_Content;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_Center;
     }
 }

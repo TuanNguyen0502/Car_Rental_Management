@@ -118,6 +118,18 @@
     <Compile Include="FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FCar_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCar_Detail.Designer.cs">
+      <DependentUpon>FCar_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\EmployeeInfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layouts\EmployeeInfor.Designer.cs">
+      <DependentUpon>EmployeeInfor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\FContract.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\EmployeeInfor.resx">
+      <DependentUpon>EmployeeInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layouts\FContract.resx">
       <DependentUpon>FContract.cs</DependentUpon>
