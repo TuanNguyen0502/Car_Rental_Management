@@ -97,9 +97,12 @@ namespace Car_Rental_Management.ControlContent
 
         private void btn_Del_Click(object sender, EventArgs e)
         {
-            var customer = customerList.SingleOrDefault(t => t.CustomerID == _customer.CustomerID);
-            if (customer != null)
-                customerList.Remove(customer);
+            if(_customer != null)
+            {
+                var customer = customerList.SingleOrDefault(t => t.CustomerID == _customer.CustomerID);
+                if (customer != null)
+                    customerList.Remove(customer);
+            }
         }
 
         private void btn_Edit_Click(object sender, EventArgs e)

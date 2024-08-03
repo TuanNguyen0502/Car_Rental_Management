@@ -18,15 +18,13 @@ namespace Car_Rental_Management
         public FCustomer_Information()
         {
             InitializeComponent();
-            btn_Edit.Hide();
-            btnOK.Show();
+            btnOK.BringToFront();
             customerList = DataAccess.Customers;
         }
         public FCustomer_Information(Customer customer)
         {
             InitializeComponent();
-            btn_Edit.Show();
-            btnOK.Hide();
+            btn_Edit.BringToFront(); 
             customerList = DataAccess.Customers;
             _customer = customer;
         }
@@ -79,8 +77,7 @@ namespace Car_Rental_Management
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            btnOK.Show();
-            btn_Edit.Hide();
+            btnOK.BringToFront();
             Accessible();
         }
         public bool checkValid()
@@ -164,8 +161,7 @@ namespace Car_Rental_Management
                     customerList = new List<Customer> { customer1 };
                 }
             }
-            btnOK.Hide();
-            btn_Edit.Show();
+            btn_Edit.BringToFront();
             Inaccessible();
         }
     }
