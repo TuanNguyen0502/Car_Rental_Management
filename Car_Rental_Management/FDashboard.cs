@@ -14,6 +14,8 @@ namespace Car_Rental_Management
     public partial class FDashboard : Form
     {
         List<Car> cars = DataAccess.GetAllCars();
+        List<Customer> customers = DataAccess.Customers;
+        List<Contract> contracts = DataAccess.Contracts;
         public FDashboard()
         {
             InitializeComponent();
@@ -25,6 +27,8 @@ namespace Car_Rental_Management
             lblnumVehiclesRented.Text = getNumOfRentedVehicles().ToString();
             lblnumVehiclesAvailable.Text = getNumOfAvailableVehicles().ToString();
             lblnumVehiclesIssued.Text = getNumOfMaintenanceVehicles().ToString();
+            lblnumClients.Text = getNumOfCustomers().ToString();
+            lblnumRevenue.Text = getNumOfRevenue().ToString("C");
         }
 
         public int getNumOfVehicles()
@@ -44,6 +48,17 @@ namespace Car_Rental_Management
         public int getNumOfMaintenanceVehicles()
         {
             return cars.Count(c => c.Status == Status.Maintenance);
+        }
+
+        public int getNumOfCustomers()
+        {
+            return customers.Count;
+        }
+        public decimal getNumOfRevenue()
+        {
+            return contracts
+                .Where(contract => decimal.TryParse(contract.RentCost, out _))
+                .Sum(contract => decimal.Parse(contract.RentCost));
         }
     }
 }
