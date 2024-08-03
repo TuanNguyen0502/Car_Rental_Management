@@ -43,7 +43,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel_Top = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.button_Reload = new Guna.UI2.WinForms.Guna2Button();
             this.button_Search = new Guna.UI2.WinForms.Guna2Button();
             this.flowLayoutPanel_Center = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
@@ -284,7 +284,7 @@
             this.panel_Top.Controls.Add(this.tableLayoutPanel1);
             this.panel_Top.Controls.Add(this.textBox_Search);
             this.panel_Top.Controls.Add(this.comboBox_Transmission);
-            this.panel_Top.Controls.Add(this.guna2Button2);
+            this.panel_Top.Controls.Add(this.button_Reload);
             this.panel_Top.Controls.Add(this.button_Search);
             this.panel_Top.Controls.Add(this.comboBox_FuelType);
             this.panel_Top.Dock = System.Windows.Forms.DockStyle.Top;
@@ -293,25 +293,26 @@
             this.panel_Top.Size = new System.Drawing.Size(1213, 213);
             this.panel_Top.TabIndex = 1;
             // 
-            // guna2Button2
+            // button_Reload
             // 
-            this.guna2Button2.AutoRoundedCorners = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.White;
-            this.guna2Button2.BorderRadius = 29;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
-            this.guna2Button2.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_48;
-            this.guna2Button2.Location = new System.Drawing.Point(417, 19);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(80, 60);
-            this.guna2Button2.TabIndex = 2;
+            this.button_Reload.AutoRoundedCorners = true;
+            this.button_Reload.BackColor = System.Drawing.Color.White;
+            this.button_Reload.BorderRadius = 29;
+            this.button_Reload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.button_Reload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.button_Reload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.button_Reload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button_Reload.FillColor = System.Drawing.Color.White;
+            this.button_Reload.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
+            this.button_Reload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.button_Reload.ForeColor = System.Drawing.Color.White;
+            this.button_Reload.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
+            this.button_Reload.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_48;
+            this.button_Reload.Location = new System.Drawing.Point(417, 19);
+            this.button_Reload.Name = "button_Reload";
+            this.button_Reload.Size = new System.Drawing.Size(80, 60);
+            this.button_Reload.TabIndex = 2;
+            this.button_Reload.Click += new System.EventHandler(this.button_Reload_Click);
             // 
             // button_Search
             // 
@@ -368,7 +369,7 @@
 
         private Guna.UI2.WinForms.Guna2TextBox textBox_Search;
         private Guna.UI2.WinForms.Guna2Button button_Search;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button button_Reload;
         private Guna.UI2.WinForms.Guna2ComboBox comboBox_Transmission;
         private Guna.UI2.WinForms.Guna2ComboBox comboBox_FuelType;
         private Guna.UI2.WinForms.Guna2Button button_Add;

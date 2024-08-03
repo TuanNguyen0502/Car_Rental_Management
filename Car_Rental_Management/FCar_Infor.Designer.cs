@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_CarModel = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.checkBox_Bluetooth = new Guna.UI2.WinForms.Guna2CheckBox();
             this.checkBox_Convertible = new Guna.UI2.WinForms.Guna2CheckBox();
             this.checkBox_Electric = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label_USBport = new System.Windows.Forms.Label();
             this.textBox_USBport = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -72,7 +72,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
-            this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Controls.Add(this.label_CarModel);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
@@ -80,16 +80,16 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1310, 130);
             this.guna2Panel1.TabIndex = 2;
             // 
-            // label1
+            // label_CarModel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(87, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 54);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Car";
+            this.label_CarModel.AutoSize = true;
+            this.label_CarModel.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.label_CarModel.ForeColor = System.Drawing.Color.White;
+            this.label_CarModel.Location = new System.Drawing.Point(87, 28);
+            this.label_CarModel.Name = "label_CarModel";
+            this.label_CarModel.Size = new System.Drawing.Size(82, 54);
+            this.label_CarModel.TabIndex = 3;
+            this.label_CarModel.Text = "Car";
             // 
             // guna2PictureBox1
             // 
@@ -564,6 +564,7 @@
             this.checkBox_SoundProof.UncheckedState.BorderRadius = 0;
             this.checkBox_SoundProof.UncheckedState.BorderThickness = 0;
             this.checkBox_SoundProof.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkBox_SoundProof.Visible = false;
             // 
             // flowLayoutPanel1
             // 
@@ -593,6 +594,7 @@
             this.checkBox_Bluetooth.UncheckedState.BorderRadius = 0;
             this.checkBox_Bluetooth.UncheckedState.BorderThickness = 0;
             this.checkBox_Bluetooth.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkBox_Bluetooth.Visible = false;
             // 
             // checkBox_Convertible
             // 
@@ -611,6 +613,7 @@
             this.checkBox_Convertible.UncheckedState.BorderRadius = 0;
             this.checkBox_Convertible.UncheckedState.BorderThickness = 0;
             this.checkBox_Convertible.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkBox_Convertible.Visible = false;
             // 
             // checkBox_Electric
             // 
@@ -629,16 +632,18 @@
             this.checkBox_Electric.UncheckedState.BorderRadius = 0;
             this.checkBox_Electric.UncheckedState.BorderThickness = 0;
             this.checkBox_Electric.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkBox_Electric.Visible = false;
             // 
-            // label15
+            // label_USBport
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label15.Location = new System.Drawing.Point(42, 858);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(108, 32);
-            this.label15.TabIndex = 57;
-            this.label15.Text = "USB port";
+            this.label_USBport.AutoSize = true;
+            this.label_USBport.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label_USBport.Location = new System.Drawing.Point(42, 858);
+            this.label_USBport.Name = "label_USBport";
+            this.label_USBport.Size = new System.Drawing.Size(108, 32);
+            this.label_USBport.TabIndex = 57;
+            this.label_USBport.Text = "USB port";
+            this.label_USBport.Visible = false;
             // 
             // textBox_USBport
             // 
@@ -662,6 +667,7 @@
             this.textBox_USBport.SelectedText = "";
             this.textBox_USBport.Size = new System.Drawing.Size(379, 77);
             this.textBox_USBport.TabIndex = 55;
+            this.textBox_USBport.Visible = false;
             // 
             // FCar_Infor
             // 
@@ -672,7 +678,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox_USBport);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label_USBport);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -717,7 +723,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_CarModel;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -750,7 +756,7 @@
         private Guna.UI2.WinForms.Guna2CheckBox checkBox_Bluetooth;
         private Guna.UI2.WinForms.Guna2CheckBox checkBox_Convertible;
         private Guna.UI2.WinForms.Guna2CheckBox checkBox_Electric;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label_USBport;
         private Guna.UI2.WinForms.Guna2TextBox textBox_USBport;
     }
 }

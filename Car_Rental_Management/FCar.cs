@@ -20,16 +20,7 @@ namespace Car_Rental_Management
 
         public FCar()
         {
-            InitializeData();
             InitializeComponent();
-        }
-
-        private void InitializeData()
-        {
-            fords = DataAccess.Fords;
-            mazdas = DataAccess.Mazdas;
-            mercedes = DataAccess.Mercedeses;
-            vinfasts = DataAccess.VinFasts;
         }
 
         private void FCar_Load(object sender, EventArgs e)
@@ -39,6 +30,11 @@ namespace Car_Rental_Management
 
         private void LoadData()
         {
+            fords = DataAccess.Fords;
+            mazdas = DataAccess.Mazdas;
+            mercedes = DataAccess.Mercedeses;
+            vinfasts = DataAccess.VinFasts;
+
             foreach (var ford in fords)
             {
                 UC_Car ucCar = new UC_Car(ford, CarBrand.Ford);
@@ -61,9 +57,34 @@ namespace Car_Rental_Management
             }
         }
 
+        private void button_Reload_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel_Center.Controls.Clear();
+            LoadData();
+        }
+
         private void button_Add_Click(object sender, EventArgs e)
         {
+            // Display a message box with options
+            DialogResult result = MessageBox.Show(
+                "Choose an option:",
+                "Option Selector",
+                MessageBoxButtons.YesNoCancel,
+                MessageBoxIcon.Question);
 
+            // Handle the user's choice
+            switch (result)
+            {
+                case DialogResult.Yes:
+                    Console.WriteLine("You chose Yes.");
+                    break;
+                case DialogResult.No:
+                    Console.WriteLine("You chose No.");
+                    break;
+                case DialogResult.Cancel:
+                    Console.WriteLine("You chose Cancel.");
+                    break;
+            }
         }
     }
 }
