@@ -93,11 +93,6 @@ namespace Car_Rental_Management.Classes
             new Mercedes("Mercedes 5", "56J5-5678", "Red", Classes.FuelType.Hydrogen, "650 L", "75 Km/L", 4, Classes.Transmission.Automatic, "Hydrogen", "350 HP", "2024", Classes.Condition.Else, Classes.Status.Rented, true),
         };
 
-        public static List<Status> Statuses = new List<Status>
-        {
-
-        };
-
         public static List<VinFast> VinFasts = new List<VinFast>
         {
             // VinFast
@@ -131,5 +126,24 @@ namespace Car_Rental_Management.Classes
             new Account("admin", "admin", "Emp001"),
         };
 
+        public static void AddFord(Ford ford)
+        {
+            Fords.Add(ford);
+        }
+
+        public static void AddMazda(Mazda mazda)
+        {
+            Mazdas.Add(mazda);
+        }
+
+        public static void AddMercedes(Mercedes mercedes)
+        {
+            Mercedeses.Add(mercedes);
+        }
+
+        public static void AddVinFast(VinFast vinFast)
+        {
+            VinFasts.Add(vinFast);
+        }
     }
 }

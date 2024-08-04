@@ -65,25 +65,13 @@ namespace Car_Rental_Management
 
         private void button_Add_Click(object sender, EventArgs e)
         {
-            // Display a message box with options
-            DialogResult result = MessageBox.Show(
-                "Choose an option:",
-                "Option Selector",
-                MessageBoxButtons.YesNoCancel,
-                MessageBoxIcon.Question);
-
-            // Handle the user's choice
-            switch (result)
+            using (CustomMessageBox_CarBrand customMessageBox = new CustomMessageBox_CarBrand())
             {
-                case DialogResult.Yes:
-                    Console.WriteLine("You chose Yes.");
-                    break;
-                case DialogResult.No:
-                    Console.WriteLine("You chose No.");
-                    break;
-                case DialogResult.Cancel:
-                    Console.WriteLine("You chose Cancel.");
-                    break;
+                if (customMessageBox.ShowDialog() == DialogResult.OK)
+                {
+                    FCar_Infor fCar_Infor = new FCar_Infor(customMessageBox.SelectedOption);
+                    fCar_Infor.ShowDialog();
+                }
             }
         }
     }
