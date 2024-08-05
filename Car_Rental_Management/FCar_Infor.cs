@@ -24,6 +24,7 @@ namespace Car_Rental_Management
         {
             InitializeComponent();
             InitializeControls(carbrand);
+            textBox_LicenseNumber.Enabled = true;
             button_Add.Visible = true;
             button_Update.Visible = false;
         }
@@ -152,6 +153,7 @@ namespace Car_Rental_Management
                     selectedStatus,
                     checkBox_Bluetooth.Checked,
                     Int32.Parse(textBox_USBport.Text));
+                DataAccess.AddMazda(new_Mazda);
             }
             else if (carBrand == CarBrand.Mercedes)
             {
@@ -170,6 +172,7 @@ namespace Car_Rental_Management
                     selectedCondition,
                     selectedStatus,
                     checkBox_Convertible.Checked);
+                DataAccess.AddMercedes(new_Mercedes);
             }
             else if (carBrand == CarBrand.VinFast)
             {
@@ -188,13 +191,95 @@ namespace Car_Rental_Management
                     selectedCondition, 
                     selectedStatus,
                     checkBox_Electric.Checked);
+                DataAccess.AddVinFast(new_VinFast);
             }
             this.Close();
         }
 
         private void button_Update_Click(object sender, EventArgs e)
         {
+            FuelType selectedFuelType = (FuelType)comboBox_FuelType.SelectedItem;
+            Transmission selectedTransmission = (Transmission)comboBox_Transmission.SelectedItem;
+            Condition selectedCondition = (Condition)comboBox_Condition.SelectedItem;
+            Status selectedStatus = (Status)comboBox_Status.SelectedItem;
 
+            if (carBrand == CarBrand.Ford)
+            {
+                Ford new_Ford = new Ford(
+                    textBox_Name.Text,
+                    textBox_LicenseNumber.Text,
+                    textBox_Color.Text,
+                    selectedFuelType,
+                    textBox_FuelCapacity.Text,
+                    textBox_FuelConsumption.Text,
+                    Int32.Parse(comboBox_Capacity.SelectedItem.ToString()),
+                    selectedTransmission,
+                    textBox_Engine.Text,
+                    textBox_Power.Text,
+                    textBox_Year.Text,
+                    selectedCondition,
+                    selectedStatus,
+                    checkBox_SoundProof.Checked);
+                DataAccess.UpdateFord(new_Ford);
+            }
+            else if (carBrand == CarBrand.Mazda)
+            {
+                Mazda new_Mazda = new Mazda(
+                    textBox_Name.Text,
+                    textBox_LicenseNumber.Text,
+                    textBox_Color.Text,
+                    selectedFuelType,
+                    textBox_FuelCapacity.Text,
+                    textBox_FuelConsumption.Text,
+                    Int32.Parse(comboBox_Capacity.SelectedItem.ToString()),
+                    selectedTransmission,
+                    textBox_Engine.Text,
+                    textBox_Power.Text,
+                    textBox_Year.Text,
+                    selectedCondition,
+                    selectedStatus,
+                    checkBox_Bluetooth.Checked,
+                    Int32.Parse(textBox_USBport.Text));
+                DataAccess.UpdateMazda(new_Mazda);
+            }
+            else if (carBrand == CarBrand.Mercedes)
+            {
+                Mercedes new_Mercedes = new Mercedes(
+                    textBox_Name.Text,
+                    textBox_LicenseNumber.Text,
+                    textBox_Color.Text,
+                    selectedFuelType,
+                    textBox_FuelCapacity.Text,
+                    textBox_FuelConsumption.Text,
+                    Int32.Parse(comboBox_Capacity.SelectedItem.ToString()),
+                    selectedTransmission,
+                    textBox_Engine.Text,
+                    textBox_Power.Text,
+                    textBox_Year.Text,
+                    selectedCondition,
+                    selectedStatus,
+                    checkBox_Convertible.Checked);
+                DataAccess.UpdateMercedes(new_Mercedes);
+            }
+            else if (carBrand == CarBrand.VinFast)
+            {
+                VinFast new_VinFast = new VinFast(
+                    textBox_Name.Text,
+                    textBox_LicenseNumber.Text,
+                    textBox_Color.Text,
+                    selectedFuelType,
+                    textBox_FuelCapacity.Text,
+                    textBox_FuelConsumption.Text,
+                    Int32.Parse(comboBox_Capacity.SelectedItem.ToString()),
+                    selectedTransmission,
+                    textBox_Engine.Text,
+                    textBox_Power.Text,
+                    textBox_Year.Text,
+                    selectedCondition,
+                    selectedStatus,
+                    checkBox_Electric.Checked);
+                DataAccess.UpdateVinFast(new_VinFast);
+            }
         }
     }
 }

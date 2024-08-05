@@ -252,6 +252,13 @@ namespace Car_Rental_Management
             this.comboBox_FuelType.AutoRoundedCorners = true;
             this.comboBox_FuelType.BackColor = System.Drawing.Color.Transparent;
             this.comboBox_FuelType.BorderRadius = 17;
+            this.comboBox_FuelType.DataSource = new Car_Rental_Management.Classes.FuelType[] {
+        Car_Rental_Management.Classes.FuelType.Gas,
+        Car_Rental_Management.Classes.FuelType.Diesel,
+        Car_Rental_Management.Classes.FuelType.Electric,
+        Car_Rental_Management.Classes.FuelType.Hybrid,
+        Car_Rental_Management.Classes.FuelType.Hydrogen,
+        Car_Rental_Management.Classes.FuelType.Other};
             this.comboBox_FuelType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBox_FuelType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_FuelType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -259,11 +266,9 @@ namespace Car_Rental_Management
             this.comboBox_FuelType.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.comboBox_FuelType.ForeColor = System.Drawing.Color.Black;
             this.comboBox_FuelType.ItemHeight = 30;
-            this.comboBox_FuelType.DataSource = Enum.GetValues(typeof(FuelType));
             this.comboBox_FuelType.Location = new System.Drawing.Point(245, 413);
             this.comboBox_FuelType.Name = "comboBox_FuelType";
             this.comboBox_FuelType.Size = new System.Drawing.Size(372, 36);
-            this.comboBox_FuelType.StartIndex = 0;
             this.comboBox_FuelType.TabIndex = 30;
             // 
             // textBox_Color
@@ -299,6 +304,7 @@ namespace Car_Rental_Management
             this.textBox_LicenseNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.textBox_LicenseNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textBox_LicenseNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox_LicenseNumber.Enabled = false;
             this.textBox_LicenseNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBox_LicenseNumber.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.textBox_LicenseNumber.ForeColor = System.Drawing.Color.Black;
@@ -417,6 +423,10 @@ namespace Car_Rental_Management
             this.comboBox_Status.AutoRoundedCorners = true;
             this.comboBox_Status.BackColor = System.Drawing.Color.Transparent;
             this.comboBox_Status.BorderRadius = 17;
+            this.comboBox_Status.DataSource = new Car_Rental_Management.Classes.Status[] {
+            Car_Rental_Management.Classes.Status.Rented,
+            Car_Rental_Management.Classes.Status.Available,
+            Car_Rental_Management.Classes.Status.Maintenance};
             this.comboBox_Status.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBox_Status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Status.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -424,11 +434,9 @@ namespace Car_Rental_Management
             this.comboBox_Status.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.comboBox_Status.ForeColor = System.Drawing.Color.Black;
             this.comboBox_Status.ItemHeight = 30;
-            this.comboBox_Status.DataSource = Enum.GetValues(typeof(Status));
             this.comboBox_Status.Location = new System.Drawing.Point(891, 588);
             this.comboBox_Status.Name = "comboBox_Status";
             this.comboBox_Status.Size = new System.Drawing.Size(372, 36);
-            this.comboBox_Status.StartIndex = 0;
             this.comboBox_Status.TabIndex = 46;
             // 
             // comboBox_Condition
@@ -436,6 +444,12 @@ namespace Car_Rental_Management
             this.comboBox_Condition.AutoRoundedCorners = true;
             this.comboBox_Condition.BackColor = System.Drawing.Color.Transparent;
             this.comboBox_Condition.BorderRadius = 17;
+            this.comboBox_Condition.DataSource = new Car_Rental_Management.Classes.Condition[] {
+            Car_Rental_Management.Classes.Condition.New,
+            Car_Rental_Management.Classes.Condition.Old,
+            Car_Rental_Management.Classes.Condition.Repairing,
+            Car_Rental_Management.Classes.Condition.Breakdown,
+            Car_Rental_Management.Classes.Condition.Else};
             this.comboBox_Condition.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBox_Condition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Condition.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -443,11 +457,9 @@ namespace Car_Rental_Management
             this.comboBox_Condition.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.comboBox_Condition.ForeColor = System.Drawing.Color.Black;
             this.comboBox_Condition.ItemHeight = 30;
-            this.comboBox_Condition.DataSource = Enum.GetValues(typeof(Condition));
             this.comboBox_Condition.Location = new System.Drawing.Point(891, 515);
             this.comboBox_Condition.Name = "comboBox_Condition";
             this.comboBox_Condition.Size = new System.Drawing.Size(372, 36);
-            this.comboBox_Condition.StartIndex = 0;
             this.comboBox_Condition.TabIndex = 45;
             // 
             // textBox_Year
@@ -524,6 +536,9 @@ namespace Car_Rental_Management
             this.comboBox_Transmission.AutoRoundedCorners = true;
             this.comboBox_Transmission.BackColor = System.Drawing.Color.Transparent;
             this.comboBox_Transmission.BorderRadius = 17;
+            this.comboBox_Transmission.DataSource = new Car_Rental_Management.Classes.Transmission[] {
+            Car_Rental_Management.Classes.Transmission.Manual,
+            Car_Rental_Management.Classes.Transmission.Automatic};
             this.comboBox_Transmission.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBox_Transmission.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Transmission.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -531,11 +546,9 @@ namespace Car_Rental_Management
             this.comboBox_Transmission.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.comboBox_Transmission.ForeColor = System.Drawing.Color.Black;
             this.comboBox_Transmission.ItemHeight = 30;
-            this.comboBox_Transmission.DataSource = Enum.GetValues(typeof(Transmission));
             this.comboBox_Transmission.Location = new System.Drawing.Point(891, 180);
             this.comboBox_Transmission.Name = "comboBox_Transmission";
             this.comboBox_Transmission.Size = new System.Drawing.Size(372, 36);
-            this.comboBox_Transmission.StartIndex = 0;
             this.comboBox_Transmission.TabIndex = 41;
             // 
             // checkBox_SoundProof
