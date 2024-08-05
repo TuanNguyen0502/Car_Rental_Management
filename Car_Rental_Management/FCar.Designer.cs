@@ -95,6 +95,7 @@
             this.comboBox_Transmission.Size = new System.Drawing.Size(246, 56);
             this.comboBox_Transmission.StartIndex = 0;
             this.comboBox_Transmission.TabIndex = 3;
+            this.comboBox_Transmission.SelectedIndexChanged += new System.EventHandler(this.comboBox_Transmission_SelectedIndexChanged);
             // 
             // comboBox_FuelType
             // 
@@ -119,6 +120,7 @@
             this.comboBox_FuelType.Size = new System.Drawing.Size(218, 56);
             this.comboBox_FuelType.StartIndex = 0;
             this.comboBox_FuelType.TabIndex = 4;
+            this.comboBox_FuelType.SelectedIndexChanged += new System.EventHandler(this.comboBox_FuelType_SelectedIndexChanged);
             // 
             // button_Add
             // 
@@ -333,6 +335,7 @@
             this.button_Search.Name = "button_Search";
             this.button_Search.Size = new System.Drawing.Size(80, 60);
             this.button_Search.TabIndex = 1;
+            this.button_Search.Click += new System.EventHandler(this.button_Search_Click);
             // 
             // flowLayoutPanel_Center
             // 
