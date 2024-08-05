@@ -46,6 +46,7 @@
             this.button_Reload = new Guna.UI2.WinForms.Guna2Button();
             this.button_Search = new Guna.UI2.WinForms.Guna2Button();
             this.flowLayoutPanel_Center = new System.Windows.Forms.FlowLayoutPanel();
+            this.comboBox_Status = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel_Top.SuspendLayout();
             this.SuspendLayout();
@@ -90,9 +91,9 @@
             "Transmission (All)",
             "Manual",
             "Automatic"});
-            this.comboBox_Transmission.Location = new System.Drawing.Point(521, 19);
+            this.comboBox_Transmission.Location = new System.Drawing.Point(487, 19);
             this.comboBox_Transmission.Name = "comboBox_Transmission";
-            this.comboBox_Transmission.Size = new System.Drawing.Size(246, 56);
+            this.comboBox_Transmission.Size = new System.Drawing.Size(212, 56);
             this.comboBox_Transmission.StartIndex = 0;
             this.comboBox_Transmission.TabIndex = 3;
             this.comboBox_Transmission.SelectedIndexChanged += new System.EventHandler(this.comboBox_Transmission_SelectedIndexChanged);
@@ -115,9 +116,9 @@
             "Gas",
             "Diesel Oil",
             "Electricity"});
-            this.comboBox_FuelType.Location = new System.Drawing.Point(787, 19);
+            this.comboBox_FuelType.Location = new System.Drawing.Point(705, 19);
             this.comboBox_FuelType.Name = "comboBox_FuelType";
-            this.comboBox_FuelType.Size = new System.Drawing.Size(218, 56);
+            this.comboBox_FuelType.Size = new System.Drawing.Size(178, 56);
             this.comboBox_FuelType.StartIndex = 0;
             this.comboBox_FuelType.TabIndex = 4;
             this.comboBox_FuelType.SelectedIndexChanged += new System.EventHandler(this.comboBox_FuelType_SelectedIndexChanged);
@@ -133,7 +134,7 @@
             this.button_Add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
             this.button_Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.button_Add.ForeColor = System.Drawing.Color.White;
-            this.button_Add.Location = new System.Drawing.Point(1050, 19);
+            this.button_Add.Location = new System.Drawing.Point(1083, 19);
             this.button_Add.Name = "button_Add";
             this.button_Add.Size = new System.Drawing.Size(118, 60);
             this.button_Add.TabIndex = 5;
@@ -282,6 +283,7 @@
             // 
             // panel_Top
             // 
+            this.panel_Top.Controls.Add(this.comboBox_Status);
             this.panel_Top.Controls.Add(this.button_Add);
             this.panel_Top.Controls.Add(this.tableLayoutPanel1);
             this.panel_Top.Controls.Add(this.textBox_Search);
@@ -310,7 +312,7 @@
             this.button_Reload.ForeColor = System.Drawing.Color.White;
             this.button_Reload.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
             this.button_Reload.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_48;
-            this.button_Reload.Location = new System.Drawing.Point(417, 19);
+            this.button_Reload.Location = new System.Drawing.Point(401, 19);
             this.button_Reload.Name = "button_Reload";
             this.button_Reload.Size = new System.Drawing.Size(80, 60);
             this.button_Reload.TabIndex = 2;
@@ -348,6 +350,31 @@
             this.flowLayoutPanel_Center.Size = new System.Drawing.Size(1213, 498);
             this.flowLayoutPanel_Center.TabIndex = 2;
             this.flowLayoutPanel_Center.WrapContents = false;
+            // 
+            // comboBox_Status
+            // 
+            this.comboBox_Status.AutoRoundedCorners = true;
+            this.comboBox_Status.BackColor = System.Drawing.Color.Transparent;
+            this.comboBox_Status.BorderRadius = 27;
+            this.comboBox_Status.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBox_Status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Status.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(139)))), ((int)(((byte)(254)))));
+            this.comboBox_Status.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBox_Status.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBox_Status.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBox_Status.ForeColor = System.Drawing.Color.White;
+            this.comboBox_Status.ItemHeight = 50;
+            this.comboBox_Status.Items.AddRange(new object[] {
+            "Status (All)",
+            "Rented",
+            "Available",
+            "Maintenance"});
+            this.comboBox_Status.Location = new System.Drawing.Point(889, 19);
+            this.comboBox_Status.Name = "comboBox_Status";
+            this.comboBox_Status.Size = new System.Drawing.Size(178, 56);
+            this.comboBox_Status.StartIndex = 1;
+            this.comboBox_Status.TabIndex = 7;
+            this.comboBox_Status.SelectedIndexChanged += new System.EventHandler(this.comboBox_Status_SelectedIndexChanged);
             // 
             // FCar
             // 
@@ -388,5 +415,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBox_Status;
     }
 }

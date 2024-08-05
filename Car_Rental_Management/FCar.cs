@@ -195,5 +195,29 @@ namespace Car_Rental_Management
             flowLayoutPanel_Center.Controls.Clear();
             LoadData(textBox_Search.Text);
         }
+
+        private void comboBox_Status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox_Status.SelectedIndex == 0) // Status (All)
+            {
+                flowLayoutPanel_Center.Controls.Clear();
+                LoadData();
+            }
+            else if (comboBox_Status.SelectedIndex == 1) // Rented
+            {
+                flowLayoutPanel_Center.Controls.Clear();
+                LoadData(Status.Rented.ToString());
+            }
+            else if (comboBox_Status.SelectedIndex == 2) // Available
+            {
+                flowLayoutPanel_Center.Controls.Clear();
+                LoadData(Status.Available.ToString());
+            }
+            else if (comboBox_Status.SelectedIndex == 3) // Maintenance
+            {
+                flowLayoutPanel_Center.Controls.Clear();
+                LoadData(Status.Maintenance.ToString());
+            }
+        }
     }
 }
