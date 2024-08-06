@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panel_Top = new Guna.UI2.WinForms.Guna2Panel();
-            this.tlpProperties = new System.Windows.Forms.TableLayoutPanel();
-            this.flowLayoutPanel_Center = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbb_Sex = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.tlpProperties = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_FullName = new System.Windows.Forms.Label();
             this.lbl_Gender = new System.Windows.Forms.Label();
             this.lbl_Phone = new System.Windows.Forms.Label();
             this.lbl_CCCD = new System.Windows.Forms.Label();
             this.lbl_DrivingLicense = new System.Windows.Forms.Label();
             this.lbl_Email = new System.Windows.Forms.Label();
+            this.flowLayoutPanel_Center = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_Top.SuspendLayout();
             this.tlpProperties.SuspendLayout();
             this.SuspendLayout();
@@ -61,45 +61,23 @@
             this.panel_Top.Size = new System.Drawing.Size(1078, 151);
             this.panel_Top.TabIndex = 3;
             // 
-            // tlpProperties
+            // btnAdd
             // 
-            this.tlpProperties.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tlpProperties.ColumnCount = 8;
-            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.5F));
-            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.5F));
-            this.tlpProperties.Controls.Add(this.lbl_FullName, 1, 0);
-            this.tlpProperties.Controls.Add(this.lbl_Gender, 2, 0);
-            this.tlpProperties.Controls.Add(this.lbl_Phone, 3, 0);
-            this.tlpProperties.Controls.Add(this.lbl_CCCD, 4, 0);
-            this.tlpProperties.Controls.Add(this.lbl_DrivingLicense, 5, 0);
-            this.tlpProperties.Controls.Add(this.lbl_Email, 6, 0);
-            this.tlpProperties.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tlpProperties.ForeColor = System.Drawing.Color.Black;
-            this.tlpProperties.Location = new System.Drawing.Point(0, 97);
-            this.tlpProperties.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tlpProperties.Name = "tlpProperties";
-            this.tlpProperties.RowCount = 1;
-            this.tlpProperties.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpProperties.Size = new System.Drawing.Size(1078, 54);
-            this.tlpProperties.TabIndex = 6;
-            // 
-            // flowLayoutPanel_Center
-            // 
-            this.flowLayoutPanel_Center.AutoScroll = true;
-            this.flowLayoutPanel_Center.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel_Center.Location = new System.Drawing.Point(0, 151);
-            this.flowLayoutPanel_Center.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.flowLayoutPanel_Center.Name = "flowLayoutPanel_Center";
-            this.flowLayoutPanel_Center.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.flowLayoutPanel_Center.Size = new System.Drawing.Size(1155, 420);
-            this.flowLayoutPanel_Center.TabIndex = 4;
-            this.flowLayoutPanel_Center.WrapContents = false;
+            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAdd.FillColor = System.Drawing.Color.LimeGreen;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Image = global::Car_Rental_Management.Properties.Resources.icons8_add_30;
+            this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAdd.Location = new System.Drawing.Point(989, 27);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(118, 36);
+            this.btnAdd.TabIndex = 12;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtSearch
             // 
@@ -148,6 +126,7 @@
             this.cbb_Sex.StartIndex = 0;
             this.cbb_Sex.TabIndex = 11;
             this.cbb_Sex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cbb_Sex.SelectedIndexChanged += new System.EventHandler(this.cbb_Sex_SelectedIndexChanged);
             this.cbb_Sex.Click += new System.EventHandler(this.cbb_Sex_SelectedIndexChanged);
             // 
             // btnSearch
@@ -180,23 +159,33 @@
             this.btnRefresh.TabIndex = 10;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // btnAdd
+            // tlpProperties
             // 
-            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdd.FillColor = System.Drawing.Color.LimeGreen;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Image = global::Car_Rental_Management.Properties.Resources.icons8_add_30;
-            this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAdd.Location = new System.Drawing.Point(989, 27);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(118, 36);
-            this.btnAdd.TabIndex = 12;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.tlpProperties.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tlpProperties.ColumnCount = 8;
+            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.5F));
+            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpProperties.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.5F));
+            this.tlpProperties.Controls.Add(this.lbl_FullName, 1, 0);
+            this.tlpProperties.Controls.Add(this.lbl_Gender, 2, 0);
+            this.tlpProperties.Controls.Add(this.lbl_Phone, 3, 0);
+            this.tlpProperties.Controls.Add(this.lbl_CCCD, 4, 0);
+            this.tlpProperties.Controls.Add(this.lbl_DrivingLicense, 5, 0);
+            this.tlpProperties.Controls.Add(this.lbl_Email, 6, 0);
+            this.tlpProperties.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tlpProperties.ForeColor = System.Drawing.Color.Black;
+            this.tlpProperties.Location = new System.Drawing.Point(0, 97);
+            this.tlpProperties.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tlpProperties.Name = "tlpProperties";
+            this.tlpProperties.RowCount = 1;
+            this.tlpProperties.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpProperties.Size = new System.Drawing.Size(1078, 54);
+            this.tlpProperties.TabIndex = 6;
             // 
             // lbl_FullName
             // 
@@ -270,6 +259,18 @@
             this.lbl_Email.Size = new System.Drawing.Size(56, 20);
             this.lbl_Email.TabIndex = 12;
             this.lbl_Email.Text = "Email";
+            // 
+            // flowLayoutPanel_Center
+            // 
+            this.flowLayoutPanel_Center.AutoScroll = true;
+            this.flowLayoutPanel_Center.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel_Center.Location = new System.Drawing.Point(0, 151);
+            this.flowLayoutPanel_Center.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flowLayoutPanel_Center.Name = "flowLayoutPanel_Center";
+            this.flowLayoutPanel_Center.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.flowLayoutPanel_Center.Size = new System.Drawing.Size(1155, 420);
+            this.flowLayoutPanel_Center.TabIndex = 4;
+            this.flowLayoutPanel_Center.WrapContents = false;
             // 
             // FClient
             // 
