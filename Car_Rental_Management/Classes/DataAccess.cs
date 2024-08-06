@@ -93,11 +93,6 @@ namespace Car_Rental_Management.Classes
             new Mercedes("Mercedes 5", "56J5-5678", "Red", Classes.FuelType.Hydrogen, "650 L", "75 Km/L", 4, Classes.Transmission.Automatic, "Hydrogen", "350 HP", "2024", Classes.Condition.Else, Classes.Status.Rented, true),
         };
 
-        public static List<Status> Statuses = new List<Status>
-        {
-
-        };
-
         public static List<VinFast> VinFasts = new List<VinFast>
         {
             // VinFast
@@ -126,10 +121,58 @@ namespace Car_Rental_Management.Classes
             Cars.AddRange(VinFasts.Cast<Car>());
             return Cars;
         }
+
         public static List<Account> Accounts = new List<Account>
         {
             new Account("admin", "admin", "Emp001"),
         };
 
+        public static void AddFord(Ford ford)
+        {
+            Fords.Add(ford);
+        }
+
+        public static void UpdateFord(Ford ford)
+        {
+            Ford f = Fords.Find(x => x.LicenseNumber == ford.LicenseNumber);
+            int index = Fords.IndexOf(f);
+            Fords[index] = ford;
+        }
+
+        public static void AddMazda(Mazda mazda)
+        {
+            Mazdas.Add(mazda);
+        }
+
+        public static void UpdateMazda(Mazda mazda)
+        {
+            Mazda m = Mazdas.Find(x => x.LicenseNumber == mazda.LicenseNumber);
+            int index = Mazdas.IndexOf(m);
+            Mazdas[index] = mazda;
+        }
+
+        public static void AddMercedes(Mercedes mercedes)
+        {
+            Mercedeses.Add(mercedes);
+        }
+
+        public static void UpdateMercedes(Mercedes mercedes)
+        {
+            Mercedes m = Mercedeses.Find(x => x.LicenseNumber == mercedes.LicenseNumber);
+            int index = Mercedeses.IndexOf(m);
+            Mercedeses[index] = mercedes;
+        }
+
+        public static void AddVinFast(VinFast vinFast)
+        {
+            VinFasts.Add(vinFast);
+        }
+
+        public static void UpdateVinFast(VinFast vinFast)
+        {
+            VinFast v = VinFasts.Find(x => x.LicenseNumber == vinFast.LicenseNumber);
+            int index = VinFasts.IndexOf(v);
+            VinFasts[index] = vinFast;
+        }
     }
 }

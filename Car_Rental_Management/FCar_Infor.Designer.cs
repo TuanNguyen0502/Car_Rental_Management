@@ -1,4 +1,7 @@
-﻿namespace Car_Rental_Management
+﻿using Car_Rental_Management.Classes;
+using System;
+
+namespace Car_Rental_Management
 {
     partial class FCar_Infor
     {
@@ -64,9 +67,13 @@
             this.checkBox_Electric = new Guna.UI2.WinForms.Guna2CheckBox();
             this.label_USBport = new System.Windows.Forms.Label();
             this.textBox_USBport = new Guna.UI2.WinForms.Guna2TextBox();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button_Add = new Guna.UI2.WinForms.Guna2Button();
+            this.button_Update = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -245,6 +252,13 @@
             this.comboBox_FuelType.AutoRoundedCorners = true;
             this.comboBox_FuelType.BackColor = System.Drawing.Color.Transparent;
             this.comboBox_FuelType.BorderRadius = 17;
+            this.comboBox_FuelType.DataSource = new Car_Rental_Management.Classes.FuelType[] {
+        Car_Rental_Management.Classes.FuelType.Gas,
+        Car_Rental_Management.Classes.FuelType.Diesel,
+        Car_Rental_Management.Classes.FuelType.Electric,
+        Car_Rental_Management.Classes.FuelType.Hybrid,
+        Car_Rental_Management.Classes.FuelType.Hydrogen,
+        Car_Rental_Management.Classes.FuelType.Other};
             this.comboBox_FuelType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBox_FuelType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_FuelType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -252,17 +266,9 @@
             this.comboBox_FuelType.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.comboBox_FuelType.ForeColor = System.Drawing.Color.Black;
             this.comboBox_FuelType.ItemHeight = 30;
-            this.comboBox_FuelType.Items.AddRange(new object[] {
-            "Gas",
-            "Diesel",
-            "Electric",
-            "Hybrid",
-            "Hydrogen",
-            "Other"});
             this.comboBox_FuelType.Location = new System.Drawing.Point(245, 413);
             this.comboBox_FuelType.Name = "comboBox_FuelType";
             this.comboBox_FuelType.Size = new System.Drawing.Size(372, 36);
-            this.comboBox_FuelType.StartIndex = 0;
             this.comboBox_FuelType.TabIndex = 30;
             // 
             // textBox_Color
@@ -298,6 +304,7 @@
             this.textBox_LicenseNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.textBox_LicenseNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textBox_LicenseNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox_LicenseNumber.Enabled = false;
             this.textBox_LicenseNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBox_LicenseNumber.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.textBox_LicenseNumber.ForeColor = System.Drawing.Color.Black;
@@ -416,6 +423,10 @@
             this.comboBox_Status.AutoRoundedCorners = true;
             this.comboBox_Status.BackColor = System.Drawing.Color.Transparent;
             this.comboBox_Status.BorderRadius = 17;
+            this.comboBox_Status.DataSource = new Car_Rental_Management.Classes.Status[] {
+            Car_Rental_Management.Classes.Status.Rented,
+            Car_Rental_Management.Classes.Status.Available,
+            Car_Rental_Management.Classes.Status.Maintenance};
             this.comboBox_Status.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBox_Status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Status.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -423,14 +434,9 @@
             this.comboBox_Status.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.comboBox_Status.ForeColor = System.Drawing.Color.Black;
             this.comboBox_Status.ItemHeight = 30;
-            this.comboBox_Status.Items.AddRange(new object[] {
-            "Rented",
-            "Available",
-            "Maintenance"});
             this.comboBox_Status.Location = new System.Drawing.Point(891, 588);
             this.comboBox_Status.Name = "comboBox_Status";
             this.comboBox_Status.Size = new System.Drawing.Size(372, 36);
-            this.comboBox_Status.StartIndex = 0;
             this.comboBox_Status.TabIndex = 46;
             // 
             // comboBox_Condition
@@ -438,6 +444,12 @@
             this.comboBox_Condition.AutoRoundedCorners = true;
             this.comboBox_Condition.BackColor = System.Drawing.Color.Transparent;
             this.comboBox_Condition.BorderRadius = 17;
+            this.comboBox_Condition.DataSource = new Car_Rental_Management.Classes.Condition[] {
+            Car_Rental_Management.Classes.Condition.New,
+            Car_Rental_Management.Classes.Condition.Old,
+            Car_Rental_Management.Classes.Condition.Repairing,
+            Car_Rental_Management.Classes.Condition.Breakdown,
+            Car_Rental_Management.Classes.Condition.Else};
             this.comboBox_Condition.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBox_Condition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Condition.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -445,16 +457,9 @@
             this.comboBox_Condition.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.comboBox_Condition.ForeColor = System.Drawing.Color.Black;
             this.comboBox_Condition.ItemHeight = 30;
-            this.comboBox_Condition.Items.AddRange(new object[] {
-            "New",
-            "Old",
-            "Repairing",
-            "Breakdown",
-            "Else..."});
             this.comboBox_Condition.Location = new System.Drawing.Point(891, 515);
             this.comboBox_Condition.Name = "comboBox_Condition";
             this.comboBox_Condition.Size = new System.Drawing.Size(372, 36);
-            this.comboBox_Condition.StartIndex = 0;
             this.comboBox_Condition.TabIndex = 45;
             // 
             // textBox_Year
@@ -531,6 +536,9 @@
             this.comboBox_Transmission.AutoRoundedCorners = true;
             this.comboBox_Transmission.BackColor = System.Drawing.Color.Transparent;
             this.comboBox_Transmission.BorderRadius = 17;
+            this.comboBox_Transmission.DataSource = new Car_Rental_Management.Classes.Transmission[] {
+            Car_Rental_Management.Classes.Transmission.Manual,
+            Car_Rental_Management.Classes.Transmission.Automatic};
             this.comboBox_Transmission.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBox_Transmission.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Transmission.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -538,13 +546,9 @@
             this.comboBox_Transmission.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.comboBox_Transmission.ForeColor = System.Drawing.Color.Black;
             this.comboBox_Transmission.ItemHeight = 30;
-            this.comboBox_Transmission.Items.AddRange(new object[] {
-            "Manual",
-            "Automatic"});
             this.comboBox_Transmission.Location = new System.Drawing.Point(891, 180);
             this.comboBox_Transmission.Name = "comboBox_Transmission";
             this.comboBox_Transmission.Size = new System.Drawing.Size(372, 36);
-            this.comboBox_Transmission.StartIndex = 0;
             this.comboBox_Transmission.TabIndex = 41;
             // 
             // checkBox_SoundProof
@@ -669,12 +673,59 @@
             this.textBox_USBport.TabIndex = 55;
             this.textBox_USBport.Visible = false;
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.button_Add);
+            this.flowLayoutPanel2.Controls.Add(this.button_Update);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(849, 858);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(414, 100);
+            this.flowLayoutPanel2.TabIndex = 58;
+            // 
+            // button_Add
+            // 
+            this.button_Add.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Add.AutoRoundedCorners = true;
+            this.button_Add.BorderRadius = 21;
+            this.button_Add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.button_Add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.button_Add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.button_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button_Add.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.button_Add.ForeColor = System.Drawing.Color.White;
+            this.button_Add.Location = new System.Drawing.Point(3, 3);
+            this.button_Add.Name = "button_Add";
+            this.button_Add.Size = new System.Drawing.Size(180, 45);
+            this.button_Add.TabIndex = 0;
+            this.button_Add.Text = "Add";
+            this.button_Add.Visible = false;
+            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
+            // 
+            // button_Update
+            // 
+            this.button_Update.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Update.AutoRoundedCorners = true;
+            this.button_Update.BorderRadius = 21;
+            this.button_Update.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.button_Update.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.button_Update.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.button_Update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button_Update.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.button_Update.ForeColor = System.Drawing.Color.White;
+            this.button_Update.Location = new System.Drawing.Point(189, 3);
+            this.button_Update.Name = "button_Update";
+            this.button_Update.Size = new System.Drawing.Size(180, 45);
+            this.button_Update.TabIndex = 1;
+            this.button_Update.Text = "Update";
+            this.button_Update.Click += new System.EventHandler(this.button_Update_Click);
+            // 
             // FCar_Infor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1310, 925);
+            this.ClientSize = new System.Drawing.Size(1310, 1050);
+            this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox_USBport);
@@ -707,14 +758,15 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FCar_Infor";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Car Information";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -758,5 +810,8 @@
         private Guna.UI2.WinForms.Guna2CheckBox checkBox_Electric;
         private System.Windows.Forms.Label label_USBport;
         private Guna.UI2.WinForms.Guna2TextBox textBox_USBport;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private Guna.UI2.WinForms.Guna2Button button_Add;
+        private Guna.UI2.WinForms.Guna2Button button_Update;
     }
 }
