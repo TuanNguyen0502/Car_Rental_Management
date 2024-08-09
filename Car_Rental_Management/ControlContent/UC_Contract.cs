@@ -29,15 +29,12 @@ namespace Car_Rental_Management.ControlContent
         }
         private void SetData()
         {
-            TimeSpan difference = _contract.DateReturn - DateTime.Now;
-
-            // Lấy số ngày từ đối tượng TimeSpan
-            int numberOfDays_Hire = difference.Days;
-
+            TimeSpan number_of_hire = _contract.DateReturn - _contract.DateHire;
+            int number = number_of_hire.Days;
             this.lbl_DayRent.Text = _contract.DateHire.ToShortDateString();
             this.lbl_Vehicle.Text = _contract.Car.Name;
             this.lbl_Client.Text = _contract.Customer.FullName;
-            if(numberOfDays_Hire > 0)
+            if(_contract.DateReturn.Day - DateTime.Now.Day > 0)
             {
                 this.lbl_Status.Text = "Đang cho thuê";
             }
@@ -45,10 +42,10 @@ namespace Car_Rental_Management.ControlContent
             {
                 this.lbl_Status.Text = "Đã trả";
             }
-            this.lbl_ReturnDate.Text = _contract.DateReturn.ToShortDateString();
+            this.lbl_ReturnDate.Text = _contract.DateReturn.ToString();
             this.lbl_Price.Text = _contract.RentCost;
-            this.lbl_DayNumbers.Text = numberOfDays_Hire.ToString();
-            this.lbl_Total.Text = Convert.ToString(numberOfDays_Hire * Convert.ToDouble(_contract.RentCost));
+            this.lbl_DayNumbers.Text = number_of_hire.ToString();
+            this.lbl_Total.Text = Convert.ToString(number * Convert.ToDouble(_contract.RentCost));
                
         }
     }

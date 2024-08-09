@@ -34,13 +34,11 @@
             this.ptc_Ava = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbb_StatusRent = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Filter = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Reload = new Guna.UI2.WinForms.Guna2Button();
             this.flp_Contents = new System.Windows.Forms.FlowLayoutPanel();
-            this.uC_Contract1 = new Car_Rental_Management.ControlContent.UC_Contract();
             this.pnl_Tasbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptc_Ava)).BeginInit();
-            this.flp_Contents.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -52,8 +50,8 @@
             this.pnl_Tasbar.Controls.Add(this.ptc_Ava);
             this.pnl_Tasbar.Controls.Add(this.txtSearch);
             this.pnl_Tasbar.Controls.Add(this.cbb_StatusRent);
-            this.pnl_Tasbar.Controls.Add(this.guna2Button1);
-            this.pnl_Tasbar.Controls.Add(this.guna2Button2);
+            this.pnl_Tasbar.Controls.Add(this.btn_Filter);
+            this.pnl_Tasbar.Controls.Add(this.btn_Reload);
             this.pnl_Tasbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Tasbar.Location = new System.Drawing.Point(0, 0);
             this.pnl_Tasbar.Name = "pnl_Tasbar";
@@ -104,57 +102,52 @@
             this.cbb_StatusRent.ItemHeight = 30;
             this.cbb_StatusRent.Items.AddRange(new object[] {
             "Tất cả",
-            "Đang thuê",
+            "Đang cho thuê",
             "Đã trả",
             "Đã đặt cọc"});
             this.cbb_StatusRent.Location = new System.Drawing.Point(539, 16);
             this.cbb_StatusRent.Name = "cbb_StatusRent";
             this.cbb_StatusRent.Size = new System.Drawing.Size(226, 36);
             this.cbb_StatusRent.TabIndex = 7;
+            this.cbb_StatusRent.SelectedIndexChanged += new System.EventHandler(this.cbb_StatusRent_SelectedIndexChanged);
             // 
-            // guna2Button1
+            // btn_Filter
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = global::Car_Rental_Management.Properties.Resources.icons8_find_16;
-            this.guna2Button1.Location = new System.Drawing.Point(428, 17);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(48, 35);
-            this.guna2Button1.TabIndex = 5;
+            this.btn_Filter.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Filter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Filter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Filter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Filter.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Filter.ForeColor = System.Drawing.Color.White;
+            this.btn_Filter.Image = global::Car_Rental_Management.Properties.Resources.icons8_find_16;
+            this.btn_Filter.Location = new System.Drawing.Point(428, 17);
+            this.btn_Filter.Name = "btn_Filter";
+            this.btn_Filter.Size = new System.Drawing.Size(48, 35);
+            this.btn_Filter.TabIndex = 5;
+            this.btn_Filter.Click += new System.EventHandler(this.btn_Filter_Click);
             // 
-            // guna2Button2
+            // btn_Reload
             // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_16;
-            this.guna2Button2.Location = new System.Drawing.Point(485, 16);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(48, 35);
-            this.guna2Button2.TabIndex = 6;
+            this.btn_Reload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Reload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Reload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Reload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Reload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Reload.ForeColor = System.Drawing.Color.White;
+            this.btn_Reload.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_16;
+            this.btn_Reload.Location = new System.Drawing.Point(485, 16);
+            this.btn_Reload.Name = "btn_Reload";
+            this.btn_Reload.Size = new System.Drawing.Size(48, 35);
+            this.btn_Reload.TabIndex = 6;
+            this.btn_Reload.Click += new System.EventHandler(this.btn_Reload_Click);
             // 
             // flp_Contents
             // 
-            this.flp_Contents.Controls.Add(this.uC_Contract1);
             this.flp_Contents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flp_Contents.Location = new System.Drawing.Point(0, 77);
             this.flp_Contents.Name = "flp_Contents";
             this.flp_Contents.Size = new System.Drawing.Size(1362, 652);
             this.flp_Contents.TabIndex = 0;
-            // 
-            // uC_Contract1
-            // 
-            this.uC_Contract1.Location = new System.Drawing.Point(3, 3);
-            this.uC_Contract1.Name = "uC_Contract1";
-            this.uC_Contract1.Size = new System.Drawing.Size(1358, 57);
-            this.uC_Contract1.TabIndex = 0;
             // 
             // FContract
             // 
@@ -167,9 +160,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FContract";
             this.Text = "FContract";
+            this.Load += new System.EventHandler(this.FContract_Load);
             this.pnl_Tasbar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptc_Ava)).EndInit();
-            this.flp_Contents.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -181,10 +174,9 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox ptc_Ava;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2ComboBox cbb_StatusRent;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btn_Filter;
+        private Guna.UI2.WinForms.Guna2Button btn_Reload;
         private System.Windows.Forms.FlowLayoutPanel flp_Contents;
         private ControlContent.UC_Contract uC_ContractContent1;
-        private ControlContent.UC_Contract uC_Contract1;
     }
 }

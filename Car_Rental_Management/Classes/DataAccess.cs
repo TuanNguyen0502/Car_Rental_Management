@@ -109,7 +109,8 @@ namespace Car_Rental_Management.Classes
 
         public static List<Contract> Contracts = new List<Contract>
         {
-            new Contract("Contract001", "Thuê xe để đi du lịch", new DateTime(2024, 07,30), new DateTime(2024, 08,02), "10000", Fords[0], Customers[0])
+            new Contract("Contract001", "Thuê xe để đi du lịch", new DateTime(2024, 07,30), new DateTime(2024, 08,02), "10000", Fords[0], Customers[0]),
+            new Contract("Contract002", "Thuê xe để đi phượt", new DateTime(2024, 08,09), new DateTime(2024, 09,12), "20000", Mercedeses[0], Customers[1])
         };
 
         public static List<Car> GetAllCars()
