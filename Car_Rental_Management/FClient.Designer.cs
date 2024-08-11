@@ -58,7 +58,7 @@
             this.panel_Top.Location = new System.Drawing.Point(0, 0);
             this.panel_Top.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_Top.Name = "panel_Top";
-            this.panel_Top.Size = new System.Drawing.Size(1078, 151);
+            this.panel_Top.Size = new System.Drawing.Size(1213, 189);
             this.panel_Top.TabIndex = 3;
             // 
             // btnAdd
@@ -72,9 +72,10 @@
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Image = global::Car_Rental_Management.Properties.Resources.icons8_add_30;
             this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAdd.Location = new System.Drawing.Point(989, 27);
+            this.btnAdd.Location = new System.Drawing.Point(1026, 34);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(118, 36);
+            this.btnAdd.Size = new System.Drawing.Size(133, 45);
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -93,14 +94,14 @@
             this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(38, 27);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch.Location = new System.Drawing.Point(43, 34);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtSearch.PlaceholderText = "Search...";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(265, 36);
+            this.txtSearch.Size = new System.Drawing.Size(298, 45);
             this.txtSearch.TabIndex = 8;
             // 
             // cbb_Sex
@@ -120,9 +121,10 @@
             "Gender(All)",
             "Nam",
             "Nữ"});
-            this.cbb_Sex.Location = new System.Drawing.Point(411, 27);
+            this.cbb_Sex.Location = new System.Drawing.Point(462, 34);
+            this.cbb_Sex.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbb_Sex.Name = "cbb_Sex";
-            this.cbb_Sex.Size = new System.Drawing.Size(175, 36);
+            this.cbb_Sex.Size = new System.Drawing.Size(196, 36);
             this.cbb_Sex.StartIndex = 0;
             this.cbb_Sex.TabIndex = 11;
             this.cbb_Sex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -138,9 +140,10 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::Car_Rental_Management.Properties.Resources.icons8_find_16;
-            this.btnSearch.Location = new System.Drawing.Point(309, 27);
+            this.btnSearch.Location = new System.Drawing.Point(348, 34);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(43, 36);
+            this.btnSearch.Size = new System.Drawing.Size(48, 45);
             this.btnSearch.TabIndex = 9;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -153,9 +156,10 @@
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.Image = global::Car_Rental_Management.Properties.Resources.icons8_refresh_16;
-            this.btnRefresh.Location = new System.Drawing.Point(355, 27);
+            this.btnRefresh.Location = new System.Drawing.Point(399, 34);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(43, 36);
+            this.btnRefresh.Size = new System.Drawing.Size(48, 45);
             this.btnRefresh.TabIndex = 10;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -179,12 +183,12 @@
             this.tlpProperties.Controls.Add(this.lbl_Email, 6, 0);
             this.tlpProperties.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tlpProperties.ForeColor = System.Drawing.Color.Black;
-            this.tlpProperties.Location = new System.Drawing.Point(0, 97);
+            this.tlpProperties.Location = new System.Drawing.Point(0, 121);
             this.tlpProperties.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpProperties.Name = "tlpProperties";
             this.tlpProperties.RowCount = 1;
             this.tlpProperties.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpProperties.Size = new System.Drawing.Size(1078, 54);
+            this.tlpProperties.Size = new System.Drawing.Size(1213, 68);
             this.tlpProperties.TabIndex = 6;
             // 
             // lbl_FullName
@@ -193,9 +197,9 @@
             this.lbl_FullName.AutoSize = true;
             this.lbl_FullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_FullName.ForeColor = System.Drawing.Color.White;
-            this.lbl_FullName.Location = new System.Drawing.Point(133, 17);
+            this.lbl_FullName.Location = new System.Drawing.Point(143, 21);
             this.lbl_FullName.Name = "lbl_FullName";
-            this.lbl_FullName.Size = new System.Drawing.Size(94, 20);
+            this.lbl_FullName.Size = new System.Drawing.Size(118, 25);
             this.lbl_FullName.TabIndex = 3;
             this.lbl_FullName.Text = "Full Name";
             this.lbl_FullName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -206,9 +210,9 @@
             this.lbl_Gender.AutoSize = true;
             this.lbl_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbl_Gender.ForeColor = System.Drawing.Color.White;
-            this.lbl_Gender.Location = new System.Drawing.Point(279, 17);
+            this.lbl_Gender.Location = new System.Drawing.Point(309, 21);
             this.lbl_Gender.Name = "lbl_Gender";
-            this.lbl_Gender.Size = new System.Drawing.Size(70, 20);
+            this.lbl_Gender.Size = new System.Drawing.Size(89, 25);
             this.lbl_Gender.TabIndex = 4;
             this.lbl_Gender.Text = "Gender";
             // 
@@ -218,9 +222,9 @@
             this.lbl_Phone.AutoSize = true;
             this.lbl_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbl_Phone.ForeColor = System.Drawing.Color.White;
-            this.lbl_Phone.Location = new System.Drawing.Point(417, 17);
+            this.lbl_Phone.Location = new System.Drawing.Point(465, 21);
             this.lbl_Phone.Name = "lbl_Phone";
-            this.lbl_Phone.Size = new System.Drawing.Size(61, 20);
+            this.lbl_Phone.Size = new System.Drawing.Size(79, 25);
             this.lbl_Phone.TabIndex = 9;
             this.lbl_Phone.Text = "Phone";
             // 
@@ -230,9 +234,9 @@
             this.lbl_CCCD.AutoSize = true;
             this.lbl_CCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbl_CCCD.ForeColor = System.Drawing.Color.White;
-            this.lbl_CCCD.Location = new System.Drawing.Point(551, 17);
+            this.lbl_CCCD.Location = new System.Drawing.Point(617, 21);
             this.lbl_CCCD.Name = "lbl_CCCD";
-            this.lbl_CCCD.Size = new System.Drawing.Size(62, 20);
+            this.lbl_CCCD.Size = new System.Drawing.Size(76, 25);
             this.lbl_CCCD.TabIndex = 10;
             this.lbl_CCCD.Text = "CCCD";
             // 
@@ -242,9 +246,9 @@
             this.lbl_DrivingLicense.AutoSize = true;
             this.lbl_DrivingLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbl_DrivingLicense.ForeColor = System.Drawing.Color.White;
-            this.lbl_DrivingLicense.Location = new System.Drawing.Point(678, 7);
+            this.lbl_DrivingLicense.Location = new System.Drawing.Point(759, 9);
             this.lbl_DrivingLicense.Name = "lbl_DrivingLicense";
-            this.lbl_DrivingLicense.Size = new System.Drawing.Size(75, 40);
+            this.lbl_DrivingLicense.Size = new System.Drawing.Size(94, 50);
             this.lbl_DrivingLicense.TabIndex = 11;
             this.lbl_DrivingLicense.Text = "Driving License";
             // 
@@ -254,9 +258,9 @@
             this.lbl_Email.AutoSize = true;
             this.lbl_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbl_Email.ForeColor = System.Drawing.Color.White;
-            this.lbl_Email.Location = new System.Drawing.Point(822, 17);
+            this.lbl_Email.Location = new System.Drawing.Point(922, 21);
             this.lbl_Email.Name = "lbl_Email";
-            this.lbl_Email.Size = new System.Drawing.Size(56, 20);
+            this.lbl_Email.Size = new System.Drawing.Size(70, 25);
             this.lbl_Email.TabIndex = 12;
             this.lbl_Email.Text = "Email";
             // 
@@ -264,22 +268,23 @@
             // 
             this.flowLayoutPanel_Center.AutoScroll = true;
             this.flowLayoutPanel_Center.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel_Center.Location = new System.Drawing.Point(0, 151);
+            this.flowLayoutPanel_Center.Location = new System.Drawing.Point(0, 189);
             this.flowLayoutPanel_Center.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel_Center.Name = "flowLayoutPanel_Center";
-            this.flowLayoutPanel_Center.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.flowLayoutPanel_Center.Size = new System.Drawing.Size(1155, 420);
+            this.flowLayoutPanel_Center.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.flowLayoutPanel_Center.Size = new System.Drawing.Size(1213, 525);
             this.flowLayoutPanel_Center.TabIndex = 4;
             this.flowLayoutPanel_Center.WrapContents = false;
             // 
             // FClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 569);
+            this.ClientSize = new System.Drawing.Size(1213, 711);
             this.Controls.Add(this.panel_Top);
             this.Controls.Add(this.flowLayoutPanel_Center);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FClient";
             this.Text = "FClient";
             this.Load += new System.EventHandler(this.FClient_Load);

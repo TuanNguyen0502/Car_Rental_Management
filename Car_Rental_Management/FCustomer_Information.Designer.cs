@@ -61,7 +61,7 @@
             this.lbl_FullName.Location = new System.Drawing.Point(149, 136);
             this.lbl_FullName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_FullName.Name = "lbl_FullName";
-            this.lbl_FullName.Size = new System.Drawing.Size(85, 20);
+            this.lbl_FullName.Size = new System.Drawing.Size(109, 25);
             this.lbl_FullName.TabIndex = 0;
             this.lbl_FullName.Text = "Full Name";
             // 
@@ -94,7 +94,7 @@
             this.lbl_Gender.Location = new System.Drawing.Point(149, 235);
             this.lbl_Gender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Gender.Name = "lbl_Gender";
-            this.lbl_Gender.Size = new System.Drawing.Size(64, 20);
+            this.lbl_Gender.Size = new System.Drawing.Size(83, 25);
             this.lbl_Gender.TabIndex = 2;
             this.lbl_Gender.Text = "Gender";
             // 
@@ -149,7 +149,7 @@
             this.lbl_Birthday.Location = new System.Drawing.Point(149, 329);
             this.lbl_Birthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Birthday.Name = "lbl_Birthday";
-            this.lbl_Birthday.Size = new System.Drawing.Size(105, 20);
+            this.lbl_Birthday.Size = new System.Drawing.Size(131, 25);
             this.lbl_Birthday.TabIndex = 5;
             this.lbl_Birthday.Text = "Date of Birth";
             // 
@@ -178,7 +178,7 @@
             this.lbl_CCCD.Location = new System.Drawing.Point(149, 427);
             this.lbl_CCCD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_CCCD.Name = "lbl_CCCD";
-            this.lbl_CCCD.Size = new System.Drawing.Size(58, 20);
+            this.lbl_CCCD.Size = new System.Drawing.Size(72, 25);
             this.lbl_CCCD.TabIndex = 7;
             this.lbl_CCCD.Text = "CCCD";
             // 
@@ -189,7 +189,7 @@
             this.lbl_Address.Location = new System.Drawing.Point(149, 515);
             this.lbl_Address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Address.Name = "lbl_Address";
-            this.lbl_Address.Size = new System.Drawing.Size(71, 20);
+            this.lbl_Address.Size = new System.Drawing.Size(91, 25);
             this.lbl_Address.TabIndex = 8;
             this.lbl_Address.Text = "Address";
             // 
@@ -244,7 +244,7 @@
             this.lbl_Phone.Location = new System.Drawing.Point(149, 613);
             this.lbl_Phone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Phone.Name = "lbl_Phone";
-            this.lbl_Phone.Size = new System.Drawing.Size(56, 20);
+            this.lbl_Phone.Size = new System.Drawing.Size(74, 25);
             this.lbl_Phone.TabIndex = 10;
             this.lbl_Phone.Text = "Phone";
             // 
@@ -277,7 +277,7 @@
             this.lbl_Email.Location = new System.Drawing.Point(149, 704);
             this.lbl_Email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Email.Name = "lbl_Email";
-            this.lbl_Email.Size = new System.Drawing.Size(51, 20);
+            this.lbl_Email.Size = new System.Drawing.Size(65, 25);
             this.lbl_Email.TabIndex = 12;
             this.lbl_Email.Text = "Email";
             // 
@@ -310,7 +310,7 @@
             this.lbl_DrivingLicense.Location = new System.Drawing.Point(149, 788);
             this.lbl_DrivingLicense.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_DrivingLicense.Name = "lbl_DrivingLicense";
-            this.lbl_DrivingLicense.Size = new System.Drawing.Size(126, 20);
+            this.lbl_DrivingLicense.Size = new System.Drawing.Size(160, 25);
             this.lbl_DrivingLicense.TabIndex = 14;
             this.lbl_DrivingLicense.Text = "Driving License";
             // 
@@ -324,7 +324,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(690, 80);
+            this.guna2Panel1.Size = new System.Drawing.Size(685, 80);
             this.guna2Panel1.TabIndex = 16;
             // 
             // button_Exit
@@ -367,7 +367,7 @@
             this.lbl_Client.Location = new System.Drawing.Point(86, 21);
             this.lbl_Client.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbl_Client.Name = "lbl_Client";
-            this.lbl_Client.Size = new System.Drawing.Size(86, 47);
+            this.lbl_Client.Size = new System.Drawing.Size(106, 56);
             this.lbl_Client.TabIndex = 0;
             this.lbl_Client.Text = "Client";
             // 
@@ -403,7 +403,7 @@
             // 
             // FCustomer_Information
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;

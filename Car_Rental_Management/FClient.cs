@@ -31,7 +31,7 @@ namespace Car_Rental_Management
                 flowLayoutPanel_Center.Controls.Add(ucClient);
             }
         }
-
+        #region Các sự kiện của button
         private void btnAdd_Click(object sender, EventArgs e)
         {
             FCustomer_Information newCustomer = new FCustomer_Information();
@@ -76,5 +76,6 @@ namespace Car_Rental_Management
             }
             else FClient_Load(sender, e);
         }
+        #endregion
     }
 }
