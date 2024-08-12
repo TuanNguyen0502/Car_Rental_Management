@@ -19,12 +19,48 @@ namespace Car_Rental_Management.Layouts
     {
         List<Employee> employees = DataAccess.Employees;
         private bool _isEmployeeInfor = true;
+        private string eid;
 
-        public EmployeeInfor()
+        public EmployeeInfor(string id)
         {
+            this.eid = id;
             InitializeComponent();
+            FindEmployee();
         }
-
+        public void FindEmployee()
+        {
+            Employee employee = null;
+            foreach (Employee emp in employees)
+            {
+                if (emp.EmployeeID == eid)
+                {
+                    employee = emp;
+                    break;
+                }
+                    
+            }
+            if (employee != null)
+            {
+                LoadData(employee);
+            }
+        }
+        public void LoadData(Employee _employee)
+        {
+            if (_employee != null)
+            {
+                txtID.Text = _employee.EmployeeID.ToString();
+                txtName.Text = _employee.FullName.ToString();
+                dayDOB.Value = _employee.DateOfBirth;
+                txtCCCD.Text = _employee.CCCD.ToString();
+                txtDiachi.Text = _employee.Address.ToString();
+                txtSĐT.Text = _employee.PhoneNumber.ToString();
+                txtEmail.Text = _employee.Email.ToString();
+                txtSalary.Text = _employee.Salary.ToString();
+                if(_employee.Gender == "Nam")
+                    radNam.Checked = true;
+                else radNu.Checked = false;
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
 

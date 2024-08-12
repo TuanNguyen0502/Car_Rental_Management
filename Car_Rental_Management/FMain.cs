@@ -108,7 +108,7 @@ namespace Car_Rental_Management
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new EmployeeInfor(eid));
         }
     }
 }
